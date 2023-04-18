@@ -57,3 +57,8 @@ starting point. Make sure your paper meets the following requirements:
 7. Once your Pull Request is **accepted and merged**, your attendance at the Shonan Code Summit is confirmed. Congratulations!
 
 We look forward to your participation in the Shonan Code Summit (ShoCode) and can't wait to see the incredible ideas and insights you'll bring to the event!
+
+## Contributing to ShoCode
+
+We welcome your feedback and contributions to the 
+Shonan Code Summit (ShoCode). Before making contributions, please review the [Code of Conduct](CODE_OF_CONDUCT.md) and the [Contribution Guidelines](CONTRIBUTING.md).
