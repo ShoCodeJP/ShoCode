@@ -23,7 +23,7 @@ Key requirements for the papers and presentations include:
 1. Vendor-neutral content (no marketing)
 1. Inclusion of reusable code (programming language, scripts, or configuration/infrastructure as code)
 
-## Location
+## Shonan Area
 What sets this event apart is its stunning location in Hayama, Japan. With breathtaking views of Mount Fuji across Sagami Bay, you'll be inspired as you immerse yourself in the beauty of this seaside town. Enjoy a variety of local activities, including marine sports, mountain trails, shopping, and dining.
 
 Don't miss this incredible opportunity to connect with like-minded engineers, learn from industry leaders, and contribute to shaping the future of software development and architecture. Share this invitation with fellow engineers and let's create the ultimate future together at the Shonan Code Summit (ShoCode)!
