@@ -32,19 +32,25 @@ Don't miss this incredible opportunity to connect with like-minded engineers, le
 
 Follow the instructions below to submit your paper and register for the event using GitHub:
 
-> The use of papers, GitHub, and the pull request process ensures that our attendees are part of our target audience with a passion for sharing knowledge. It also creates a sense of community by associating the submissions with the attendees' public GitHub profiles.
+> The use of papers, GitHub, and the pull request process ensures that our attendees are part of our target audience who are technologists with a passion for sharing knowledge. It also creates a sense of community by associating the submissions with the attendees' public GitHub profiles.
 
 ### Paper Submission and Registration
 1. Read the **[Creative Commons LICENSE](LICENSE)** before contributing to the ShoCode repository.
 1. **Fork this repository** to create your own copy of the ShoCode repository.
 2. In your forked repository, **create a new folder** under `papers` named after your GitHub username (e.g., **`papers/your_username`**).
 3. Inside the folder you created, **add your paper** as a Markdown file. Use [papers/template.md](papers/template.md) as a 
-starting point. Make sure your paper meets the following requirements:
-  - Papers should be in English
-  - Length should be under 2000 words
+starting point (you can change to structure and headings to suit your 
+topic). Make sure your paper meets the following requirements:
+  - Papers should be in English (machine translation ok)
+  - Length should around 500-2000 words
   - Focus on technical depth and innovation
   - Vendor-neutral content (no marketing)
-  - Include some reusable code (programming language, scripts, or configuration/infrastructure as code)
+  - Include some reusable code (any kind of code is fine, 
+    programming languages, mermaid diagrams/charts, 
+    config/infra as code, etc.)
+  - You can author in Japanese and machine-translate to English. 
+    - Submit both versions named as `paper_title.md` and `paper_title_jp.md`.
+    - Here is the Japanese template: [papers/template.md](papers/template.md)
 4. At the bottom of the paper, provide the following information:
   - Your name and social media details
   - We need at least one way to contact you (twitter, facebook, LINE, etc)
