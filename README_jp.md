@@ -34,14 +34,11 @@
 志を同じくするエンジニアとつながり、業界のリーダーから学び、ソフトウェア開発とアーキテクチャの未来を形作ることに貢献できるこの素晴らしい機会をお見逃しなく。 この招待状を仲間のエンジニアと共有し、Shonan Code Summit (ShoCode) で一緒に究極の未来を作りましょう！
 
 <img src="resources/top_banner.jpg" alt="Shonan Code Summit" title="Shonan Code Summit" width="400" height="400">
-
-:::note info
-Created by DALL-E
-:::
+*Created by DALL-E*
 
 ## 参加方法
 
-以下の手順に従って **自己紹介ページ (BIO)** を提出し、GitHub を使用してイベントに参加登録してください。
+以下の手順にしたがって **自己紹介ページ (BIO)** を提出し、GitHub を使用してイベントに参加登録してください。
 
 > GitHub、および Pull request プロセスを使用した自己紹介ページを提出することで、参加者は知識を共有することに情熱を持っているターゲット オーディエンスの一部であることが保証されます。また、提出物を出席者の公開 GitHub プロファイルに関連付けることで、コミュニティの感覚を生み出します。
 
