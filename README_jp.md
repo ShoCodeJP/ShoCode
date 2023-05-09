@@ -34,6 +34,7 @@
 志を同じくするエンジニアとつながり、業界のリーダーから学び、ソフトウェア開発とアーキテクチャの未来を形作ることに貢献できるこの素晴らしい機会をお見逃しなく。 この招待状を仲間のエンジニアと共有し、Shonan Code Summit (ShoCode) で一緒に究極の未来を作りましょう！
 
 <img src="resources/top_banner.jpg" alt="Shonan Code Summit" title="Shonan Code Summit" width="400" height="400">
+
 *Created by DALL-E*
 
 ## 参加方法

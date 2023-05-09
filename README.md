@@ -31,6 +31,7 @@ What sets this event apart is its stunning location in Hayama, Japan. With breat
 Don't miss this incredible opportunity to connect with like-minded engineers, learn from industry leaders, and contribute to shaping the future of software development and architecture. Share this invitation with fellow engineers and let's create the ultimate future together at the Shonan Code Summit (ShoCode)!
 
 <img src="resources/top_banner.jpg" alt="Shonan Code Summit" title="Shonan Code Summit" width="400" height="400">
+
 *Created by DALL-E*
 
 ## How to Attend
