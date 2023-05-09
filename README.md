@@ -10,7 +10,7 @@ Join us for an unforgettable one-day event, the Shonan Code Summit (ShoCode), fo
 
 * Location: TBD (Hayama, Japan)
 * Date: TBD (August/September, 2023) 
-* Cost: TBD (goal is under 20,000yen)
+* Cost: TBD (goal is under 10,000yen)
 
 At the heart of this event, we have a unique and engaging format:
 
