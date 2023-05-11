@@ -1,7 +1,6 @@
 # Shonan Code Summit : Innovating the Future
 
 [![English](https://img.shields.io/badge/🇬🇧-English-white?style=plastic)](README.md)
-(README.md)
 
 > 革新的なエンジニアが知識を共有し、ソフトウェア開発の未来を形作るための、コミュニティ主導のコラボレイティブな技術サミットです。
 
