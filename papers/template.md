@@ -1,41 +1,44 @@
-# [Paper Title]
+# Self-Introduction Page - [Your Name]
 
-## Abstract
-Provide a brief summary of your paper (approximately 100-200 words) that highlights the main ideas, technical insights, and innovations.
+## About Me
+
+- **Name:** [Your Name]
+- **GitHub Username:** [Your GitHub Username]
+- **Social Media:** [Provide links to your social media profiles, such as Twitter, LinkedIn, etc.]
+- **Contact Information:** [Provide at least one way to contact you, such as an email address or messaging app handle (LINE, Messenger, etc.)]
 
 ## Introduction
-Introduce the problem, topic, or concept your paper will address. Describe its relevance, importance, and the motivation behind your research or idea.
 
-## Background and Related Work
-Provide a brief overview of the existing literature, research, or technologies related to your paper's topic. Explain how your work builds upon, differs from, or adds to the current understanding or state of the art.
+[Introduce yourself and your background briefly. Talk about your experience as an engineer, your areas of expertise, and any notable projects or achievements.]
 
-## Technical Approach
-Describe your methodology, design, or approach in detail. Include code snippets, algorithms, or configurations where appropriate. Ensure that your code is reusable and well-documented.
+## Technical Proposal
 
-### Subsection (if applicable)
-If needed, divide this section into subsections to discuss specific aspects of your technical approach.
+[This can be a written proposal of
+what technical content you would
+bring to the event as a speaker or
+attendee. Or it can be a link to
+an article, blog, repo or even
+a pull request that you authored. It
+should be something you created and
+can talk about with other attendees.]
 
-## Results or Insights
-Present the outcomes, findings, or insights gained from your research or idea. If applicable, include visual aids such as graphs, tables, or diagrams to illustrate your points.
+## Code Examples
 
-## Discussion and Future Work
-Discuss the implications of your findings or insights. Describe any limitations, open questions, or potential avenues for future research or development in this area.
+[Include reusable code snippets, programming language examples, scripts, or configuration/infrastructure as code to demonstrate your technical expertise. You can include the
+code here or link to the code
+in an article, repo or pull request.]
 
-## Conclusion
-Summarize the main points of your paper and reiterate its significance or potential impact on the field.
+## Event Registration Preference
 
-## References
-List any sources you cited throughout your paper, following a consistent citation format such as APA, MLA, or IEEE.
+Please indicate your preference for attending the event:
 
-## Author Information
-Provide your name, affiliation, and social media information. Include your GitHub username for paper submission and event registration purposes. Include
-at least one method to direct contact you (LINE,
-Facebook, Twitter, etc).
+- [ ] Participate as a session speaker
+- [ ] Participate in the "speed-dating" rounds
+- [ ] As a participant, just publish my self-introduction page on this event repository
 
-## Submission Preferences
-Indicate your preference for sharing your paper at the Shonan Code Summit (ShoCode):
-- Present the paper as a session
-- Participate in the "speed-dating" rounds
-- Simply make the paper available via the event repository
-> Acceptance of the paper, does not guarantee an 
-in-person presentation.
+By selecting one of the options above, you indicate your availability and interest in actively participating in the event beyond submitting your self-introduction page.
+
+Looking forward to connecting with the engineering community at the Shonan Code Summit (ShoCode) and sharing our knowledge!
+
+---
+**Note:** This file will serve as your self-introduction page (bio) and event registration. Please ensure it meets the requirements mentioned in the event details.
