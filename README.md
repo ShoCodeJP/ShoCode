@@ -1,5 +1,5 @@
 # Shonan Code Summit: Innovating the Future 
-*if you want to read this documnet in Japanese, please see [README_jp](README_jp.md).*
+[![日本語](https://img.shields.io/badge/%F0%9F%87%AF%F0%9F%87%B5-日本語-white?style=plastic)](README_jp.md)
 
 > A collaborative, community-powered tech summit for innovative engineers to share knowledge and shape the future of software development.
 
@@ -15,8 +15,8 @@ Join us for an unforgettable one-day event, the Shonan Code Summit (ShoCode), fo
 At the heart of this event, we have a unique and engaging format:
 
 1. Engineers will submit a self-introduction page (bio) showcasing their deep technical insights, concepts, code, and so on.
-1. Participants who submit engaging and insightful activities and knowledge will have the opportunity to present as speakers.
-1. Attendees will have the chance to share their technical knowledges in shorter "speed-dating" type sessions, fostering dynamic and rapid exchanges of ideas.
+1. Contributors who submit engaging and insightful activities and knowledge will have the opportunity to present as speakers.
+1. Attendees will have the chance to share their technical knowledge in shorter "speed-dating" type sessions, fostering dynamic and rapid exchanges of ideas.
 1. Ample opportunities for networking, collaboration, and discussions will be provided throughout the day.
 
 Key requirements for the presentations include:
