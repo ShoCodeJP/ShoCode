@@ -9,7 +9,10 @@
 
 ## Introduction
 
-[Introduce yourself and your background briefly. Talk about your experience as an engineer, your areas of expertise, and any notable projects or achievements.]
+[Introduce yourself and your background briefly. 
+Talk about your experience as an engineer, 
+your areas of expertise, and any notable projects 
+or achievements.]
 
 ## Technical Proposal
 
@@ -24,8 +27,10 @@ can talk about with other attendees.]
 
 ## Code Examples
 
-[Include reusable code snippets, programming language examples, scripts, or configuration/infrastructure as code to demonstrate your technical expertise. You can include the
-code here or link to the code
+[Include reusable code snippets, programming 
+language examples, scripts, or configuration/infrastructure 
+as code to support your technical proposal. 
+You can include the code here or link to the code
 in an article, repo or pull request.]
 
 ## Event Registration Preference
