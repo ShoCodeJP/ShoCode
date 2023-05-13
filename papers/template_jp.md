@@ -2,6 +2,8 @@
 
 > PR を通して提出する自己紹介ページは英語である必要があります。(機械翻訳の利用はOKです)
 
+[![English](https://img.shields.io/badge/🇬🇧-English-white?style=plastic)](template.md)
+
 ## About Me
 
 - **Name:** [氏名]
