@@ -24,35 +24,22 @@ jobs:
           curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh | sh -s -- -b /usr/local/bin
 
       - name: Run Markdown linter
-        run: npx markdownlint '**/*.md' --config .markdownlint.yaml --ignore 'node_modules/**' > markdownlint_report.txt
+        run: |
+          npx markdownlint '**/*.md' --config .markdownlint.yaml --ignore 'node_modules/**' \
+          | reviewdog -efm="%f:%l:%c %m" -efm="%f:%l %m" -name="markdownlint" -reporter=github-pr-review
+        env:
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run spell checker
-        run: npx markdown-spellcheck '**/*.md' --ignore 'node_modules/**' > spell_checker_report.txt
+        run: |
+          npx markdown-spellcheck '**/*.md' --ignore 'node_modules/**' --en-us -r -x -a > markdown-spellcheck.txt
+          if [ $? -ne 0 ]; then
+            cat markdown-spellcheck.txt | gh pr comment ${{ github.event.pull_request.number }}
+          fi
 
       - name: Run link checker
         run: |
-          find . -name "*.md" -not -path "./node_modules/*" -not -path "./.github/*" -exec npx markdown-link-check {} + > link_checker_report.txt
-
-      - name: Create Markdown linter annotations
-        if: always()
-        run: |
-          cat markdownlint_report.txt \
-          | reviewdog -f=markdownlint -name="markdownlint" -reporter=github-pr-review
-        env:
-          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.REVIEWDOG_GITHUB_API_TOKEN }}
-
-      - name: Create spell checker annotations
-        if: always()
-        run: |
-          cat spell_checker_report.txt \
-          | reviewdog -f=markdown-spellcheck -name="spell checker" -reporter=github-pr-review
-        env:
-          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.REVIEWDOG_GITHUB_API_TOKEN }}
-
-      - name: Create link checker annotations
-        if: always()
-        run: |
-          cat link_checker_report.txt \
-          | reviewdog -f=markdown-link-check -name="link checker" -reporter=github-pr-review
-        env:
-          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.REVIEWDOG_GITHUB_API_TOKEN }}
+          find . -name "*.md" -not -path "./node_modules/*" -not -path "./.github/*" -exec npx markdown-link-check -q {} + > markdown-link-check.txt
+          if [ -s markdown-link-check.txt ]; then
+            cat markdown-link-check.txt | gh pr comment ${{ github.event.pull_request.number }}
+          fi
