@@ -1,7 +1,9 @@
 name: Markdown Checks
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - markdown_pipeline
 
 jobs:
   markdown_checks:
