@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install markdownlint-cli markdown-spellcheck markdown-link-check
+          npm install -g markdownlint-cli markdown-spellcheck markdown-link-check
           curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh | sh -s -- -b /usr/local/bin
 
       - name: Run Markdown linter
@@ -34,7 +34,7 @@ jobs:
       - name: Run spell checker
         if: always()
         run: |
-          npx markdown-spellcheck '**/*.md' --ignore 'node_modules/**' --en-us -r -x -a | tee markdown-spellcheck.txt
+          npx markdown-spellcheck '**/*.md' --en-us -r -x -a | tee markdown-spellcheck.txt
           if [ $? -ne 0 ]; then
             cat markdown-spellcheck.txt | gh pr comment ${{ github.event.pull_request.number }}
           fi
