@@ -22,10 +22,29 @@ jobs:
         run: npm install markdownlint-cli markdown-spellcheck markdown-link-check
 
       - name: Run Markdown linter
-        run: npx markdownlint '**/*.md' --config .markdownlint.yaml --ignore 'node_modules/**'
+        run: npx markdownlint '**/*.md' --config .markdownlint.yaml --ignore 'node_modules/**' > markdownlint_report.txt
 
       - name: Run spell checker
-        run: npx markdown-spellcheck '**/*.md' --ignore 'node_modules/**'
+        run: npx markdown-spellcheck '**/*.md' --ignore 'node_modules/**' > spell_checker_report.txt
 
       - name: Run link checker
-        run: npx markdown-link-check '**/*.md' --ignore 'node_modules/**'
+        run: |
+          find . -name "*.md" -not -path "./node_modules/*" -not -path "./.github/*" -exec npx markdown-link-check {} + > link_checker_report.txt
+
+      - name: Create Markdown linter annotations
+        if: always()
+        run: |
+          cat markdownlint_report.txt \
+          | reviewdog -f=markdownlint -name="markdownlint" -reporter=github-pr-review
+
+      - name: Create spell checker annotations
+        if: always()
+        run: |
+          cat spell_checker_report.txt \
+          | reviewdog -f=markdown-spellcheck -name="spell checker" -reporter=github-pr-review
+
+      - name: Create link checker annotations
+        if: always()
+        run: |
+          cat link_checker_report.txt \
+          | reviewdog -f=markdown-link-check -name="link checker" -reporter=github-pr-review
