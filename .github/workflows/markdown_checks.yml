@@ -21,15 +21,15 @@ jobs:
       - name: Install dependencies
         run: |
           npm install -g markdownlint-cli markdown-spellcheck markdown-link-check
-          curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh | sh -s -- -b /usr/local/bin
 
       - name: Run Markdown linter
         if: always()
         run: |
-          npx markdownlint '**/*.md' --config .markdownlint.yaml --ignore 'node_modules/**' \
-          | reviewdog -efm="%f:%l:%c %m" -efm="%f:%l %m" -name="markdownlint" -reporter=github-pr-review
-        env:
-          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          npx markdownlint '**/*.md' --config .markdownlint.yaml --ignore 'node_modules/**' | tee markdownlint.txt
+          if [ $? -ne 0 ]; then
+            cat markdownlint.txt | gh pr comment ${{ github.event.pull_request.number }}
+            return 1
+          fi
 
       - name: Run spell checker
         if: always()
@@ -37,6 +37,7 @@ jobs:
           npx markdown-spellcheck '**/*.md' --en-us -r -x -a | tee markdown-spellcheck.txt
           if [ $? -ne 0 ]; then
             cat markdown-spellcheck.txt | gh pr comment ${{ github.event.pull_request.number }}
+            return 1
           fi
 
       - name: Run link checker
@@ -45,4 +46,5 @@ jobs:
           find . -name "*.md" -not -path "./node_modules/*" -not -path "./.github/*" -exec npx markdown-link-check -q {} + | tee markdown-link-check.txt
           if [ -s markdown-link-check.txt ]; then
             cat markdown-link-check.txt | gh pr comment ${{ github.event.pull_request.number }}
+            return 1
           fi
