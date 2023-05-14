@@ -92,7 +92,7 @@ with the attendees' public GitHub profiles.
 5. At the bottom of the page, provide the following information:
 
     * Your name and social media details
-    * We need at least one way to contact you (twitter, facebook, LINE, etc)
+    * We need at least one way to contact you (twitter, Facebook, LINE, etc)
     * A brief abstract of your page
     * Your preference for attending the event:
       * Participate as a session speaker
