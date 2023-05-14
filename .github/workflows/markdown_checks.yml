@@ -19,7 +19,9 @@ jobs:
           node-version: '14'
 
       - name: Install dependencies
-        run: npm install markdownlint-cli markdown-spellcheck markdown-link-check
+        run: |
+          npm install markdownlint-cli markdown-spellcheck markdown-link-check
+          curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh | sh -s -- -b /usr/local/bin
 
       - name: Run Markdown linter
         run: npx markdownlint '**/*.md' --config .markdownlint.yaml --ignore 'node_modules/**' > markdownlint_report.txt
