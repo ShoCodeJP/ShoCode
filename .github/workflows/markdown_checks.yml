@@ -19,13 +19,13 @@ jobs:
           node-version: '14'
 
       - name: Install dependencies
-        run: npm install markdownlint-cli aspell markdown-link-check
+        run: npm install markdownlint-cli markdown-spellcheck markdown-link-check
 
       - name: Run Markdown linter
         run: npx markdownlint '**/*.md' --config .markdownlint.yaml --ignore 'node_modules/**'
 
       - name: Run spell checker
-        run: aspell check **/*.md --ignore 'node_modules/**'
+        run: npx markdown-spellcheck '**/*.md' --ignore 'node_modules/**'
 
       - name: Run link checker
         run: npx markdown-link-check '**/*.md' --ignore 'node_modules/**'
