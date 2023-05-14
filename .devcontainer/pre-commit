@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Run Markdown linter if available
+echo "** Markdown Linting **"
+if npx markdownlint -V; then
+  npx markdownlint '**/*.md' --config .markdownlint.yaml
+  if [ $? -ne 0 ]; then
+    echo "Markdown linting failed. Please fix the issues before committing."
+    exit 1
+  fi
+else
+  echo "Warning: 'npx' command not found. Skipping Markdown linting."
+fi
+
+# Run spell checker if available
+echo "** Markdown Spellcheck **"
+if npx markdown-spellcheck -V; then
+  npx markdown-spellcheck '**/*.md' -r -x -a --en-us --ignore 'node_modules/**/*.md' --ignore '.github/**/*.md'
+  if [ $? -ne 0 ]; then
+    echo "Spell checking failed. Please fix the issues before committing."
+    exit 1
+  fi
+else
+  echo "Warning: 'npx' or 'markdown-spellcheck' command not found. Skipping spell checking."
+fi
+
+# Run link checker if available
+echo "** Markdown Link Check **"
+if npx markdown-link-check -V; then
+  find . -name "*.md" -not -path "./node_modules/*" -not -path "./.github/*" -exec npx markdown-link-check {} +
+  if [ $? -ne 0 ]; then
+    echo "Link checking failed. Please fix the issues before committing."
+    exit 1
+  fi
+else
+  echo "Warning: 'npx', 'find', or 'markdown-link-check' command not found. Skipping link checking."
+fi
+
+exit 0

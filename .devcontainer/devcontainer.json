@@ -13,5 +13,5 @@
 			]
 		}
 	},
-	"postCreateCommand": "apt-get update && apt-get install -y git"
+	"postCreateCommand": "cp .devcontainer/pre-commit .git/hooks/pre-commit"
 }
