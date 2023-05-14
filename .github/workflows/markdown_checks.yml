@@ -22,7 +22,7 @@ jobs:
         run: npm install markdownlint-cli aspell markdown-link-check
 
       - name: Run Markdown linter
-        run: npx markdownlint '**/*.md'
+        run: npx markdownlint '**/*.md' --config .markdownlint.yaml
 
       - name: Run spell checker
         run: aspell check **/*.md
