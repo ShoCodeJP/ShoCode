@@ -1,9 +1,9 @@
 name: Markdown Checks
 
 on:
-  push:
+  pull_request:
     branches:
-      - markdown_pipeline
+      - main
 
 jobs:
   markdown_checks:
