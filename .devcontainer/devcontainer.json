@@ -9,6 +9,7 @@
 			"extensions": [
 				"github.vscode-github-actions",
 				"DavidAnson.vscode-markdownlint",
+				"ms-azuretools.vscode-docker"
 			]
 		}
 	},
