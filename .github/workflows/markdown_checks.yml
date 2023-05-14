@@ -1,0 +1,29 @@
+name: Markdown Checks
+
+on:
+  workflow_dispatch:
+
+jobs:
+  markdown_checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install markdownlint-cli aspell markdown-link-check
+
+      - name: Run Markdown linter
+        run: npx markdownlint '**/*.md'
+
+      - name: Run spell checker
+        run: aspell check **/*.md
+
+      - name: Run link checker
+        run: npx markdown-link-check '**/*.md'
