@@ -34,7 +34,7 @@ jobs:
             title="Markdownlint Report"
             comment="The following issues were found in the Markdown files. Please review and make the necessary changes."
             header="## $title\n\n$comment\n\n"
-            body="```text\n$(cat markdownlint.txt)\n```"
+            body="\`\`\`text\n$(cat markdownlint.txt)\n\`\`\`"
             gh pr comment ${{ github.event.pull_request.number }} -b "$header$body"
             return 1
           fi
