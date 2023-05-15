@@ -30,6 +30,8 @@ jobs:
             gh pr comment ${{ github.event.pull_request.number }} -F markdownlint.txt
             return 1
           fi
+        env:
+          GH_TOKEN: ${{ github.token }}
 
       - name: Run spell checker
         if: always()
@@ -39,6 +41,8 @@ jobs:
             gh pr comment ${{ github.event.pull_request.number }} -F markdown-spellcheck.txt
             return 1
           fi
+        env:
+          GH_TOKEN: ${{ github.token }}
 
       - name: Run link checker
         if: always()
@@ -48,3 +52,5 @@ jobs:
             gh pr comment ${{ github.event.pull_request.number }} -F markdown-link-check.txt
             return 1
           fi
+        env:
+          GH_TOKEN: ${{ github.token }}
