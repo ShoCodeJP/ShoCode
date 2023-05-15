@@ -2,8 +2,6 @@
 
 [![日本語](https://img.shields.io/badge/%F0%9F%87%AF%F0%9F%87%B5-日本語-white?style=plastic)](README_jp.md)
 
-[bad link](http://example.net/1234)
-
 > A collaborative, community-powered tech summit for innovative engineers to
 share knowledge and shape the future of software development.
 
