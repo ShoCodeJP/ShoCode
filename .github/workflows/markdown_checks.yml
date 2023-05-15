@@ -25,8 +25,8 @@ jobs:
       - name: Run Markdown linter
         if: always()
         run: |
-          npx markdownlint '**/*.md' --config .markdownlint.yaml --ignore 'node_modules/**' | tee markdownlint.txt | return ${PIPESTATUS[0]}
-          if [ $? -ne 0 ]; then
+          npx markdownlint '**/*.md' --config .markdownlint.yaml --ignore 'node_modules/**' | tee markdownlint.txt
+          if [ ${PIPESTATUS[0]} -ne 0 ]; then
             gh pr comment ${{ github.event.pull_request.number }} -F markdownlint.txt
             return 1
           fi
@@ -34,8 +34,8 @@ jobs:
       - name: Run spell checker
         if: always()
         run: |
-          npx markdown-spellcheck '**/*.md' --en-us -r -x -a | tee markdown-spellcheck.txt  | return ${PIPESTATUS[0]}
-          if [ $? -ne 0 ]; then
+          npx markdown-spellcheck '**/*.md' --en-us -r -x -a | tee markdown-spellcheck.txt
+          if [ ${PIPESTATUS[0]} -ne 0 ]; then
             gh pr comment ${{ github.event.pull_request.number }} -F markdown-spellcheck.txt
             return 1
           fi
