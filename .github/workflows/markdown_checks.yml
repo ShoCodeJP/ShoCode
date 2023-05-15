@@ -29,7 +29,7 @@ jobs:
       - name: Run Markdown linter
         if: always()
         run: |
-          npx markdownlint '**/*.md' --config .markdownlint.yaml --ignore 'node_modules/**' | tee markdownlint.txt
+          npx markdownlint '**/*.md' --config .markdownlint.yaml --ignore 'node_modules/**' 2>&1 | tee markdownlint.txt
           if [ ${PIPESTATUS[0]} -ne 0 ]; then
             gh pr comment ${{ github.event.pull_request.number }} -F markdownlint.txt
             return 1
@@ -40,7 +40,7 @@ jobs:
       - name: Run spell checker
         if: always()
         run: |
-          npx markdown-spellcheck '**/*.md' --en-us -r -x -a | tee markdown-spellcheck.txt
+          npx markdown-spellcheck '**/*.md' --en-us -r -x -a 2>&1 | tee markdown-spellcheck.txt
           if [ ${PIPESTATUS[0]} -ne 0 ]; then
             gh pr comment ${{ github.event.pull_request.number }} -F markdown-spellcheck.txt
             return 1
@@ -51,7 +51,7 @@ jobs:
       - name: Run link checker
         if: always()
         run: |
-          find . -name "*.md" -not -path "./node_modules/*" -not -path "./.github/*" -exec npx markdown-link-check -q {} + | tee markdown-link-check.txt
+          find . -name "*.md" -not -path "./node_modules/*" -not -path "./.github/*" -exec npx markdown-link-check -q {} + 2>&1 | tee markdown-link-check.txt
           if [ -s markdown-link-check.txt ]; then
             gh pr comment ${{ github.event.pull_request.number }} -F markdown-link-check.txt
             return 1
