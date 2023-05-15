@@ -1,0 +1,25 @@
+# markdown-spellcheck spelling configuration file
+# Format - lines beginning # are comments
+# global dictionary is at the start, file overrides afterwards
+# one word per line, to define a file override use ' - filename'
+# where filename is relative to this configuration file
+Shonan
+ShoCode
+inclusivity
+ethnicities
+mockups
+LinkedIn
+IaC
+repo
+2023
+10
+000
+DALL-E
+template.md
+2000
+OSS
+TBD
+Hayama
+000yen
+Sagami
+e.g.
