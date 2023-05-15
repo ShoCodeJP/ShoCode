@@ -31,8 +31,8 @@ jobs:
         run: |
           npx markdownlint '**/*.md' --config .markdownlint.yaml --ignore 'node_modules/**' 2>&1 | tee markdownlint.txt
           if [ ${PIPESTATUS[0]} -ne 0 ]; then
-            title="Markdownlint Report"
-            comment="The following issues were found in the Markdown files. Please review and make the necessary changes."
+            title="Markdown Lint Report"
+            comment="The following linting issues were found in the Markdown files.\nPlease review and make the necessary changes."
             header="## $title\n\n$comment\n\n"
             body="\`\`\`text\n$(cat markdownlint.txt)\n\`\`\`"
             echo -e "$header$body" > markdownlint.txt
@@ -47,6 +47,11 @@ jobs:
         run: |
           npx markdown-spellcheck '**/*.md' --en-us -r -x -a 2>&1 | tee markdown-spellcheck.txt
           if [ ${PIPESTATUS[0]} -ne 0 ]; then
+            title="Markdown SpellCheck Report"
+            comment="The following spelling errors were found in the Markdown files.\nPlease review and make the necessary changes or add new words to *.spelling*."
+            header="## $title\n\n$comment\n\n"
+            body="\`\`\`text\n$(cat markdown-spellcheck.txt)\n\`\`\`"
+            echo -e "$header$body" > markdown-spellcheck.txt
             gh pr comment ${{ github.event.pull_request.number }} -F markdown-spellcheck.txt
             return 1
           fi
@@ -56,8 +61,13 @@ jobs:
       - name: Run link checker
         if: always()
         run: |
-          find . -name "*.md" -not -path "./node_modules/*" -not -path "./.github/*" -exec npx markdown-link-check -q {} + 2>&1 | tee markdown-link-check.txt
+          find . -name "*.md" -not -path "./node_modules/*" -not -path "./.github/*" -exec npx markdown-link-check -c .markdownlinkcheck.json -q {} + 2>&1 | tee markdown-link-check.txt
           if [ -s markdown-link-check.txt ]; then
+            title="Markdown Link Checker Report"
+            comment="The following broken links were found in the Markdown files.\nPlease review and make the necessary changes."
+            header="## $title\n\n$comment\n\n"
+            body="\`\`\`text\n$(cat markdown-link-check.txt)\n\`\`\`"
+            echo -e "$header$body" > markdown-link-check.txt
             gh pr comment ${{ github.event.pull_request.number }} -F markdown-link-check.txt
             return 1
           fi

@@ -27,7 +27,7 @@ fi
 # Run link checker if available
 echo "** Markdown Link Check **"
 if npx markdown-link-check -V; then
-  find . -name "*.md" -not -path "./node_modules/*" -not -path "./.github/*" -exec npx markdown-link-check -q {} +
+  find . -name "*.md" -not -path "./node_modules/*" -not -path "./.github/*" -exec npx markdown-link-check -c .markdownlinkcheck.json -q {} +
   if [ $? -ne 0 ]; then
     echo "Link checking failed. Please fix the issues before committing."
     exit 1
