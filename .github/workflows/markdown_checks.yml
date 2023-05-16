@@ -45,7 +45,7 @@ jobs:
       - name: Run spell checker
         if: always()
         run: |
-          npx markdown-spellcheck '**/*.md' --en-us -r -x -a 2>&1 | tee markdown-spellcheck.txt
+          npx markdown-spellcheck '**/*.md' --en-us -t -r -x -a 2>&1 | tee markdown-spellcheck.txt
           if [ ${PIPESTATUS[0]} -ne 0 ]; then
             title="Markdown SpellCheck Report"
             comment="The following spelling errors were found in the Markdown files.\nPlease review and make the necessary changes or add new words to *.spelling*."

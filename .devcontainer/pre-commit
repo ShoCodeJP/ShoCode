@@ -15,7 +15,7 @@ fi
 # Run spell checker if available
 echo "** Markdown Spellcheck **"
 if npx markdown-spellcheck -V; then
-  npx markdown-spellcheck '**/*.md' -r -x -a --en-us --ignore 'node_modules/**/*.md' --ignore '.github/**/*.md'
+  npx markdown-spellcheck '**/*.md' -t -r -x -a --en-us --ignore 'node_modules/**/*.md' --ignore '.github/**/*.md'
   if [ $? -ne 0 ]; then
     echo "Spell checking failed. Please fix the issues before committing."
     exit 1
