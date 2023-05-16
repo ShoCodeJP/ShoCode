@@ -6,7 +6,7 @@
 
 - **Name:** Drew Robbins
 - **GitHub Username:** [drewby](https://github.com/drewby)
-- **Social Media:** [LinkedIn](https://www.linkedin.com), [Twitter](https://twitter.com/drewrobbins)
+- **Social Media:** [LinkedIn](https://www.linkedin.com/in/drewby/), [Twitter](https://twitter.com/drewrobbins)
 - **Contact Information:** Please contact me via [Messenger](http://m.me/drewrobbins)
   or LINE: drewby
 
