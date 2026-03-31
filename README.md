@@ -1,120 +1,110 @@
-# Shonan Code Summit: Innovating the Future
+# ShoCode: Agentic Coding on the Coast
 
 [![日本語](https://img.shields.io/badge/%F0%9F%87%AF%F0%9F%87%B5-日本語-white?style=plastic)](README_jp.md)
 
-> A collaborative, community-powered tech summit for innovative engineers to
-share knowledge and shape the future of software development.
+> A community-powered, fully bilingual (日本語 / English) one-day event for
+builders, creators, and doers exploring the frontier of agentic coding —
+held in the inspiring Shonan area of Kanagawa, Japan.
 
-This is your one-stop source for all event details, venue information,
-logistics, and costs. As an innovative technical event, we will be using
-GitHub to manage every aspects of the summit, including the submission of your
-self-introduction (bio) page, which also doubles as registration.
+This repository is your single source of truth for event details, registration,
+and community contributions. True to its roots, ShoCode uses GitHub to manage
+every aspect of the event — including registration, which happens through a
+pull request (with easier paths available for those new to PRs).
 
-## The Summit
+## The Event
 
-Join us for an unforgettable one-day event, the Shonan Code Summit (ShoCode),
-focused on exploring and exchanging cutting-edge ideas and knowledge in the
-world of software engineering and architecture. Our goal is to bring together
-the finest engineers who are passionate about creating a brighter future for
-developers and enhancing their professional fulfillment, and together, we will
-push the boundaries of innovation and design.
+The Shonan Code Summit (ShoCode) is a one-day, repeatable gathering where
+engineers come together to **build, present, and demo** around the theme of
+**Agentic Coding** — AI agents that write, review, test, deploy, and evolve
+code alongside humans.
 
-* Location: TBD (Hayama, Japan)
-* Date: TBD (August/September, 2023)
-* Cost: TBD (goal is under 10,000yen)
+* **Location:** TBD (Shonan area, Kanagawa, Japan)
+* **Date:** TBD
+* **Cost:** TBD (goal is to keep it affordable and accessible)
+* **Languages:** Japanese and English (fully bilingual)
 
-At the heart of this event, we have a unique and engaging format:
+### Format
 
-1. Engineers will submit a self-introduction page (bio) showcasing their deep
-   technical insights, concepts, code, and so on.
-1. Contributors who submit engaging and insightful activities and knowledge
-   will have the opportunity to present as speakers.
-1. Attendees will have the chance to share their technical knowledge in shorter
-   "speed-dating" type sessions, fostering dynamic and rapid exchanges of ideas.
-1. Ample opportunities for networking, collaboration, and discussions will be
-   provided throughout the day.
+The day is split into three acts:
 
-Key requirements for the presentations include:
+1. **Presentations** — Deep-dive talks on agentic coding: autonomous agents,
+   human-in-the-loop workflows, AI-assisted architecture, prompt engineering
+   for code generation, and more.
+2. **Hackathon** — Hands-on building time. Bring a project idea or join a team
+   on-site. Build something real with agentic tools and techniques.
+3. **Hackathon Demos** — Teams show what they built. Live demos, feedback, and
+   celebration of what's possible when humans and agents code together.
 
-1. A strong focus on technical depth and innovation
-1. Vendor-neutral content (no marketing)
-1. Inclusion of reusable code (programming language, scripts, or
-   configuration/infrastructure as code)
+### What We Value
+
+* **Builders, creators, doers.** This event is for people who make things.
+* **Technical depth and honesty.** No marketing pitches, no investor decks, no
+  recruiting talks.
+* **Community first.** Sponsors are welcome in appropriate ways, but this is not
+  a corporate event. It belongs to the community.
+* **Bilingual by design.** Presentations and materials in both Japanese and
+  English. Use whichever you're comfortable with.
 
 ## Shonan Area
 
-What sets this event apart is its stunning location in Hayama, Japan. With
-breathtaking views of Mount Fuji across Sagami Bay, you'll be inspired as you
-immerse yourself in the beauty of this seaside town. Along with participating
-in the event, enjoy a variety of local activities, including marine sports,
-mountain trails, shopping, and dining.
-
-Don't miss this incredible opportunity to connect with like-minded engineers,
-learn from industry leaders, and contribute to shaping the future of software
-development and architecture. Share this invitation with fellow engineers and
-let's create the ultimate future together at the Shonan Code Summit (ShoCode)!
+What sets ShoCode apart is its location in the Shonan area of Kanagawa, Japan.
+With views of Mount Fuji across Sagami Bay, ocean breezes, and the relaxed
+energy of the coast, you'll find inspiration beyond the screen. Enjoy local
+beaches, trails, cafés, and the unmistakable vibe of Shonan before or after
+the event.
 
 <figure>
-  <img src="resources/top_banner.jpg" alt="Shonan Code Summit"
-title="Shonan Code Summit" width="400" height="400">
+  <img src="resources/top_banner.jpg" alt="ShoCode: Agentic Coding on the Coast"
+title="ShoCode" width="400" height="400">
   <figcaption>Created by DALL-E</figcaption>
 </figure>
 
 ## How to Attend
 
-Follow the instructions below to submit your **self-introduction page (bio)**
-and register for the event using GitHub:
+Register by submitting a **profile page** to this repository. There are two
+ways to do it — pick whichever suits you:
 
-> Submitting a bio page using GitHub and the pull request process ensures that
-our attendees are part of our target audience with a passion for sharing
-knowledge. It also creates a sense of community by associating the submissions
-with the attendees' public GitHub profiles.
+### Option 1: Pull Request (classic ShoCode style)
 
-### Self-introduction Page (bio) Submission and Registration
+1. Read the **[Creative Commons LICENSE](LICENSE)**.
+2. **Fork this repository.**
+3. Create a new folder under `profiles/` named after your GitHub username
+   (e.g., `profiles/your_username`).
+4. Add your profile page as a Markdown file. Use
+   [profiles/template.md](profiles/template.md) as a starting point.
+5. **Submit a Pull Request** from your fork to this repository.
 
-1. Read the **[Creative Commons LICENSE](LICENSE)** before contributing to the
-   ShoCode repository.
-2. **Fork this repository** to create your own copy of the ShoCode repository.
-3. In your forked repository, **create a new folder** under `papers` named
-   after your GitHub username (e.g., **`papers/your_username`**).
-4. Inside the folder you created, **add your "self-introduction page"** as a
-   Markdown file. Use [papers/template.md](papers/template.md) as a starting
-   point. Make sure your "self-introduction page" meets the following
-   requirements:
+### Option 2: Ask Copilot (the agentic path 🤖)
 
-    * The page should be in English (use of machine translation is allowed)
-    * Length should be under 2000 words
-    * Focus on technical depth and innovation
-    * Vendor-neutral content (no marketing)
-    * Include some reusable code (programming language, scripts, or
-        configuration/infrastructure as code)
+Comment on an open registration issue with your details and ask **@copilot** to
+create the PR for you. Copilot will generate your profile page and submit the
+PR on your behalf. This is registration-as-agentic-coding — fitting for a
+conference about AI agents that write code alongside humans.
 
-5. At the bottom of the page, provide the following information:
+---
 
-    * Your name and social media details
-    * We need at least one way to contact you (twitter, Facebook, LINE, etc)
-    * A brief abstract of your page
-    * Your preference for attending the event:
-      * Participate as a session speaker
-      * Participate in the "speed-dating" rounds
-      * As a participant, just publish my self-introduction page on this event
-          repository
+### Profile Page Requirements
 
-6. Once you have completed steps 1-5, **submit a Pull Request** from your
-   forked repository to the main ShoCode repository. Your Pull Request will act
-   as your page submission and event registration.
-7. The event maintainers will **review your Pull Request**. They may provide
-   feedback or request changes to your page or submission details.
-8. Once your Pull Request is **accepted and merged**, your attendance at the
-   Shonan Code Summit is confirmed. Congratulations!
+Your profile page should include:
 
-We look forward to your participation in the Shonan Code Summit (ShoCode)
-and can't wait to see the incredible ideas and insights you'll bring to the
-event!
+* **About you** — name, GitHub username, and a public way to contact you
+  (Twitter/X, LinkedIn, Bluesky, LINE, etc.)
+* **What you'll bring** — a short description of what you want to present,
+  build, or demo. Focus on agentic coding, AI-assisted development, or related
+  technical topics.
+* **Code or project links** — share repos, gists, blogs, or prior work that
+  shows what you're about
+* **Your preferred role:**
+  * Presenter — give a talk during the presentation block
+  * Hacker — participate in the hackathon (and demo what you build)
+  * Both — present and hack
+  * Attendee — come, learn, and connect
+
+Once your PR is reviewed and merged, you're in. Welcome to ShoCode!
 
 ## Contributing to ShoCode
 
-We welcome your feedback and contributions to the Shonan Code Summit (ShoCode).
-Before making contributions, please review the
-[Code of Conduct](CODE_OF_CONDUCT.md) and the
-[Contribution Guidelines](CONTRIBUTING.md).
+This event belongs to the community. We welcome contributions of all kinds —
+event ideas, tooling, documentation, translations, and more. Before
+contributing, please review the [Code of Conduct](CODE_OF_CONDUCT.md) and
+the [Contribution Guidelines](CONTRIBUTING.md).

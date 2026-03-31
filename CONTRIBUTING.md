@@ -1,86 +1,65 @@
 # Contributing Guidelines
 
-Welcome to the Shonan Code Summit (ShoCode) repository! We're glad you're here
-and interested in contributing to our community-driven event. This document
-outlines some guidelines for contributing to the ShoCode repository, including
-how to submit code contributions, report bugs, suggest new features, and
-participate in discussions.
+Welcome to the ShoCode repository! We're glad you're here and interested in
+contributing to this community-driven event. This document outlines how to
+contribute — whether that's registering to attend, improving the repo, or
+helping shape the event itself.
 
-## Code Contributions
+## Event Registration
 
-We welcome code contributions that align with the goals and values of the
-ShoCode community. A code contribution can be a paper submission, updates
-to documentation, or code that supports the event. To submit a code
-contribution, please follow these steps:
+The primary way to contribute is to **register as a participant** by submitting
+a profile page. See the [README](README.md) for full details, but in short:
 
-1. Fork the repository and create a new branch for your contribution.
-2. Make your changes and ensure that your code follows the project's coding
-   conventions and style.
-3. Write tests for your changes and ensure that they pass.
-4. Submit a pull request to the main repository and provide a clear description
-   of your changes.
+1. **Pull Request** — Fork, add your profile page under `profiles/your_username`,
+   and submit a PR.
+2. **Ask @copilot** — Comment on a registration issue and let Copilot create
+   the PR for you.
 
-Please ensure that your pull request adheres to the following guidelines:
+## Repo Contributions
 
-- Clearly state the purpose and scope of your contribution.
-- Explain any dependencies, testing strategies, or deployment considerations
-  that may be relevant.
-- Include relevant documentation updates or examples.
-- Be willing to collaborate and address feedback or issues that may arise during
-  the review process.
+We welcome contributions that improve the event or this repository: tooling,
+documentation, translations, automation, issue templates, and more.
+
+To submit a contribution:
+
+1. Fork the repository and create a new branch for your changes.
+2. Make your changes and ensure they're clear and well-structured.
+3. Submit a pull request with a description of what you changed and why.
+
+Guidelines:
+
+- Keep the scope focused — one PR per logical change.
+- If your contribution adds new functionality (e.g., automation, CI), explain
+  how it works.
+- Bilingual contributions (English + Japanese) are especially appreciated.
+- Be willing to iterate on feedback during review.
 
 ## Bug Reports
 
-If you encounter a bug or error in the ShoCode repository, please submit a
-detailed bug report that includes the following information:
+If you find a problem — broken links, formatting issues, unclear instructions —
+open an issue with:
 
-- A clear description of the problem, including any error messages or symptoms.
-- Steps to reproduce the problem.
-- Any relevant information about your environment, such as the operating system,
-  browser, or device.
-- Any relevant logs, screenshots, or other supporting evidence.
+- A clear description of the problem.
+- Steps to reproduce it, if applicable.
+- Tag it with the **"bug"** label.
 
-Please submit your bug report as a new issue in the repository and tag it with
-the "bug" label.
+## Ideas & Feature Requests
 
-## Feature Requests
+Have an idea to make ShoCode better? Open an issue tagged with **"enhancement"**
+and describe:
 
-We welcome feature requests that align with the goals and values of the ShoCode
-community. A feature request can be anything from how we manage the event to
-enhancements to the ShoCode repository. To submit a feature request, please
-follow these steps:
-
-1. Check if the feature request already exists by searching the existing issues.
-2. If the feature request does not exist, create a new issue that clearly states
-   the purpose and scope of the feature.
-3. Provide any relevant documentation, user stories, or mockups that may help to
-   illustrate the feature.
-4. Be willing to collaborate and address feedback or issues that may arise
-   during the review process.
-
-Please submit your feature request as a new issue in the repository and tag it
-with the "enhancement" label.
+- What you'd like to see.
+- Why it would help the event or community.
+- Any relevant context, mockups, or prior art.
 
 ## Discussions
 
-The ShoCode repository also serves as a forum for community-driven discussions
-related to the event, technology, and related topics. To participate in a
-discussion, please follow these guidelines:
+This repo is also a place for community discussion. Use issues or pull requests
+to start conversations. Keep it respectful, on-topic, and constructive — see
+the [Code of Conduct](CODE_OF_CONDUCT.md).
 
-1. Be respectful and courteous to other participants, regardless of their
-   backgrounds or viewpoints.
-2. Stay on-topic and avoid straying into unrelated or contentious topics.
-3. Listen actively and empathetically to others, and avoid interrupting or
-   talking over others.
-4. Be open to feedback and new ideas, and avoid making assumptions or
-   generalizations about individuals or groups.
+## Thank You
 
-Please use the issues or pull requests in the repository to initiate a discussion.
-
-## Conclusion
-
-Thank you for your interest in contributing to the Shonan Code Summit (ShoCode)
-repository. We value your contributions and are committed to maintaining a safe,
-inclusive, and respectful community for all participants. Please review and
-adhere to these guidelines as you contribute to the repository. If you have any
-questions or concerns, please reach out to the event organizers or moderators.
+ShoCode exists because of its community. Every contribution matters — whether
+it's a profile page, a typo fix, or a bold new idea. Thank you for being part
+of it.

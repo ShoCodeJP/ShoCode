@@ -1,19 +1,27 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/debian
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	"name": "Debian",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"build": {
-		"dockerfile": "Dockerfile"
+	"name": "Ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "lts"
+		},
+		"ghcr.io/devcontainers/features/github-cli:1": {}
 	},
+	"mounts": [
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
+	],
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				"github.copilot",
+				"github.copilot-chat",
 				"github.vscode-github-actions",
 				"DavidAnson.vscode-markdownlint",
 				"ms-azuretools.vscode-docker"
 			]
 		}
 	},
-	"postCreateCommand": "cp .devcontainer/pre-commit .git/hooks/pre-commit"
+	"postCreateCommand": "npm install -g markdownlint-cli markdown-spellcheck markdown-link-check @bradygaster/squad-cli && (gh extension install github/gh-copilot || true) && cp .devcontainer/pre-commit .git/hooks/pre-commit"
 }
