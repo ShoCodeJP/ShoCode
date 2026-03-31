@@ -5,6 +5,15 @@
         },
         {
             "pattern": "^https://www.linkedin.com"
+        },
+        {
+            "pattern": "^https://github.com/username"
+        },
+        {
+            "pattern": "^https://example.com"
+        },
+        {
+            "pattern": "^url$"
         }
     ]
 }

@@ -18,5 +18,6 @@
 | Tsunade | Marketing & Comms | `.squad/agents/tsunade/charter.md` | ✅ Active |
 | Neji | Quality & Review | `.squad/agents/neji/charter.md` | ✅ Active |
 | Hinata | Attendee Operations | `.squad/agents/hinata/charter.md` | ✅ Active |
+| Shikamaru | Tooling & Technical Support | `.squad/agents/shikamaru/charter.md` | ✅ Active |
 | Scribe | Session Logger | `.squad/agents/scribe/charter.md` | 📋 Silent |
 | Ralph | Work Monitor | `.squad/agents/ralph/charter.md` | 🔄 Monitor |

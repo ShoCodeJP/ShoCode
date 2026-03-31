@@ -6,7 +6,8 @@
 
 - **Name:** [Your Name]
 - **GitHub Username:** [Your GitHub Username]
-- **Social Media / Contact:** [Links to your public profiles — Twitter/X, LinkedIn, Bluesky, Mastodon, LINE, etc.]
+- **Social Media / Contact:** [Links to your public profiles —
+  Twitter/X, LinkedIn, Bluesky, Mastodon, LINE, etc.]
 
 ## Introduction
 

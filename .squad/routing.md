@@ -40,3 +40,9 @@
 | Accessibility and dietary requirement collection | Hinata | Naruto (logistics) |
 | Check-in logistics, day-of attendee ops | Hinata | — |
 | Post-event surveys and follow-up | Hinata | Tsunade (comms) |
+| GitHub Actions, workflows, repo configuration | Shikamaru | — |
+| CLI tooling, shell scripts, automation | Shikamaru | — |
+| CI/CD pipeline setup and debugging | Shikamaru | — |
+| Developer environment and tool issues | Shikamaru | — |
+| Technical blockers for other agents | Shikamaru | — |
+| GitHub issue/PR templates and labels | Shikamaru | — |
