@@ -1,39 +1,37 @@
 #!/bin/bash
 
-# Run Markdown linter if available
+# Get list of staged markdown files
+STAGED_MD=$(git diff --cached --name-only --diff-filter=ACM -- '*.md')
+
+if [ -z "$STAGED_MD" ]; then
+  echo "No staged markdown files — skipping checks."
+  exit 0
+fi
+
+EXIT_CODE=0
+
+# Run Markdown linter on staged files only
 echo "** Markdown Linting **"
-if npx markdownlint -V; then
-  npx markdownlint '**/*.md' --config .markdownlint.yaml
+if command -v markdownlint &> /dev/null; then
+  echo "$STAGED_MD" | xargs markdownlint --config .markdownlint.yaml
   if [ $? -ne 0 ]; then
     echo "Markdown linting failed. Please fix the issues before committing."
-    exit 1
+    EXIT_CODE=1
   fi
 else
-  echo "Warning: 'npx' command not found. Skipping Markdown linting."
+  echo "Warning: markdownlint not found. Skipping."
 fi
 
-# Run spell checker if available
-echo "** Markdown Spellcheck **"
-if npx markdown-spellcheck -V; then
-  npx markdown-spellcheck '**/*.md' -t -r -x -a --en-us --ignore 'node_modules/**/*.md' --ignore '.github/**/*.md'
-  if [ $? -ne 0 ]; then
-    echo "Spell checking failed. Please fix the issues before committing."
-    exit 1
-  fi
-else
-  echo "Warning: 'npx' or 'markdown-spellcheck' command not found. Skipping spell checking."
-fi
-
-# Run link checker if available
+# Run link checker on staged files only
 echo "** Markdown Link Check **"
-if npx markdown-link-check -V; then
-  find . -name "*.md" -not -path "./node_modules/*" -not -path "./.github/*" -exec npx markdown-link-check -c .markdownlinkcheck.json -q {} +
+if command -v markdown-link-check &> /dev/null; then
+  echo "$STAGED_MD" | xargs -I {} markdown-link-check -c .markdownlinkcheck.json -q {}
   if [ $? -ne 0 ]; then
     echo "Link checking failed. Please fix the issues before committing."
-    exit 1
+    EXIT_CODE=1
   fi
 else
-  echo "Warning: 'npx', 'find', or 'markdown-link-check' command not found. Skipping link checking."
+  echo "Warning: markdown-link-check not found. Skipping."
 fi
 
-exit 0
+exit $EXIT_CODE

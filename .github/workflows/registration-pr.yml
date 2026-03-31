@@ -1,0 +1,63 @@
+name: Registration PR
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - "profiles/**"
+  pull_request_target:
+    types: [closed]
+    paths:
+      - "profiles/**"
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  label-and-validate:
+    if: github.event.action == 'opened' || github.event.action == 'synchronize'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Add registration label
+        run: gh pr edit ${{ github.event.pull_request.number }} --add-label "registration"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Validate profile sections
+        run: |
+          errors=()
+          for profile in $(find profiles/ -name 'profile.md' -o -name 'profile_jp.md' | sort); do
+            for section in "About Me" "Introduction" "What I'll Bring" "Preferred Role"; do
+              if ! grep -qi "$section" "$profile"; then
+                errors+=("$profile is missing required section: $section")
+              fi
+            done
+          done
+          if [ ${#errors[@]} -gt 0 ]; then
+            body="## Registration Validation\n\nThe following issues were found:\n"
+            for err in "${errors[@]}"; do
+              body="$body\n- $err"
+            done
+            echo -e "$body" > validation.txt
+            gh pr comment ${{ github.event.pull_request.number }} -F validation.txt
+            echo "::error::Profile validation failed"
+            exit 1
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+  welcome-on-merge:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post welcome comment
+        run: |
+          gh pr comment ${{ github.event.pull_request.number }} --body "🎉 Welcome to ShoCode! Your registration is confirmed. / ShoCode へようこそ！参加登録が確認されました。"
+        env:
+          GH_TOKEN: ${{ github.token }}

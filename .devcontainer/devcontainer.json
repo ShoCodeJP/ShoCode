@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	"name": "Ubuntu",
+	"name": "ShoCode",
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {
@@ -9,9 +9,6 @@
 		},
 		"ghcr.io/devcontainers/features/github-cli:1": {}
 	},
-	"mounts": [
-		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
-	],
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -19,9 +16,9 @@
 				"github.copilot-chat",
 				"github.vscode-github-actions",
 				"DavidAnson.vscode-markdownlint",
-				"ms-azuretools.vscode-docker"
+				"yzhang.markdown-all-in-one"
 			]
 		}
 	},
-	"postCreateCommand": "npm install -g markdownlint-cli markdown-spellcheck markdown-link-check @bradygaster/squad-cli && (gh extension install github/gh-copilot || true) && cp .devcontainer/pre-commit .git/hooks/pre-commit"
+	"postCreateCommand": "npm install -g markdownlint-cli markdown-link-check && cp .devcontainer/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit"
 }
