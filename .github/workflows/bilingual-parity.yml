@@ -1,0 +1,92 @@
+name: Bilingual Parity Check
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - "README.md"
+      - "README_jp.md"
+      - "CONTRIBUTING.md"
+      - "CONTRIBUTING_jp.md"
+      - "CODE_OF_CONDUCT.md"
+      - "CODE_OF_CONDUCT_jp.md"
+      - "profiles/**/profile.md"
+      - "profiles/**/profile_jp.md"
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  bilingual-parity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check bilingual parity
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          set -euo pipefail
+
+          CHANGED_FILES=$(gh pr diff "$PR_NUMBER" --name-only)
+          labels_to_add=()
+          issues=()
+
+          # --- Root bilingual file pairs ---
+          pairs=(
+            "README.md|README_jp.md|needs-jp-update|needs-en-update"
+            "CONTRIBUTING.md|CONTRIBUTING_jp.md|needs-jp-update|needs-en-update"
+            "CODE_OF_CONDUCT.md|CODE_OF_CONDUCT_jp.md|needs-jp-update|needs-en-update"
+          )
+
+          for pair in "${pairs[@]}"; do
+            IFS='|' read -r en_file jp_file label_jp label_en <<< "$pair"
+            en_changed=$(echo "$CHANGED_FILES" | grep -cx "$en_file" || true)
+            jp_changed=$(echo "$CHANGED_FILES" | grep -cx "$jp_file" || true)
+
+            if [[ "$en_changed" -gt 0 && "$jp_changed" -eq 0 ]]; then
+              labels_to_add+=("$label_jp")
+              issues+=("- \`$en_file\` changed but \`$jp_file\` was not updated / \`$en_file\` が変更されましたが \`$jp_file\` は更新されていません")
+            elif [[ "$jp_changed" -gt 0 && "$en_changed" -eq 0 ]]; then
+              labels_to_add+=("$label_en")
+              issues+=("- \`$jp_file\` changed but \`$en_file\` was not updated / \`$jp_file\` が変更されましたが \`$en_file\` は更新されていません")
+            fi
+          done
+
+          # --- Profile bilingual pairs ---
+          profile_dirs=$(echo "$CHANGED_FILES" | grep -oP '^profiles/[^/]+/' | sort -u || true)
+          for dir in $profile_dirs; do
+            has_en=$(echo "$CHANGED_FILES" | grep -cx "${dir}profile.md" || true)
+            has_jp=$(echo "$CHANGED_FILES" | grep -cx "${dir}profile_jp.md" || true)
+            if [[ "$has_en" -gt 0 && "$has_jp" -eq 0 && ! -f "${dir}profile_jp.md" ]]; then
+              labels_to_add+=("needs-translation")
+              issues+=("- \`${dir}profile.md\` has no Japanese counterpart / \`${dir}profile.md\` に日本語版がありません")
+            elif [[ "$has_jp" -gt 0 && "$has_en" -eq 0 && ! -f "${dir}profile.md" ]]; then
+              labels_to_add+=("needs-translation")
+              issues+=("- \`${dir}profile_jp.md\` has no English counterpart / \`${dir}profile_jp.md\` に英語版がありません")
+            fi
+          done
+
+          # --- Apply labels and comment ---
+          if [[ ${#issues[@]} -gt 0 ]]; then
+            # Deduplicate labels
+            unique_labels=($(printf '%s\n' "${labels_to_add[@]}" | sort -u))
+            for label in "${unique_labels[@]}"; do
+              gh pr edit "$PR_NUMBER" --add-label "$label"
+            done
+
+            comment="## 🌐 Bilingual Parity Notice / バイリンガル整合性のお知らせ\n\n"
+            comment+="The following paired files may need attention:\n\n"
+            comment+="以下のペアファイルに対応が必要かもしれません：\n\n"
+            for issue in "${issues[@]}"; do
+              comment+="$issue\n"
+            done
+            comment+="\n---\n"
+            comment+="No worries — this doesn't block your PR! The update can come in a follow-up.\n\n"
+            comment+="ご安心ください — PR はブロックされません！更新は別の PR で行えます。"
+
+            echo -e "$comment" | gh pr comment "$PR_NUMBER" -F -
+          fi
