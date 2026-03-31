@@ -1,0 +1,52 @@
+{
+  "agents": {
+    "naruto": {
+      "created_at": "2026-03-31T02:33:51.074Z",
+      "persistent_name": "Naruto",
+      "universe": "Naruto",
+      "status": "active"
+    },
+    "sakura": {
+      "created_at": "2026-03-31T02:33:51.074Z",
+      "persistent_name": "Sakura",
+      "universe": "Naruto",
+      "status": "active"
+    },
+    "kakashi": {
+      "created_at": "2026-03-31T02:33:51.074Z",
+      "persistent_name": "Kakashi",
+      "universe": "Naruto",
+      "status": "active"
+    },
+    "tsunade": {
+      "created_at": "2026-03-31T02:33:51.074Z",
+      "persistent_name": "Tsunade",
+      "universe": "Naruto",
+      "status": "active"
+    },
+    "neji": {
+      "created_at": "2026-03-31T02:33:51.074Z",
+      "persistent_name": "Neji",
+      "universe": "Naruto",
+      "status": "active"
+    },
+    "hinata": {
+      "created_at": "2026-03-31T02:33:51.074Z",
+      "persistent_name": "Hinata",
+      "universe": "Naruto",
+      "status": "active"
+    },
+    "scribe": {
+      "created_at": "2026-03-31T02:33:51.074Z",
+      "persistent_name": "Scribe",
+      "universe": "Naruto",
+      "status": "active"
+    },
+    "ralph": {
+      "created_at": "2026-03-31T02:33:51.074Z",
+      "persistent_name": "Ralph",
+      "universe": "Naruto",
+      "status": "active"
+    }
+  }
+}
