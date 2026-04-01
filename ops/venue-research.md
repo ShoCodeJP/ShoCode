@@ -23,8 +23,8 @@
 | **Location** | Kamakura station area | Hayama (bus from Zushi) | Hayama hilltop | Fujisawa station | Fujisawa station | Kamakura coast | Chigasaki station |
 | **Capacity** | ~40–60 (est.) | 100 (Emerald Room) | 200+ (multiple rooms) | 100–500 | ~40–60 | ~30–50 | 50–150 |
 | **Tokyo Access** | ~60 min (JR Yokosuka) | ~90 min (JR + bus) | ~90 min (bus required) | ~50 min (JR Tokaido) | ~50 min (JR Tokaido) | ~60 min (JR Yokosuka) | ~55 min (JR Tokaido) |
-| **WiFi** | Unknown (verify) | Likely basic (verify) | Conference-grade | Municipal (verify) | Coworking-grade | Coworking-grade | Municipal (verify) |
-| **Power** | Unknown (verify) | Available (event setup) | Full conference setup | Full setup | Coworking-ready | Coworking-ready | Basic |
+| **WiFi** | ✅ Available (confirmed) | Likely basic (verify) | Conference-grade | Municipal (verify) | Coworking-grade | Coworking-grade | Municipal (verify) |
+| **Power** | ✅ Available (confirmed) | Available (event setup) | Full conference setup | Full setup | Coworking-ready | Coworking-ready | Basic |
 | **Food** | Built-in restaurant | Catering available on-site | On-site restaurant | External catering | Nearby restaurants | Nearby restaurants | External catering |
 | **Ocean View** | Town atmosphere | **Yes — Sagami Bay + Fuji** | Mountain/nature views | No | No | **Yes — beachside** | Near beach |
 | **Vibe** | ★★★★★ Creative/local | ★★★★ Marina luxury | ★★★ Corporate retreat | ★★ Municipal | ★★★ Modern cowork | ★★★★ Beach casual | ★★ Community hall |
@@ -44,7 +44,7 @@
 - **Capacity:** Estimated 40–60 (restaurant/event space — needs confirmation)
 - **Food:** Built-in restaurant — catering is essentially included, which simplifies logistics enormously
 - **Vibe:** Drew really liked this one. Creative, local Kamakura atmosphere. A restaurant that doubles as an event space has an inherently relaxed, community feel that fits ShoCode perfectly.
-- **WiFi/Power:** Unknown — **must verify** during site visit. This is the biggest risk for a coding event at a restaurant venue.
+- **WiFi/Power:** ✅ Confirmed available by Drew (April 2026). Needs load-testing for 50+ laptops during site visit, but the infrastructure exists.
 - **Cost:** Unknown — needs direct inquiry
 - **Pros:**
   - Drew's top pick — personal endorsement matters
@@ -53,9 +53,9 @@
   - Authentic Shonan vibe
 - **Cons:**
   - Capacity may be tight for 80+ attendees
-  - WiFi and power infrastructure are unknowns
+  - WiFi/power load capacity for 50+ laptops needs testing during site visit
   - Website returned 403 — limited public info available
-- **Action items:** Site visit to assess capacity, WiFi, power, and pricing
+- **Action items:** Site visit to confirm capacity, test WiFi under load, and get pricing
 
 ---
 
@@ -210,7 +210,7 @@
 
 ### Top Tier (Recommended for Site Visit)
 
-1. **Another Day (Kamakura)** — Drew's pick, best vibe, built-in food. Critical unknowns: capacity, WiFi, power. **Must visit first.**
+1. **Another Day (Kamakura)** — Drew's pick, best vibe, built-in food. WiFi and power confirmed ✅. Remaining unknowns: capacity for 50-100, pricing. **Must visit first.**
 2. **Hayama Marina (Emerald Room)** — Spectacular views, right capacity, reasonable cost. Critical unknowns: WiFi, power outlet density. **Worth a visit.**
 
 ### Strong Backup
