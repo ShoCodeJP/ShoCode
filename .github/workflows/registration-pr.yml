@@ -29,10 +29,69 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
 
+      - name: Validate folder structure
+        run: |
+          errors=()
+          # Get list of changed files under profiles/
+          changed=$(gh pr diff ${{ github.event.pull_request.number }} --name-only | grep '^profiles/' || true)
+          for file in $changed; do
+            # Allow template files at the root of profiles/
+            if [ "$file" = "profiles/template.md" ] || [ "$file" = "profiles/template_jp.md" ]; then
+              continue
+            fi
+            # Check that the file follows profiles/{username}/... structure (not flat like profiles/foo.md)
+            if ! echo "$file" | grep -qE '^profiles/[^/]+/'; then
+              errors+=("$file — profile files must be inside a subfolder: profiles/{username}/profile.md")
+            fi
+          done
+
+          # For each profile folder touched, verify profile.md exists
+          folders=$(echo "$changed" | grep -oE '^profiles/[^/]+/' | sort -u || true)
+          for folder in $folders; do
+            # Skip template folder if it somehow exists
+            if [ "$folder" = "profiles/template/" ]; then
+              continue
+            fi
+            if [ ! -f "${folder}profile.md" ]; then
+              errors+=("${folder} — missing required profile.md (each registration must include profile.md)")
+            fi
+          done
+
+          # Check that profile markdown files match expected names
+          profile_files=$(echo "$changed" | grep -E '\.md$' || true)
+          for file in $profile_files; do
+            # Skip templates
+            if [ "$file" = "profiles/template.md" ] || [ "$file" = "profiles/template_jp.md" ]; then
+              continue
+            fi
+            basename=$(basename "$file")
+            if [ "$basename" != "profile.md" ] && [ "$basename" != "profile_jp.md" ]; then
+              errors+=("$file — markdown files in profile folders must be named profile.md or profile_jp.md")
+            fi
+          done
+
+          if [ ${#errors[@]} -gt 0 ]; then
+            body="## 📁 Folder Structure Validation\n\nThe following issues were found with your profile submission:\n"
+            for err in "${errors[@]}"; do
+              body="$body\n- $err"
+            done
+            body="$body\n\n**Expected structure:**\n\`\`\`\nprofiles/{your-github-username}/\n  profile.md        (required)\n  profile_jp.md     (optional)\n  headshot.jpg      (optional)\n\`\`\`"
+            echo -e "$body" > validation.txt
+            gh pr comment ${{ github.event.pull_request.number }} -F validation.txt
+            echo "::error::Folder structure validation failed"
+            exit 1
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
       - name: Validate profile sections
         run: |
           errors=()
           for profile in $(find profiles/ -name 'profile.md' -o -name 'profile_jp.md' | sort); do
+            # Skip templates
+            if [ "$profile" = "profiles/template.md" ] || [ "$profile" = "profiles/template_jp.md" ]; then
+              continue
+            fi
             for section in "About Me" "Introduction" "What I'll Bring" "Preferred Role"; do
               if ! grep -qi "$section" "$profile"; then
                 errors+=("$profile is missing required section: $section")
