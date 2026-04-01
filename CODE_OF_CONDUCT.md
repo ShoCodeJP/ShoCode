@@ -1,3 +1,5 @@
+[![日本語](https://img.shields.io/badge/%F0%9F%87%AF%F0%9F%87%B5-日本語-white?style=plastic)](CODE_OF_CONDUCT_jp.md)
+
 # Shonan Code Summit (ShoCode) Code of Conduct
 
 ## Introduction
@@ -72,6 +74,8 @@ If you experience or witness any behavior that violates this Code of Conduct, or
 if you have any questions or concerns about the conduct of another participant,
 please report it to the event organizers or moderators immediately. We take all
 reports of misconduct seriously and will investigate them promptly and confidentially.
+
+**Contact:** Drew Robbins — drew@drewby.com
 
 ## Conclusion
 
