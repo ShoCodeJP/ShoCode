@@ -1,0 +1,39 @@
+name: Stale PR Cleanup
+
+on:
+  schedule:
+    - cron: '0 9 * * 1' # Weekly on Monday at 09:00 UTC
+  workflow_dispatch:
+
+permissions:
+  pull-requests: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          # Only target PRs, not issues
+          days-before-issue-stale: -1
+          days-before-issue-close: -1
+          days-before-pr-stale: 14
+          days-before-pr-close: 7
+          stale-pr-label: stale
+          exempt-pr-labels: 'keep-open,work-in-progress'
+          stale-pr-message: |
+            👋 This pull request has been inactive for 14 days. It will be closed automatically in 7 days if there is no further activity.
+
+            If you're still working on this, push a commit or comment to keep it open. You can also add the `keep-open` label to prevent auto-closing.
+
+            ---
+
+            👋 このプルリクエストは14日間更新がありません。さらに7日間アクティビティがない場合、自動的にクローズされます。
+
+            まだ作業中の場合は、コミットをプッシュするかコメントを残してください。`keep-open` ラベルを追加すると、自動クローズを防ぐこともできます。
+          close-pr-message: |
+            🔒 This pull request has been closed due to inactivity. Feel free to reopen it if you'd like to continue working on it!
+
+            ---
+
+            🔒 このプルリクエストは非アクティブのためクローズされました。作業を続けたい場合は、お気軽に再オープンしてください！

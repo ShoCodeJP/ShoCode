@@ -1,0 +1,17 @@
+# ShoCode Repository Owners
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything
+* @drewby
+
+# Registration profiles
+/profiles/ @drewby
+
+# GitHub workflows, templates, and config
+/.github/ @drewby
+
+# Squad configuration
+/.squad/ @drewby
+
+# Operations docs
+/ops/ @drewby
