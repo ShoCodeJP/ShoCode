@@ -20,3 +20,5 @@
 - 2026-04-01: Fixed template asymmetry — English template now explicitly links to the Japanese template in the closing note. The JP template already linked back via badge, so the gap was only in the EN direction.
 - 2026-04-01: Added CoC reporting contact (Drew Robbins) to both EN and JP versions. Email is appropriate for safety/enforcement contacts even though profile pages prohibit email collection — these serve fundamentally different purposes.
 - 2026-04-01: When creating bilingual file pairs, always add badges bidirectionally in the same commit to avoid a window where one file links to a nonexistent counterpart.
+- 2026-04-01: Added "Language Inclusion" section to both EN and JP Code of Conduct. Placed between Expected Behavior and Unacceptable Behavior — after the positive standards, before enforcement. JP version written natively (言語インクルージョン), not translated from English.
+- 2026-04-01: README.md Option 1 step 4 now cross-references profiles/template_jp.md alongside the English template, with natural bilingual phrasing ("Japanese template (日本語テンプレート)").

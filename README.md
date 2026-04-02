@@ -72,6 +72,8 @@ ways to do it — pick whichever suits you:
    (e.g., `profiles/your_username`).
 4. Add your profile page as a Markdown file. Use
    [profiles/template.md](profiles/template.md) as a starting point.
+   A [Japanese template (日本語テンプレート)](profiles/template_jp.md) is also
+   available — use whichever language you prefer.
 5. **Submit a Pull Request** from your fork to this repository.
 
 ### Option 2: Ask Copilot (the agentic path 🤖)
