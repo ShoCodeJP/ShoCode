@@ -1,4 +1,24 @@
 default: true
+
+# Line length — disabled for content-heavy files (emails, tables, prompts)
+MD013: false
+
+# Duplicate headings — venue emails reuse section headers per venue
+MD024: false
+
+# Bare URLs — used in email signatures
+MD034: false
+
+# Inline HTML — allow common elements
 MD033:
-  # Allowed elements
-  allowed_elements: [img,figure,figcaption]
+  allowed_elements: [img, figure, figcaption, a]
+
+# First line heading — files start with language-toggle badges
+MD041: false
+
+# Ordered list prefix style
+MD029:
+  style: ordered
+
+# Table column style — disabled (compact tables are fine)
+MD060: false

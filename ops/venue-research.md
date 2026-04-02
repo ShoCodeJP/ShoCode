@@ -18,7 +18,7 @@
 
 ## Venue Comparison Matrix / 会場比較表
 
-| Criteria | Another Day (Kamakura) | Hayama Marina | Shonan Village Center | Fujisawa Civic Hall | NEKTON Fujisawa | Kamakura Seaside Coworking | Chigasaki Community Center |
+| Criteria | Another Day (Kamakura) | Hayama Marina | Shonan Village Center | Fujisawa Civic Hall | NEKTON Fujisawa | Kamakura Seaside Coworking ⚠️ | Chigasaki Community Center |
 |---|---|---|---|---|---|---|---|
 | **Location** | Kamakura station area | Hayama (bus from Zushi) | Hayama hilltop | Fujisawa station | Fujisawa station | Kamakura coast | Chigasaki station |
 | **Capacity** | ~40–60 (est.) | 100 (Emerald Room) | 200+ (multiple rooms) | 100–500 | ~40–60 | ~30–50 | 50–150 |
@@ -30,7 +30,7 @@
 | **Vibe** | ★★★★★ Creative/local | ★★★★ Marina luxury | ★★★ Corporate retreat | ★★ Municipal | ★★★ Modern cowork | ★★★★ Beach casual | ★★ Community hall |
 | **Cost** | Unknown | ¥6,600/hr (day) / ¥9,900/hr (eve) | ~¥17,000–19,000/person (overnight pkg) | Low (municipal rates) | Room rental rates | Room rental rates | Low (municipal) |
 | **AV Equipment** | Unknown | Projector ¥5,500, mic ¥3,300 | Included in packages | Available | Basic | Basic | Available |
-| **Website** | [anotherday.jp](https://www.anotherday.jp/) | [hayamamarina.com](https://hayamamarina.com/rentalspace/) | [shonan-village.co.jp](https://www.shonan-village.co.jp/) | City facility | [nekton-fujisawa.com](https://nekton-fujisawa.com/) | — | City facility |
+| **Website** | [anotherday.jp](https://www.anotherday.jp/) ⚠️ 403 | [hayamamarina.com](https://hayamamarina.com/rentalspace/) ✅ | [shonan-village.co.jp](https://www.shonan-village.co.jp/) ✅ | City facility | [nekton-fujisawa.com](https://nekton-fujisawa.com/) ⚠️ no content | ⚠️ Unverified | City facility |
 
 ---
 
@@ -38,7 +38,7 @@
 
 ### 1. Another Day (Kamakura) ⭐ Drew's pick
 
-- **Website:** <https://www.anotherday.jp/>
+- **Website:** <https://www.anotherday.jp/> — ⚠️ Returns HTTP 403 (blocked); /contact/ and /about/ return 404. No public email or contact form found. Site visit required for contact.
 - **Location:** Near Kamakura station, walkable
 - **Access from Tokyo:** ~60 min via JR Yokosuka Line to Kamakura
 - **Capacity:** Estimated 40–60 (restaurant/event space — needs confirmation)
@@ -54,14 +54,15 @@
 - **Cons:**
   - Capacity may be tight for 80+ attendees
   - WiFi/power load capacity for 50+ laptops needs testing during site visit
-  - Website returned 403 — limited public info available
-- **Action items:** Site visit to confirm capacity, test WiFi under load, and get pricing
+  - Website returns 403 (verified 2026-04-01) — no public contact info available online
+- **Action items:** Site visit to confirm capacity, test WiFi under load, and get pricing. Must find contact method in person or via social media.
 
 ---
 
 ### 2. Hayama Marina Rental Space (Emerald Room)
 
-- **Website:** <https://hayamamarina.com/rentalspace/>
+- **Website:** <https://hayamamarina.com/rentalspace/> — ✅ Live and accessible. Full rental info, pricing, and room details available.
+- **Contact:** TEL 046-875-0002 / FAX 046-876-1146 (no public email found; phone inquiry recommended)
 - **Location:** Hayama Marina, 〒240-0112 神奈川県三浦郡葉山町堀内50-2
 - **Access from Tokyo:** ~90 min (JR to Zushi/逗子, then bus to 葉山マリーナ stop). Kyukei Line to 逗子・葉山駅 also an option.
 - **Capacity:** Emerald Room — 117㎡, max 100 people. Seated party: 60. Standing: 100. Conference/lecture: 60.
@@ -95,7 +96,7 @@
 
 ### 3. Shonan Village Center / 湘南国際村センター (Hayama)
 
-- **Website:** <https://www.shonan-village.co.jp/>
+- **Website:** <https://www.shonan-village.co.jp/> — ✅ Live and accessible. Contact form: <https://www.shonan-village.co.jp/mailform_jp>. TEL: 046-855-1800.
 - **Location:** Hayama hilltop (上山口), surrounded by nature. 〒240-0198 神奈川県三浦郡葉山町上山口1560-39
 - **Access from Tokyo:** ~90 min. Bus from Zushi required. The center can arrange bus transport.
 - **Capacity:** 24 conference rooms of various sizes. Up to 200+ with multiple rooms. 100 guest rooms for overnight stays.
@@ -153,7 +154,7 @@
 
 ### 5. NEKTON Fujisawa / ネクトン藤沢
 
-- **Website:** <https://nekton-fujisawa.com/>
+- **Website:** <https://nekton-fujisawa.com/> — ⚠️ Site failed to load content (JS-heavy SPA; may require browser visit to verify)
 - **Location:** Near Fujisawa station
 - **Access from Tokyo:** ~50 min via JR Tokaido Line
 - **Capacity:** Coworking space — estimated 40–60 for events (needs verification)
@@ -176,7 +177,13 @@
 
 ---
 
-### 6. Beach-adjacent Venue Option: Enoshima Area
+### 6. ⚠️ Kamakura Seaside Coworking — UNVERIFIED
+
+> **Status: Unverified — may not exist or may have closed.** No website URL was ever listed. Web searches for "Kamakura Seaside Coworking" and "鎌倉シーサイドコワーキング" return no results. Cannot confirm this venue exists. Do NOT rely on this as a candidate. Deep research agent prompt included in `ops/venue-contact-emails.md` to investigate further.
+
+---
+
+### 7. Beach-adjacent Venue Option: Enoshima Area
 
 - **Location:** Enoshima / Katase-Enoshima station area
 - **Access from Tokyo:** ~70 min (Odakyu Romancecar to Katase-Enoshima, or JR + Enoden)
@@ -191,7 +198,7 @@
 
 ---
 
-### 7. Chigasaki Community / Cultural Center Area
+### 8. Chigasaki Community / Cultural Center Area
 
 - **Location:** Near Chigasaki station
 - **Access from Tokyo:** ~55 min via JR Tokaido Line
@@ -215,16 +222,28 @@
 
 ### Strong Backup
 
-3. **Shonan Village Center** — Most reliable infrastructure, best WiFi guarantee, but isolated and corporate. Consider for day-use if coastal venues have infrastructure gaps.
+1. **Shonan Village Center** — Most reliable infrastructure, best WiFi guarantee, but isolated and corporate. Consider for day-use if coastal venues have infrastructure gaps.
 
 ### Budget / Fallback Options
 
-4. **NEKTON Fujisawa** — If we need guaranteed developer infra and accept sacrificing atmosphere.
-5. **Fujisawa / Chigasaki Municipal** — If budget drives the decision.
+1. **NEKTON Fujisawa** — If we need guaranteed developer infra and accept sacrificing atmosphere.
+2. **Fujisawa / Chigasaki Municipal** — If budget drives the decision.
 
 ### Aspirational
 
-6. **Enoshima coastal venue** — Needs scouting. Could be the dream venue if we find one with adequate infra.
+1. **Enoshima coastal venue** — Needs scouting. Could be the dream venue if we find one with adequate infra.
+
+---
+
+## URL Verification Status (2026-04-01)
+
+| URL | Status | Notes |
+|-----|--------|-------|
+| anotherday.jp | ⚠️ HTTP 403 | Site blocks automated access. /contact/ and /about/ return 404. No email found. |
+| hayamamarina.com | ✅ Live | Rental space page loads fully. TEL 046-875-0002. No email found. |
+| shonan-village.co.jp | ✅ Live | Full content. Contact form: mailform_jp. TEL 046-855-1800. |
+| nekton-fujisawa.com | ⚠️ No content | JS-heavy SPA — failed to extract content via automated fetch. Needs browser visit. |
+| Kamakura Seaside Coworking | ❌ No URL | No website ever listed. Search returns no results. May not exist. |
 
 ---
 
