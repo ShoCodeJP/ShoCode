@@ -1,6 +1,9 @@
 {
     "ignorePatterns": [
         {
+            "pattern": "^#"
+        },
+        {
             "pattern": "^https://twitter.com"
         },
         {
@@ -14,6 +17,12 @@
         },
         {
             "pattern": "^url$"
+        },
+        {
+            "pattern": "^https://www.anotherday.jp"
+        },
+        {
+            "pattern": "^https://nekton-fujisawa.com"
         }
     ]
 }

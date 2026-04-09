@@ -48,4 +48,5 @@ Please indicate how you'd like to participate:
 
 **Note:** This file serves as your profile page and event registration.
 Both English and Japanese submissions are welcome.
+A [Japanese version of this template](template_jp.md) is also available.
 Looking forward to seeing you at ShoCode!

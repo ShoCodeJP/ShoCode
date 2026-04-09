@@ -1,0 +1,312 @@
+# ShoCode Schedule — Single Source of Truth
+# ShoCodeスケジュール — 唯一の信頼できるソース
+#
+# This file drives the program schedule for each ShoCode edition.
+# Fill in [TBD] fields for your edition. Times are in local time (JST).
+
+event:
+  name: "ShoCode"
+  edition: "[TBD]"             # e.g., "ShoCode 2026 Fall"
+  date: "[TBD]"                # e.g., "2026-10-17"
+  location: "[TBD]"            # e.g., "Fujisawa, Kanagawa"
+  venue: "[TBD]"               # e.g., "Shonan Community Center"
+  theme: "[TBD]"               # e.g., "Agents in Production"
+  expected_attendance: "[TBD]" # e.g., "50-100"
+  timezone: "Asia/Tokyo"
+  doors_open: "10:00"
+  start: "10:30"
+  end: "18:00"
+  mc_en: "[TBD]"
+  mc_jp: "[TBD]"
+
+format:
+  name: "Three-Act Structure / 三幕構成"
+  acts:
+    - id: 1
+      name_en: "Presentations"
+      name_jp: "プレゼンテーション"
+      time: "10:30–12:25"
+    - id: 2
+      name_en: "Hackathon"
+      name_jp: "ハッカソン"
+      time: "13:15–16:10"
+    - id: 3
+      name_en: "Demos & Closing"
+      name_jp: "デモ＆クロージング"
+      time: "16:10–18:00"
+
+schedule:
+  # ── Act 1 — Presentations / プレゼンテーション ──
+  - time: "10:00"
+    end: "10:30"
+    duration_min: 30
+    act: 1
+    type: registration
+    title_en: "Doors Open & Registration"
+    title_jp: "開場・受付"
+    notes_en: "Check-in, coffee, name tags"
+    notes_jp: "受付、コーヒー、名札"
+
+  - time: "10:30"
+    end: "10:40"
+    duration_min: 10
+    act: 1
+    type: ceremony
+    title_en: "Opening Ceremony"
+    title_jp: "オープニングセレモニー"
+    notes_en: "Welcome & housekeeping. Bilingual MC"
+    notes_jp: "歓迎挨拶、バイリンガルMC"
+
+  - time: "10:40"
+    end: "11:10"
+    duration_min: 30
+    act: 1
+    type: keynote
+    title_en: "Keynote Talk"
+    title_jp: "基調講演"
+    speaker: "[TBD]"
+    language: "[TBD]"
+    topic: "[TBD]"
+    notes_en: "Sets the agentic coding theme"
+    notes_jp: "エージェントコーディングのテーマ設定"
+
+  - time: "11:10"
+    end: "11:15"
+    duration_min: 5
+    act: 1
+    type: break
+    title_en: "Break"
+    title_jp: "休憩"
+
+  - time: "11:15"
+    end: "12:00"
+    duration_min: 45
+    act: 1
+    type: talk_block
+    title_en: "Presentation Block A"
+    title_jp: "プレゼンブロック A"
+    notes_en: "3 × 15-min talks (12 min talk + 3 min Q&A)"
+    notes_jp: "3本の15分トーク（12分発表＋3分質疑）"
+    talks:
+      - slot: "A-1"
+        speaker: "[TBD]"
+        language: "[TBD]"
+        topic: "[TBD]"
+        duration_min: 15
+      - slot: "A-2"
+        speaker: "[TBD]"
+        language: "[TBD]"
+        topic: "[TBD]"
+        duration_min: 15
+      - slot: "A-3"
+        speaker: "[TBD]"
+        language: "[TBD]"
+        topic: "[TBD]"
+        duration_min: 15
+
+  - time: "12:00"
+    end: "12:25"
+    duration_min: 25
+    act: 1
+    type: lightning_block
+    title_en: "Lightning Talks"
+    title_jp: "ライトニングトーク"
+    notes_en: "5 × 5-min talks (no Q&A, tight changeovers)"
+    notes_jp: "5本の5分トーク（質疑なし）"
+    talks:
+      - slot: "LT-1"
+        speaker: "[TBD]"
+        language: "[TBD]"
+        topic: "[TBD]"
+        duration_min: 5
+      - slot: "LT-2"
+        speaker: "[TBD]"
+        language: "[TBD]"
+        topic: "[TBD]"
+        duration_min: 5
+      - slot: "LT-3"
+        speaker: "[TBD]"
+        language: "[TBD]"
+        topic: "[TBD]"
+        duration_min: 5
+      - slot: "LT-4"
+        speaker: "[TBD]"
+        language: "[TBD]"
+        topic: "[TBD]"
+        duration_min: 5
+      - slot: "LT-5"
+        speaker: "[TBD]"
+        language: "[TBD]"
+        topic: "[TBD]"
+        duration_min: 5
+
+  # ── Lunch / ランチ ──
+  - time: "12:25"
+    end: "13:15"
+    duration_min: 50
+    act: null
+    type: lunch
+    title_en: "Lunch & Team Formation"
+    title_jp: "ランチ＆チーム編成"
+    notes_en: "Community networking, hackathon team formation"
+    notes_jp: "ネットワーキング、ハッカソンチーム編成"
+
+  # ── Act 2 — Hackathon / ハッカソン ──
+  - time: "13:15"
+    end: "13:25"
+    duration_min: 10
+    act: 2
+    type: ceremony
+    title_en: "Hackathon Kickoff"
+    title_jp: "ハッカソンキックオフ"
+    notes_en: "Rules, themes, tool access, team finalization"
+    notes_jp: "ルール説明、テーマ、ツール、チーム最終確認"
+
+  - time: "13:25"
+    end: "15:55"
+    duration_min: 150
+    act: 2
+    type: hackathon
+    title_en: "Hackathon Build Time"
+    title_jp: "ハッカソンビルドタイム"
+    notes_en: "Heads-down building with agentic tools"
+    notes_jp: "エージェントツールを使った開発"
+    mid_break:
+      time: "15:10"
+      end: "15:20"
+      duration_min: 10
+      optional: true
+      notes_en: "Snacks, stretch"
+      notes_jp: "軽食、ストレッチ"
+
+  - time: "15:55"
+    end: "16:10"
+    duration_min: 15
+    act: 2
+    type: wrap_up
+    title_en: "Hack Wrap-Up"
+    title_jp: "ハックまとめ"
+    notes_en: "Commit code, prepare demos"
+    notes_jp: "コードコミット、デモ準備"
+
+  # ── Act 3 — Demos & Closing / デモ＆クロージング ──
+  - time: "16:10"
+    end: "17:10"
+    duration_min: 60
+    act: 3
+    type: demos
+    title_en: "Hackathon Demos"
+    title_jp: "ハッカソンデモ"
+    notes_en: "5 min per team (3 min demo + 2 min Q&A). Strict timer."
+    notes_jp: "1チーム5分（デモ3分＋質疑2分）。厳格なタイマー。"
+    target_teams: "8-12"
+
+  - time: "17:10"
+    end: "17:15"
+    duration_min: 5
+    act: 3
+    type: break
+    title_en: "Break"
+    title_jp: "休憩"
+
+  - time: "17:15"
+    end: "17:40"
+    duration_min: 25
+    act: 3
+    type: awards
+    title_en: "Community Awards & Closing"
+    title_jp: "コミュニティアワード＆クロージング"
+    notes_en: "Recognition, wrap-up, next-event teaser"
+    notes_jp: "表彰、まとめ、次回予告"
+    awards:
+      - name_en: "Shonan Spirit Award"
+        name_jp: "湘南スピリット賞"
+        emoji: "🏖️"
+        criteria_en: "Most creative or joyful hack"
+        criteria_jp: "最もクリエイティブまたは楽しいハック"
+      - name_en: "Agent Whisperer Award"
+        name_jp: "エージェントウィスパラー賞"
+        emoji: "🤖"
+        criteria_en: "Best use of agentic coding"
+        criteria_jp: "エージェントコーディングの最も優れた活用"
+      - name_en: "Best Demo Award"
+        name_jp: "ベストデモ賞"
+        emoji: "🎤"
+        criteria_en: "Most compelling presentation"
+        criteria_jp: "最も説得力のあるプレゼンテーション"
+
+  - time: "17:40"
+    end: "18:00"
+    duration_min: 20
+    act: 3
+    type: networking
+    title_en: "Open Networking / Kanpai"
+    title_jp: "オープンネットワーキング・乾杯"
+    notes_en: "Informal hangout, group photo"
+    notes_jp: "交流、集合写真"
+
+presentation_format:
+  session_types:
+    - type: keynote
+      name_en: "Keynote"
+      name_jp: "基調講演"
+      duration_min: 30
+      breakdown: "25 min talk + 5 min Q&A"
+      count: 1
+    - type: standard
+      name_en: "Standard Talk"
+      name_jp: "通常トーク"
+      duration_min: 15
+      breakdown: "12 min talk + 3 min Q&A"
+      count: 3
+    - type: lightning
+      name_en: "Lightning Talk"
+      name_jp: "ライトニングトーク"
+      duration_min: 5
+      breakdown: "5 min, no Q&A"
+      count: 5
+  total_speaker_slots: 9
+  bilingual_rules:
+    - "Speakers present in their preferred language"
+    - "Slides must be bilingual (primary language in body, secondary in subtitle/footer)"
+    - "MC provides 1-2 sentence summary in the alternate language after each talk"
+    - "Target ~50/50 JP/EN speaker balance"
+
+hackathon:
+  build_time_min: 150
+  build_window: "13:25–15:55"
+  team_size_min: 1
+  team_size_max: 4
+  team_formation: "Pre-formed teams welcome; solo hackers join during lunch mixer"
+  requirement: "Must use at least one agentic coding tool or technique"
+  submission: "Code pushed to a public GitHub repo by 15:55"
+  demo_required: true
+  themes:
+    - id: 1
+      name_en: "Agent Autopilot"
+      name_jp: "エージェントオートパイロット"
+      description_en: "Build an agent that ships a feature end-to-end with minimal human input"
+      description_jp: "最小限の人間の関与でエンドツーエンドの機能をリリースするエージェントを開発"
+    - id: 2
+      name_en: "Human + Agent Pair"
+      name_jp: "人間＋エージェントペア"
+      description_en: "Design a workflow where a human and an agent collaborate in a tight loop"
+      description_jp: "人間とエージェントが密に連携するワークフローを設計"
+    - id: 3
+      name_en: "Agent Infra"
+      name_jp: "エージェントインフラ"
+      description_en: "Build tooling, observability, or guardrails for agentic coding systems"
+      description_jp: "エージェントコーディングシステム向けのツール、監視、ガードレールを構築"
+    - edition_specific: "[TBD]"
+
+demo_format:
+  total_time_min: 60
+  target_teams: "8-12"
+  time_per_team_min: 5
+  breakdown: "3 min live demo + 2 min Q&A"
+  changeover_min: 1
+  timer: "Strict — MC cuts at 5 min, no exceptions"
+  format: "Live demo strongly preferred over slides"
+  adjustments:
+    fewer_teams: "Extend Q&A time"
+    more_than_12: "Tighten to 4 min each"

@@ -1,3 +1,5 @@
+[![日本語](https://img.shields.io/badge/%F0%9F%87%AF%F0%9F%87%B5-日本語-white?style=plastic)](CODE_OF_CONDUCT_jp.md)
+
 # Shonan Code Summit (ShoCode) Code of Conduct
 
 ## Introduction
@@ -41,6 +43,18 @@ viewpoints. Specifically, we expect participants to:
 - Report any incidents of harassment or discrimination to the event organizers
   or moderators immediately.
 
+## Language Inclusion
+
+ShoCode is a bilingual event — English and Japanese are equally valid for all
+activities, including presentations, discussions, code comments, pull requests,
+and hallway conversations. No participant should ever be judged, dismissed, or
+excluded based on their language proficiency in either language.
+
+Whether you speak one language fluently or are still learning, you belong here.
+We encourage participants to help bridge language gaps when they can — offer to
+paraphrase, translate key points, or simply be patient. Language diversity is a
+strength of this community, not a barrier.
+
 ## Unacceptable Behavior
 
 The following behaviors are considered unacceptable and will not be tolerated at
@@ -72,6 +86,8 @@ If you experience or witness any behavior that violates this Code of Conduct, or
 if you have any questions or concerns about the conduct of another participant,
 please report it to the event organizers or moderators immediately. We take all
 reports of misconduct seriously and will investigate them promptly and confidentially.
+
+**Contact:** Drew Robbins — drew@drewby.com
 
 ## Conclusion
 

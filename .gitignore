@@ -5,3 +5,6 @@
 .squad/sessions/
 # Squad: SubSquad activation file (local to this machine)
 .squad-workstream
+
+# Private comms — emails, PII, planning conversations (never commit)
+ops/comms/
