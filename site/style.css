@@ -179,6 +179,13 @@ a:focus-visible {
   font-size: clamp(2.2rem, 5vw, 3.6rem);
   font-weight: 800;
   letter-spacing: -0.02em;
+  margin-bottom: 0.25rem;
+}
+
+.hero .subtitle {
+  font-size: clamp(1rem, 2.0vw, 1.15rem);
+  font-weight: 300;
+  opacity: 0.9;
   margin-bottom: 0.5rem;
 }
 
@@ -469,7 +476,7 @@ section:nth-of-type(even) {
 
 /* ---- Bilingual Content Visibility ---- */
 
-[lang="ja"] {
+[lang="ja"]:not(:root) {
   display: none;
 }
 
