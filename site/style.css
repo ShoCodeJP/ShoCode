@@ -16,6 +16,7 @@
   --text-secondary: #4a5e70;
   --text-light: #f0f4f8;
   --border-light: #d6dfe8;
+  --nav-bg: rgba(11, 37, 69, 0.92);
 }
 
 *,
@@ -104,7 +105,7 @@ a:focus-visible {
   left: 0;
   right: 0;
   z-index: 90;
-  background: rgba(11, 37, 69, 0.92);
+  background: var(--nav-bg);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   padding: 0 2rem;
@@ -211,6 +212,8 @@ a:focus-visible {
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .btn {
@@ -576,11 +579,31 @@ body.ja .footer-links li[lang="en"] {
 
 @media (max-width: 768px) {
   .site-nav {
-    padding: 0 1rem;
+    --nav-reserve: 7.5rem;
+    padding: 0 var(--nav-reserve) 0 1rem;
+    justify-content: flex-start;
+    overflow: hidden;
   }
 
   .site-nav ul {
     gap: 1rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .site-nav ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-nav::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: var(--nav-reserve);
+    bottom: 0;
+    width: 2rem;
+    background: linear-gradient(to right, transparent, var(--nav-bg));
+    pointer-events: none;
   }
 
   .site-nav a {
@@ -594,7 +617,7 @@ body.ja .footer-links li[lang="en"] {
 
   .hero {
     min-height: 75vh;
-    padding: 5rem 1.5rem 3rem;
+    padding: 5rem 1.5rem 6rem;
   }
 
   .hero-banner {
