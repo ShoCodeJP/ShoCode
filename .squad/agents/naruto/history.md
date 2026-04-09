@@ -52,3 +52,29 @@
 - **Contact info:** Added contact method notes to email section headers — Another Day has no discoverable contact method (TBD), Hayama Marina is phone-only (046-875-0002).
 - **Deep research prompt:** Added comprehensive prompt to bottom of venue-contact-emails.md for an AI research agent to: find contact info for both venues, verify Kamakura Seaside Coworking existence, discover new Shonan-area venues, find venues that have hosted tech events.
 - **Key learning:** Japanese venue websites often have no public email — phone is the primary contact method. For Another Day specifically, the 403 block + no contact info means an in-person visit is the only viable path. Google searches via fetch_webpage return JS challenge pages, not results.
+
+### 2026-04-02: Deep Research Integration — Venue Pivot
+
+- **CRITICAL:** Another Day Kamakura (Drew's #1 pick) is closing 2026-04-26 per Instagram. Removed from active candidates. Decision logged to `.squad/decisions/inbox/naruto-venue-pivot.md`.
+- **Kamakura Seaside Coworking confirmed not real.** Deep research found no evidence of that name. Likely a mix-up with GOOD WORKING ZAIMOKUZA or NIHO kamakura.
+- **New top-3 identified and integrated into `ops/venue-research.md`:**
+  1. CIRQ Kamakura (cirq-hall.jp) — oceanfront Zaimokuza, 80-150 cap, confirmed WiFi + high-speed, AV, food/bento. Best combined ShoCode fit.
+  2. Hayama Marina Emerald Room — 60-100 cap, ocean+Fuji views, WiFi/power unverified.
+  3. KOTOWA Kamakura Tsurugaoka Kaikan (dearswedding.jp) — 130 seminar cap, 5 min from Kamakura station, strong catering, WiFi unverified.
+- **KAYAC Meeting Building (ぼくらの会議棟)** at 鎌倉市御成町4-31 flagged as worth investigating — most developer-event-proven venue in Kamakura (kamakura.go, Kanagawa.swift, hackathons).
+- **Venue inquiry emails updated:** `ops/venue-contact-emails.md` now has 3 bilingual emails (CIRQ, Hayama Marina, KOTOWA). Another Day removed.
+- **New venues cataloged:** NIHO kamakura (30 cap, tech-event proven), the KAIDAN fujisawa (60 cap, developer WiFi), Kamakura Performing Arts Center (institutional backup), GOOD WORKING ZAIMOKUZA (beachfront, too small), Chiga lab (community, small).
+- **Tech event history section added** to venue-research.md — connpass-verified event listings for Shonan area venues.
+- **Key learning:** Connpass is the definitive source for Japanese tech event venue history. NIHO kamakura and KAYAC's meeting building are the two most-used tech venues in Kamakura proper.
+
+### 2026-04-02: Strategic Pivot — NIHO kamakura, 25-Person Curated Event
+
+- **Drew's decision:** NIHO kamakura is the preferred venue. Cap at 25 attendees. Smaller inaugural event to build credibility and vet applicants.
+- **Drew's exact words:** "I really like NIHO kamakura. The space looks inspiring. We'd have to limit probably to 25 people, but it would give us a chance to do a smaller event, build credibility and we could be more vetting of applicants."
+- **Venue profile updated** in `ops/venue-research.md` — NIHO promoted from "too small" to Drew's pick with full strategic rationale.
+- **NIHO inquiry email drafted** in `ops/venue-contact-emails.md` — bilingual (JP/EN), tailored to 25-person event, references NIHO's tech event history. Now Section 1 (top priority).
+- **Recommendation stack reordered:** NIHO #1 for v1, CIRQ/Hayama/KOTOWA moved to "v2 pipeline" for scale-up.
+- **Budget insight:** 25-person event dramatically reduces costs (~¥139K total vs. hundreds of thousands for 80-100 person venues). Community-affordable without sponsorship.
+- **Key strategic learning:** Starting small is a feature, not a compromise. A curated 25-person event with vetted attendees creates stronger community signal, lower logistics risk, and a credibility foundation for scaling.
+- **Decision logged:** `.squad/decisions/inbox/naruto-niho-preferred.md`
+- **Impact on other agents:** Sakura (agenda for 25), Hinata (selective registration), Kakashi (fewer speaker slots), Tsunade (intimate event positioning).
