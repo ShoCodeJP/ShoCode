@@ -311,6 +311,7 @@
 > **Verdict: Does not exist.** Deep research (2026-04-02) found no evidence of a venue operating under the name "Kamakura Seaside Coworking" or "鎌倉シーサイドコワーキング." No exact-match listing, website, or directory entry found.
 >
 > The name was likely a mix-up with one of these real Kamakura coworking spaces:
+>
 > - **GOOD WORKING ZAIMOKUZA** — beachfront in Zaimokuza (goodworking.jp)
 > - **Satellite YUIGAHAMA** — share office near Yuigahama beach
 > - **NIHO kamakura** — near Kamakura Station, hosts coworking and tech events (niho.life)
@@ -390,13 +391,13 @@ Drew's original favorite. Instagram confirmed closing 2026-04-26. Cannot host Sh
 
 Keep these in the pipeline for when the format is proven:
 
-2. **CIRQ Kamakura** — Best oceanfront fit. 80–150 capacity, confirmed WiFi, AV, food. Zaimokuza beachfront.
-3. **Hayama Marina (Emerald Room)** — Spectacular ocean + Fuji views, 60-100 capacity. WiFi/power unknowns.
-4. **KOTOWA Kamakura Tsurugaoka Kaikan** — Largest capacity (130 seminar), strongest catering, central Kamakura. WiFi unknown.
+1. **CIRQ Kamakura** — Best oceanfront fit. 80–150 capacity, confirmed WiFi, AV, food. Zaimokuza beachfront.
+2. **Hayama Marina (Emerald Room)** — Spectacular ocean + Fuji views, 60-100 capacity. WiFi/power unknowns.
+3. **KOTOWA Kamakura Tsurugaoka Kaikan** — Largest capacity (130 seminar), strongest catering, central Kamakura. WiFi unknown.
 
 ### Worth Investigating
 
-5. **ぼくらの会議棟 / KAYAC Meeting Building** — Most developer-event-proven venue in Kamakura. KAYAC is a tech company that understands developer needs. Capacity and rental terms unknown.
+1. **ぼくらの会議棟 / KAYAC Meeting Building** — Most developer-event-proven venue in Kamakura. KAYAC is a tech company that understands developer needs. Capacity and rental terms unknown.
 
 ### Other Backups
 
@@ -437,9 +438,9 @@ Keep these in the pipeline for when the format is proven:
 
 ### Short-Term (Next 2 Weeks)
 
-4. **Schedule site visit to NIHO** — Drew should see the space in person. 2 min from Kamakura station makes a quick weekday visit easy.
-5. **Investigate KAYAC Meeting Building (ぼくらの会議棟)** — Worth knowing about for future events.
-6. **NIHO-specific questions:**
+1. **Schedule site visit to NIHO** — Drew should see the space in person. 2 min from Kamakura station makes a quick weekday visit easy.
+2. **Investigate KAYAC Meeting Building (ぼくらの会議棟)** — Worth knowing about for future events.
+3. **NIHO-specific questions:**
    - Full-day event buyout pricing (may be better than ¥8,500/hr × 9hrs)
    - WiFi bandwidth — 25 laptops is much more feasible than 50-100, but confirm
    - Power outlet count and locations for 25 laptops
