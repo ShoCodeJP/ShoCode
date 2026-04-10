@@ -8,3 +8,6 @@
 
 # Private comms — emails, PII, planning conversations (never commit)
 ops/comms/
+
+# Landing page — maintained in ShoCodeJP/ShoCodeJP.github.io (local symlink)
+site
