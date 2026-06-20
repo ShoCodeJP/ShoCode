@@ -20,11 +20,13 @@ When APIs or public interfaces change, tests must be updated in the same commit.
 ## Examples
 
 ✓ **Correct:**
+
 - Changed auth API signature → updated auth.test.ts in same commit
 - Added `distributed-mesh.md` to features/ → added `'distributed-mesh'` to EXPECTED_FEATURES array
 - Deleted two scenario files → removed entries from EXPECTED_SCENARIOS
 
 ✗ **Incorrect:**
+
 - Changed spawn parameters → committed without updating casting.test.ts (CI breaks for next person)
 - Added `built-in-roles.md` → left EXPECTED_FEATURES at old count (PR blocked)
 - Test says "expected 7 files" but disk has 25 (assertion staleness)

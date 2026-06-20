@@ -21,6 +21,7 @@ Registered marketplace sources are stored in `.squad/plugins/marketplaces.json`:
 ## CLI Commands
 
 Users manage marketplaces via the CLI:
+
 - `squad plugin marketplace add {owner/repo}` — Register a GitHub repo as a marketplace source
 - `squad plugin marketplace remove {name}` — Remove a registered marketplace
 - `squad plugin marketplace list` — List registered marketplaces

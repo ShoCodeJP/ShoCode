@@ -11,3 +11,6 @@ ops/comms/
 
 # Landing page — maintained in ShoCodeJP/ShoCodeJP.github.io (local symlink)
 site
+
+node_modules
+.squad/.cache/

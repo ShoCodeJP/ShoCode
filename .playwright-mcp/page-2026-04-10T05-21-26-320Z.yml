@@ -1,0 +1,487 @@
+- generic [ref=e4]:
+  - generic [ref=e5]: NIHO kamakura | 鎌倉駅徒歩２分のレンタルスペース、イベントスペース 読み込まれました
+  - generic [ref=e9]:
+    - navigation [ref=e10]:
+      - generic [ref=e11]:
+        - link [ref=e12] [cursor=pointer]:
+          - /url: /
+        - navigation [ref=e13]:
+          - generic [ref=e14]:
+            - paragraph [ref=e15]: リビングに通う
+            - navigation [ref=e16]:
+              - link "ABOUT" [ref=e17] [cursor=pointer]:
+                - /url: /#about
+            - navigation [ref=e18]:
+              - link "SERVICE" [ref=e19] [cursor=pointer]:
+                - /url: /#service
+            - navigation [ref=e20]:
+              - link "PRICE" [ref=e21] [cursor=pointer]:
+                - /url: "#pricing"
+            - navigation [ref=e22]:
+              - link "CALENDAR" [ref=e23] [cursor=pointer]:
+                - /url: /#event
+            - navigation [ref=e24]:
+              - paragraph [ref=e25]
+            - link "ITEM" [ref=e26] [cursor=pointer]:
+              - /url: /item-rental
+              - paragraph [ref=e27]: ITEM
+            - link "REMOTEWORK" [ref=e28] [cursor=pointer]:
+              - /url: /remotework
+              - paragraph [ref=e29]: REMOTEWORK
+            - paragraph [ref=e30]: 単発で借りる
+            - navigation [ref=e31]:
+              - link "RENTAL" [ref=e32] [cursor=pointer]:
+                - /url: /rentalspace
+            - paragraph [ref=e34]: まちを知る
+            - navigation [ref=e35]:
+              - link "ARTICLE" [ref=e36] [cursor=pointer]:
+                - /url: /posts
+            - link "CREATORS" [ref=e37] [cursor=pointer]:
+              - /url: /creators
+              - paragraph [ref=e38]: CREATORS
+            - link "ACTIVITY" [ref=e39] [cursor=pointer]:
+              - /url: /circles
+              - paragraph [ref=e40]: ACTIVITY
+            - link "COMPANIES" [ref=e41] [cursor=pointer]:
+              - /url: /companies
+              - paragraph [ref=e42]: COMPANIES
+        - generic [ref=e43]:
+          - link "" [ref=e44] [cursor=pointer]:
+            - /url: https://lin.ee/dBDOIxJ
+            - generic [ref=e45]: 
+          - link "" [ref=e46] [cursor=pointer]:
+            - /url: https://www.instagram.com/niho.kamakura?igsh=YTZybXV0ZmFpa29p&utm_source=qr
+            - generic [ref=e47]: 
+    - heading "イベント・レンタルスペース利用 （一般の方向け 貸切利用）" [level=1] [ref=e50]:
+      - text: イベント・レンタルスペース利用
+      - text: （一般の方向け 貸切利用）
+    - generic [ref=e54]:
+      - heading "概要" [level=2] [ref=e55]
+      - paragraph [ref=e59]:
+        - text: NIHOは一般の人にも開かれており、貸切で様々な用途にご利用可能です。
+        - text: パーティ・イベント・ライブ・料理教室・オフサイトミーティング・二次会など、ぜひ様々な活動の場としてお使いください。
+      - heading "空間概要" [level=2] [ref=e80]
+      - paragraph [ref=e81]:
+        - text: 鎌倉駅徒歩2分、まちの社員食堂という建物の２階、49m2のリビングダイニングです。
+        - text: キッチン設備もあり、様々な調理家電・食器類もお使いいただけます。
+      - generic [ref=e87]:
+        - generic:
+          - paragraph
+        - generic [ref=e88]:
+          - heading "詳細" [level=2] [ref=e89]
+          - list [ref=e91]:
+            - listitem [ref=e92]:
+              - generic [ref=e93]:
+                - heading "貸切料金" [level=3] [ref=e94]
+                - paragraph [ref=e95]:
+                  - text: 一般（非会員） 8500円/h（税込）
+                  - text: ※夜20時以降は夜間割で8000円/hです。
+                  - text: ※月額会員の方はトップページをご覧ください
+            - listitem [ref=e96]:
+              - generic [ref=e97]:
+                - heading "営業時間" [level=3] [ref=e98]
+                - paragraph [ref=e99]: 全日朝7-24時
+            - listitem [ref=e100]:
+              - generic [ref=e101]:
+                - heading "広さ" [level=3] [ref=e102]
+                - paragraph [ref=e103]: 49m2（スリッパでお過ごしいただく形です）
+            - listitem [ref=e104]:
+              - generic [ref=e105]:
+                - heading "定員" [level=3] [ref=e106]: 定員
+                - paragraph [ref=e107]:
+                  - text: 30名
+                  - text: （25名程度までがおすすめです。30名以上でも可能ですが、窮屈に感じられると思います。）
+            - listitem [ref=e108]:
+              - generic [ref=e109]:
+                - heading "用途" [level=3] [ref=e110]: 用途
+                - paragraph [ref=e111]: パーティ・撮影・ミーティング・料理イベント・ライブ・上映会など
+            - listitem [ref=e112]:
+              - generic [ref=e113]:
+                - heading "可能な行為" [level=3] [ref=e114]
+                - paragraph [ref=e115]:
+                  - text: ・お子様同席、ペット同伴（事前連絡が必要です）
+                  - text: ・飲食持ち込み、料理、飲酒
+                  - text: ・撮影・配信・各種営利的な事業
+            - listitem [ref=e116]:
+              - generic [ref=e117]:
+                - heading "禁止行為" [level=3] [ref=e118]
+                - paragraph [ref=e119]:
+                  - text: ・喫煙、異臭のする行為
+                  - text: ※喫煙は周辺の屋外でも不可です。徒歩10分程度で東口の喫煙スペースをご利用ください
+            - listitem [ref=e120]:
+              - generic [ref=e121]:
+                - heading "アクセス" [level=3] [ref=e122]
+                - paragraph [ref=e123]:
+                  - text: 鎌倉駅西口徒歩2分
+                  - text: まちの社員食堂棟２階
+            - listitem [ref=e124]:
+              - generic [ref=e125]:
+                - heading "損害賠償" [level=3] [ref=e126]
+                - paragraph [ref=e127]: 物損・騒音・清掃未了などの理由で施設側に損害・手間が生じた場合は、その相当額をご負担いただくことがございます。
+            - listitem [ref=e128]:
+              - generic [ref=e129]:
+                - heading "キャンセルポリシー" [level=3] [ref=e130]
+                - paragraph [ref=e131]:
+                  - text: 7日前〜2日前 ： 30％
+                  - text: 1日前〜当日 ： 100％
+      - generic [ref=e132]:
+        - paragraph [ref=e134]: 下記の基本的な設備が貸切料金に含まれて利用可能です。
+        - generic [ref=e135]:
+          - heading "◻︎キッチン利用" [level=3] [ref=e136]: ◻︎キッチン利用
+          - paragraph [ref=e137]:
+            - text: 調理家電全般： オーブンレンジ（石窯ドーム）、炊飯器（ 5.５号ビストロシリーズ）、トースター（バルミューダ）、ホームベーカリー（Panasonicビストロシリーズ）、ホットプレート、ソーダストリーム、IH計３口、コーヒーグラインダー（varia）、エスプレッソマシーン（la marzocco）、スロージューサー、braun ジューサー、電気ケトル（fellow社）など各種
+            - text: 調理道具：包丁２丁、まな板２つ、平皿（カレー程度までは盛り付け可能）14枚、茶碗５膳、味噌汁椀５膳程度、フォーク・スプーン・おはし各14本程度、カップ（マグカップ・ガラスカップ）18個程度
+        - generic [ref=e138]:
+          - heading "◻︎各種設備" [level=3] [ref=e139]
+          - paragraph [ref=e140]:
+            - text: オフィス機材：Wifi、電源・延長コード
+            - text: 楽器 ： オーディオ、レコードプレイヤー、ギター、ウクレレ、カリンバ
+            - text: ボードゲーム：10種類以上（ブロックス、UNO、マダミスシリーズ、カルカソンヌ、囲碁など）
+        - generic [ref=e141]:
+          - heading "◻︎ゴミ捨て（少量）" [level=3] [ref=e142]
+          - paragraph [ref=e143]: ・燃えるゴミ・燃えないごみ・ビン/缶・ペットボトルなど各種２０Lまでは無料で処理します。パーティ実施などでそれ以上の分量が出る場合は下記のオプションからごみ処理を選択ください。
+      - generic [ref=e144]:
+        - heading "オプション" [level=2] [ref=e145]
+        - paragraph [ref=e148]:
+          - text: 下記の設備・サービス利用の場合は別途追加料金が必要です。ご利用時間に合わせた請求となります。
+          - text: （空間の利用時間と同一の利用時間が原則となります。） ※金額は全て税込です。
+      - list [ref=e149]:
+        - listitem [ref=e150]:
+          - generic [ref=e151]:
+            - heading "発表用ディスプレイ （55インチ）" [level=3] [ref=e152]:
+              - text: 発表用ディスプレイ
+              - text: （55インチ）
+            - paragraph [ref=e153]: 発表などに最適な大型ディスプレイです。HDMI, 変換アダプタも付属します。
+          - img "発表用ディスプレイ<br>（55インチ） | 発表などに最適な大型ディスプレイです。HDMI, 変換アダプタも付属します。 | 800円/時間" [ref=e155]
+          - paragraph [ref=e156]: 800円/時間
+          - paragraph [ref=e157]: 個人用の23インチは300円/時間です。
+        - listitem [ref=e158]:
+          - generic [ref=e159]:
+            - heading "ホワイトボード (90*180cm）" [level=3] [ref=e160]:
+              - text: ホワイトボード
+              - text: (90*180cm）
+            - paragraph [ref=e161]: 会議やブレストなどでお使いいただけます。
+          - img "ホワイトボード<br>(90*180cm） | 会議やブレストなどでお使いいただけます。 | 600円/時間" [ref=e163]
+          - paragraph [ref=e164]: 600円/時間
+          - paragraph
+        - listitem [ref=e165]:
+          - generic [ref=e166]:
+            - heading "フリードリンク (コーヒー・ハーブティ)" [level=3] [ref=e167]:
+              - text: フリードリンク
+              - text: (コーヒー・ハーブティ)
+            - paragraph [ref=e168]: 自家焙煎コーヒーや20種以上のハーブを利用者全員が自由に好きなだけお飲みいただけます。ブレンドも可能です。
+          - img "フリードリンク<br>(コーヒー・ハーブティ) | 自家焙煎コーヒーや20種以上のハーブを利用者全員が自由に好きなだけお飲みいただけます。ブレンドも可能です。 | 700円/時間(参加者全員飲めます）" [ref=e170]
+          - paragraph [ref=e171]: 700円/時間(参加者全員飲めます）
+          - paragraph [ref=e172]: ハーブ：エルダーフラワー・ホーリーバジル・ネトル・エキナセア・セージ・レモンバームなど各種
+        - listitem [ref=e173]:
+          - generic [ref=e174]:
+            - heading "プロジェクター/スクリーン" [level=3] [ref=e175]
+            - paragraph [ref=e176]: 120インチのスクリーンに投影して映画上映などが可能です。プロジェクターはXIGMI HORIZON S Maxです。(4K可)
+          - img "プロジェクター/スクリーン | 120インチのスクリーンに投影して映画上映などが可能です。プロジェクターはXIGMI HORIZON S Maxです。(4K可) | 800円/時間" [ref=e178]
+          - paragraph [ref=e179]: 800円/時間
+          - paragraph
+        - listitem [ref=e180]:
+          - generic [ref=e181]:
+            - heading "撮影・配信機材" [level=3] [ref=e182]: 撮影・配信機材
+            - paragraph [ref=e183]:
+              - text: カメラ： SONY FX30, ZV-E10M2
+              - text: ショットガンマイク ECM-M1、三脚 ： K&F TM2515T1
+          - img "撮影・配信機材<br> | カメラ： SONY FX30, ZV-E10M2<br>ショットガンマイク ECM-M1、三脚 ： K&F TM2515T1 | 400円/時間・個" [ref=e185]
+          - paragraph [ref=e186]: 400円/時間・個
+          - paragraph
+        - listitem [ref=e187]:
+          - generic [ref=e188]:
+            - heading "プリンター印刷" [level=3] [ref=e189]: プリンター印刷
+            - paragraph [ref=e190]: A2までカラー印刷が可能です。EPSON EP50Vという機種です。10枚単位でご購入下さい。
+          - img "プリンター印刷<br> | A2までカラー印刷が可能です。EPSON EP50Vという機種です。10枚単位でご購入下さい。 | 500円/10枚" [ref=e192]
+          - paragraph [ref=e193]: 500円/10枚
+          - paragraph
+        - listitem [ref=e194]:
+          - generic [ref=e195]:
+            - heading "個室利用" [level=3] [ref=e196]
+            - paragraph [ref=e197]: オンライン会議やお着替えをしたい場合はこちらの簡易個室でご利用可能です。1m*1.5m程度のスペースです。
+          - img "個室利用 | オンライン会議やお着替えをしたい場合はこちらの簡易個室でご利用可能です。1m*1.5m程度のスペースです。 | 400円/時間" [ref=e199]
+          - paragraph [ref=e200]: 400円/時間
+          - paragraph
+        - listitem [ref=e201]:
+          - generic [ref=e202]:
+            - heading "姿見鏡・ヘアメイク鏡" [level=3] [ref=e203]
+            - paragraph [ref=e204]: 高さ150×幅35cmの全身鏡や、20cm程度のスタンドミラー（テーブルに立ててお顔を映すもの）がご利用可能です。
+          - img "姿見鏡・ヘアメイク鏡 | 高さ150×幅35cmの全身鏡や、20cm程度のスタンドミラー（テーブルに立ててお顔を映すもの）がご利用可能です。 | 300円/時間" [ref=e206]
+          - paragraph [ref=e207]: 300円/時間
+          - paragraph
+        - listitem [ref=e208]:
+          - generic [ref=e209]:
+            - heading "レンタサイクル" [level=3] [ref=e210]
+            - paragraph [ref=e211]: 電動自転車（Panasonic製）をご自由に利用可能です。市内の移動にお使いください。
+          - img "レンタサイクル | 電動自転車（Panasonic製）をご自由に利用可能です。市内の移動にお使いください。 | 400円/時間・台" [ref=e213]
+          - paragraph [ref=e214]: 400円/時間・台
+          - paragraph [ref=e215]: 最大２台まで可能です。
+        - listitem [ref=e216]:
+          - generic [ref=e217]:
+            - heading "１階拡張（夜のみ）" [level=3] [ref=e218]
+            - paragraph [ref=e219]: NIHOの１階はランチ食堂で、夜は貸切利用の範囲を１階にも拡張して利用が可能です（飲食店営業も可）。25名程度収容可能です。（店舗名はまちの社員食堂です）
+          - img "１階拡張（夜のみ） | NIHOの１階はランチ食堂で、夜は貸切利用の範囲を１階にも拡張して利用が可能です（飲食店営業も可）。25名程度収容可能です。（店舗名はまちの社員食堂です） | 25000円/一晩(17-23時）" [ref=e221]
+          - paragraph [ref=e222]: 25000円/一晩(17-23時）
+          - paragraph
+        - listitem [ref=e223]:
+          - generic [ref=e224]:
+            - heading "Amazon fire TV 4K max" [level=3] [ref=e225]
+            - paragraph [ref=e226]: 豊富な映像を大画面で楽しめます。発表用の大型ディスプレイを申請ください。
+          - img "Amazon fire TV&nbsp; 4K max | 豊富な映像を大画面で楽しめます。発表用の大型ディスプレイを申請ください。 | 300円/時間" [ref=e228]
+          - paragraph [ref=e229]: 300円/時間
+          - paragraph [ref=e230]: ご自身のアカウントでログインいただきます。
+        - listitem [ref=e231]:
+          - generic [ref=e232]:
+            - heading "調味料利用" [level=3] [ref=e233]
+            - paragraph [ref=e234]: 現地で保存している調味料（20種類程度）を全てご利用可能です。 塩・砂糖・醤油・油・スパイス・料理酒・小麦粉など各種あります。
+          - img "調味料利用 | 現地で保存している調味料（20種類程度）を全てご利用可能です。 塩・砂糖・醤油・油・スパイス・料理酒・小麦粉など各種あります。 | 800円/回" [ref=e236]
+          - paragraph [ref=e237]: 800円/回
+          - paragraph [ref=e238]: 必要に応じて事前に内容をご相談ください
+        - listitem [ref=e239]:
+          - generic [ref=e240]:
+            - heading "スピーカー(ライブ機材)" [level=3] [ref=e241]
+            - paragraph [ref=e242]: yamaha dbr10、10インチの高品質アンプスピーカーです。最大129dbの出力です。マイク各種、スタンド、コード類、アナログミキサーなどもございます。
+          - img "スピーカー(ライブ機材) | yamaha dbr10、10インチの高品質アンプスピーカーです。最大129dbの出力です。マイク各種、スタンド、コード類、アナログミキサーなどもございます。 | 400円/時間（２個セット）" [ref=e244]
+          - paragraph [ref=e245]: 400円/時間（２個セット）
+          - paragraph [ref=e246]: マイク各種、スタンド、コード類、アナログミキサーなどもございます。
+      - list [ref=e247]:
+        - listitem [ref=e248]:
+          - generic [ref=e249]:
+            - heading "ゴミ処理（大量）" [level=3] [ref=e250]
+            - paragraph [ref=e251]: 施設内のゴミ箱（各20L程度）に入る範囲は無料で処理します。パーティなどでそれを超える場合はこちらをご利用下さい。
+            - heading "1400円/回" [level=2] [ref=e252]
+            - paragraph
+        - listitem [ref=e253]:
+          - generic [ref=e254]:
+            - heading "荷物受け取り・預かり" [level=3] [ref=e255]
+            - paragraph [ref=e256]: 事前・事後の荷物の受け取り・預かりなどに対応します。一人分・1日ごとの金額です。（１人分は40L程度の大きさまで）
+            - heading "700円/回（1日ごと）" [level=2] [ref=e257]
+            - paragraph [ref=e258]: 当日中は700円、前日からは1400円という意味です。
+        - listitem [ref=e259]:
+          - generic [ref=e260]:
+            - heading "各種相談・紹介" [level=3] [ref=e261]
+            - paragraph [ref=e262]: 街を楽しむための相談を承ります。おすすめのテイクアウトや食事・観光スポットなど多様にご相談ください。
+            - heading "800円/15分程度" [level=2] [ref=e263]
+            - paragraph
+        - listitem [ref=e264]:
+          - generic [ref=e265]:
+            - heading "ケータリング用意" [level=3] [ref=e266]
+            - paragraph [ref=e267]: ご希望の予算・食事内容に合わせて、その季節に応じたおすすめのお店からのオードブルと飲み物を手配します。
+            - heading "注文金額の5%" [level=2] [ref=e268]
+            - paragraph [ref=e269]: 食材費実費は別途ご負担いただきます。目安として、軽食程度なら1名1500円、十分な料理であれば2000−2500円台、お酒などもつく場合は3500円程度でご用意が可能です。
+        - listitem [ref=e270]:
+          - generic [ref=e271]:
+            - heading "写真撮影" [level=3] [ref=e272]
+            - paragraph [ref=e273]: 会の途中または最後などに一眼レフで写真を撮影して色味も補正した上でお渡しします。
+            - heading "800円/１回（2カット程度）" [level=2] [ref=e274]
+            - paragraph [ref=e275]: イベント全体で様々に写真を撮る場合は１時間5000円で承ります。本HPに掲載しているすべての写真がスタッフ撮影によるものです。
+        - listitem [ref=e276]:
+          - generic [ref=e277]:
+            - heading "事前入室" [level=3] [ref=e278]
+            - paragraph [ref=e279]: 貸切の時間が始まる前に、数名程度が先に来て簡易な相談などが可能です。
+            - heading "350円/人・30分" [level=2] [ref=e280]
+            - paragraph [ref=e281]: 1名が30分利用するたびに350円いただくという意味です。他の利用者もいるため設備の移動までは不可です。
+        - listitem [ref=e282]:
+          - generic [ref=e283]:
+            - heading "記事作成" [level=3] [ref=e284]
+            - paragraph [ref=e285]: イベント中にBluetoothマイクで会話を録音し、AIも利用して簡易的な記事を作成します。
+            - heading "800円" [level=2] [ref=e286]
+            - paragraph [ref=e287]:
+              - text: 記事の見本はこちらです。
+              - text: https://niho.life/posts/regenerative-torism
+        - listitem [ref=e288]:
+          - generic [ref=e289]:
+            - heading "事前投稿（集客支援）" [level=3] [ref=e290]
+            - paragraph [ref=e291]: 公開でのイベントの時にNIHOのSNSでも発信して集客をサポートします。
+            - heading "700円〜" [level=2] [ref=e292]
+            - paragraph [ref=e293]: InstagramとFacebookのストーリー投稿は700円、投稿は1100円です（写真素材は提供下さい）
+      - link "記事見本" [ref=e295] [cursor=pointer]:
+        - /url: https://niho.life/posts/regenerative-torism
+      - heading "利用の流れ" [level=2] [ref=e298]
+      - generic [ref=e299]:
+        - heading "＜予約まで＞" [level=3] [ref=e301]
+        - paragraph [ref=e303]: 1. 空き日程をご確認ください(下記カレンダー参照）
+        - paragraph [ref=e305]:
+          - text: 2. ご希望の日時・オプションなどを以下のフォームからご連絡ください。
+          - text: 用途に応じて様々にご提案も可能ですので、お気軽にご相談ください。
+        - paragraph [ref=e307]: 3. スタッフより利用可能かをご連絡し、詳細をご相談・確定したのち、決済のURLをお送りします。
+        - paragraph [ref=e309]: 4. URLより事前のカード決済を完了していただくとご予約完了です！
+        - paragraph [ref=e311]: ※ご質問は電話や公式LINEなどでお気軽にご連絡ください。下見も可能です。
+        - heading "＜利用当日＞" [level=3] [ref=e312]
+        - paragraph [ref=e314]:
+          - text: 当日は、スタッフが現地にてお待ちしております。
+          - text: 開始時刻の5分前よりお入りいただけます。入室後は施設の使い方を5分ほどでご案内いたします。
+          - text: 現地は靴を脱いでスリッパでお過ごしいただく空間となります。
+          - text: お手洗いは１階に降りたところにございます。
+          - text: ■退室方法
+          - text: ゴミは分別してゴミ箱に入れておいてください。
+          - text: ※20-45Lの各種のゴミ箱に収まる範囲は無料で処理いたしますが、収まらない量が発生した場合は、1回1000円でのゴミ処理有料オプションとなります。ご連絡ください
+          - text: 使った食器類は洗って拭いたのちに元の場所に戻しておいてください。設備類も戻しておいてください。
+          - text: ご退室にあたっては、終了時刻ごろにスタッフが戻る予定ですが、スタッフの到着を待たずご退室いただいて大丈夫です。鍵はそのままで電気だけ消してください。退室時はSMSやLINEなどでご連絡だけ頂ければと思います。
+      - heading "空き日程" [level=2] [ref=e316]
+      - paragraph [ref=e317]:
+        - text: ・下記のカレンダーの中で、「利用不可」と書かれていない時間帯であれば、ご利用可能です。
+        - text: （朝7-24時まで利用可能です）
+      - generic [ref=e318]:
+        - iframe [ref=e320]:
+          
+        - iframe [ref=e322]:
+          
+      - generic [ref=e323]:
+        - heading "予約フォーム" [level=2] [ref=e324]
+        - paragraph [ref=e325]: ・ご希望の日時の空きを確認したら、こちらでご相談ください。２営業日以内にご返事いたします。お電話または公式LINEでのご相談も可能です。（090-5091-5181 代表高浜 ｜ 公式LINE ： NIHO kamakura）
+      - generic [ref=e327]:
+        - generic [ref=e328]:
+          - generic [ref=e329]:
+            - paragraph [ref=e330]: ご予約相談
+            - paragraph [ref=e331]: フォーム
+          - paragraph [ref=e332]:
+            - text: 利用ご希望の日時などを決めたら、
+            - text: ご希望の日時・オプションなどを
+            - text: お伝えください。
+            - text: 質問・ご相談もお気軽にどうぞ。
+        - generic [ref=e333]:
+          - generic [ref=e334]:
+            - generic [ref=e335]:
+              - paragraph [ref=e336]: 氏名
+              - paragraph [ref=e337]: "*"
+            - textbox "氏名 *" [ref=e338]:
+              - /placeholder: ""
+          - generic [ref=e339]:
+            - generic [ref=e340]:
+              - paragraph [ref=e341]: フリガナ
+              - paragraph [ref=e342]: "*"
+            - textbox "フリガナ *" [ref=e343]:
+              - /placeholder: ""
+          - generic [ref=e344]:
+            - paragraph [ref=e346]: ご所属（法人・団体名）
+            - textbox "ご所属（法人・団体名）" [ref=e347]:
+              - /placeholder: ""
+          - generic [ref=e348]:
+            - generic [ref=e349]:
+              - paragraph [ref=e350]: メールアドレス
+              - paragraph [ref=e351]: "*"
+            - textbox "メールアドレス *" [ref=e352]:
+              - /placeholder: ""
+          - generic [ref=e353]:
+            - generic [ref=e354]:
+              - paragraph [ref=e355]: 電話番号
+              - paragraph [ref=e356]: "*"
+            - textbox "電話番号 *" [ref=e357]:
+              - /placeholder: ""
+          - generic [ref=e358]:
+            - generic [ref=e359]:
+              - generic [ref=e360]:
+                - paragraph [ref=e361]: 希望する日付
+                - paragraph [ref=e362]: "*"
+              - paragraph [ref=e363]: ※このフォーム上のカレンダーで空いている日程をお選びください
+            - textbox "希望する日付 * ※このフォーム上のカレンダーで空いている日程をお選びください" [ref=e364]:
+              - /placeholder: " 例）2025/01/10 "
+          - generic [ref=e365]:
+            - generic [ref=e366]:
+              - generic [ref=e367]:
+                - paragraph [ref=e368]: 希望する時間
+                - paragraph [ref=e369]: "*"
+              - paragraph [ref=e370]: 利用する時間帯をお伝えください（例：10:00-12:00）
+            - textbox "希望する時間 * 利用する時間帯をお伝えください（例：10:00-12:00）" [ref=e371]:
+              - /placeholder: " 例）13:00-15:00"
+          - generic [ref=e372]:
+            - generic [ref=e373]:
+              - generic [ref=e374]:
+                - paragraph [ref=e375]: 実施内容
+                - paragraph [ref=e376]: "*"
+              - paragraph [ref=e377]: ご利用の用途、人数などをお書きください
+            - textbox "実施内容 * ご利用の用途、人数などをお書きください" [ref=e378]:
+              - /placeholder: ホームパーティで10名ほどで利用、など
+          - generic [ref=e379]:
+            - generic [ref=e380]:
+              - paragraph [ref=e382]: オプションのご希望
+              - paragraph [ref=e383]: オプションをご希望の場合は、必要なオプションをお伝えください。
+            - textbox "オプションのご希望 オプションをご希望の場合は、必要なオプションをお伝えください。" [ref=e384]:
+              - /placeholder: フリードリンク・ゴミ処理
+          - generic [ref=e385]:
+            - checkbox "宛名入りの領収証が必要な方はこちらにチェックしてください （宛名にはご所属名が入りますが、 それ以外の宛名をご希望の場合は備考にご記入ください。" [ref=e386]
+            - generic [ref=e387]:
+              - text: 宛名入りの領収証が必要な方はこちらにチェックしてください
+              - text: （宛名にはご所属名が入りますが、
+              - text: それ以外の宛名をご希望の場合は備考にご記入ください。
+          - generic [ref=e388]:
+            - generic [ref=e389]:
+              - paragraph [ref=e391]: 備考
+              - paragraph [ref=e392]: ご質問・ご相談などはお気軽にお伝えください
+            - textbox "備考 ご質問・ご相談などはお気軽にお伝えください" [ref=e393]:
+              - /placeholder: " "
+          - generic [ref=e395]: • 入力確認画面はございませんので、ご入力内容を確認の上、送信ボタンを押して下さい。
+          - button "送信する" [ref=e396] [cursor=pointer]:
+            - paragraph [ref=e397]: 送信する
+    - contentinfo [ref=e398]:
+      - generic [ref=e399]:
+        - generic [ref=e402]:
+          - generic [ref=e403]:
+            - paragraph [ref=e404]: 各種備考
+            - generic [ref=e405]:
+              - link "特定商取引法に基づく表記" [ref=e406] [cursor=pointer]:
+                - /url: /tradelaw
+              - link:
+                - /url: /tradelaw
+            - link "利用規約" [ref=e407] [cursor=pointer]:
+              - /url: /terms
+          - generic [ref=e408]:
+            - generic [ref=e409]:
+              - paragraph [ref=e410]: 使い方/サービス
+              - link:
+                - /url: /tradelaw
+            - link "作業場所として使う" [ref=e411] [cursor=pointer]:
+              - /url: /remotework
+              - paragraph [ref=e412]: 作業場所として使う
+              - paragraph
+            - link "イベントで使う" [ref=e413] [cursor=pointer]:
+              - /url: /rentalspace
+            - link "子育ての場所として使う" [ref=e414] [cursor=pointer]:
+              - /url: /parenting
+            - link "コーヒーの生豆購入/焙煎" [ref=e415] [cursor=pointer]:
+              - /url: /posts/coffee-roast
+          - generic [ref=e416]:
+            - heading "お問い合わせ" [level=2] [ref=e417]:
+              - link "お問い合わせ" [ref=e418] [cursor=pointer]:
+                - /url: /contact
+              - link:
+                - /url: /tradelaw
+            - link "貸切利用（外部の方）" [ref=e419] [cursor=pointer]:
+              - /url: /rentalspace
+              - paragraph [ref=e420]: 貸切利用（外部の方）
+              - paragraph
+            - link "お試し利用（会員希望）" [ref=e421] [cursor=pointer]:
+              - /url: /#contact
+            - link "法人会員について" [ref=e422] [cursor=pointer]:
+              - /url: /business-plan
+          - generic [ref=e423]:
+            - heading "まちの紹介" [level=2] [ref=e424]:
+              - paragraph [ref=e425]: まちの紹介
+              - link:
+                - /url: /tradelaw
+            - link "まちの作り手" [ref=e426] [cursor=pointer]:
+              - /url: /creators
+              - paragraph [ref=e427]: まちの作り手
+              - paragraph
+            - link "まちの企業" [ref=e428] [cursor=pointer]:
+              - /url: /companies
+              - paragraph [ref=e429]: まちの企業
+              - paragraph
+            - link "まちの活動" [ref=e430] [cursor=pointer]:
+              - /url: /circles
+              - paragraph [ref=e431]: まちの活動
+              - paragraph
+            - link "各種記事" [ref=e432] [cursor=pointer]:
+              - /url: /posts
+              - paragraph [ref=e433]: 各種記事
+              - paragraph
+            - link "ケータリング" [ref=e434] [cursor=pointer]:
+              - /url: /catering
+              - paragraph [ref=e435]: ケータリング
+              - paragraph
+          - text:   
+        - generic [ref=e436]:
+          - img "NIHO kamakura ロゴ" [ref=e437]
+          - paragraph [ref=e438]: ©2025 Panasonic Holdings Corporation.

@@ -1,0 +1,441 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - link "CIRQ ホームページへ" [ref=e3] [cursor=pointer]:
+      - /url: https://www.cirq-hall.jp/
+      - text: CIRQ
+    - list [ref=e4]:
+      - listitem [ref=e5]:
+        - link "CIRQとは" [ref=e6] [cursor=pointer]:
+          - /url: /concept/
+      - listitem [ref=e7]:
+        - link "施設一覧" [ref=e8] [cursor=pointer]:
+          - /url: /search/
+      - listitem [ref=e9]:
+        - link "懇親会プラン" [ref=e10] [cursor=pointer]:
+          - /url: /meal/
+      - listitem [ref=e11]:
+        - link "ご利用イメージ" [ref=e12] [cursor=pointer]:
+          - /url: /howto/
+      - listitem [ref=e13]:
+        - link "ご利用事例" [ref=e14] [cursor=pointer]:
+          - /url: /cases/
+      - listitem [ref=e15]:
+        - link "ご利用の流れ" [ref=e16] [cursor=pointer]:
+          - /url: /flow/
+      - listitem [ref=e17]:
+        - link "ご予約・お問い合わせ" [ref=e18] [cursor=pointer]:
+          - /url: /contact/
+  - generic [ref=e20]:
+    - generic [ref=e21]:
+      - heading "CONTACT" [level=1] [ref=e24]
+      - paragraph [ref=e25]: ご予約・お問い合わせ
+    - list [ref=e27]:
+      - listitem [ref=e28]:
+        - link "CIRQ" [ref=e29] [cursor=pointer]:
+          - /url: /
+        - text: ">"
+      - listitem [ref=e30]: ご予約・お問い合わせ
+    - generic [ref=e31]:
+      - paragraph [ref=e32]:
+        - text: ※こちらのフォームからお問い合わせいただいた段階では予約は確定しておりません。
+        - text: ※必ず弊社の担当者よりご案内させて頂きますので、今しばらくお待ちください。
+      - generic [ref=e34]:
+        - table [ref=e35]:
+          - rowgroup [ref=e36]:
+            - row "お名前 必須 姓 ロビンス 名 アンドリュー ※フルネームでご記入ください" [ref=e187]:
+              - rowheader "お名前 必須" [ref=e38]:
+                - text: お名前
+                - generic [ref=e39]: 必須
+              - cell "姓 ロビンス 名 アンドリュー ※フルネームでご記入ください" [ref=e188]:
+                - text: 姓
+                - textbox [ref=e41]: ロビンス
+                - text: 名
+                - textbox [ref=e42]: アンドリュー
+                - paragraph [ref=e43]: ※フルネームでご記入ください
+            - row "お名前（フリガナ） ロビンス アンドリュー ※カタカナでご記入ください" [ref=e189]:
+              - rowheader "お名前（フリガナ）" [ref=e45]
+              - cell "ロビンス アンドリュー ※カタカナでご記入ください" [ref=e190]:
+                - textbox [ref=e47]: ロビンス アンドリュー
+                - paragraph [ref=e48]: ※カタカナでご記入ください
+            - row "企業名/団体名/学校名 必須 Shonan Code Summit ※正式名称でご記入ください ※個人でのお問い合わせの場合は「個人」とご記入ください" [ref=e191]:
+              - rowheader "企業名/団体名/学校名 必須" [ref=e50]:
+                - text: 企業名/団体名/学校名
+                - generic [ref=e51]: 必須
+              - cell "Shonan Code Summit ※正式名称でご記入ください ※個人でのお問い合わせの場合は「個人」とご記入ください" [ref=e192]:
+                - textbox [ref=e53]: Shonan Code Summit
+                - paragraph [ref=e54]:
+                  - text: ※正式名称でご記入ください
+                  - text: ※個人でのお問い合わせの場合は「個人」とご記入ください
+            - row "部署名" [ref=e55]:
+              - rowheader "部署名" [ref=e56]
+              - cell [ref=e57]:
+                - textbox [ref=e58]
+            - row "お電話番号 必須 080-8727-1079 ※日中ご連絡がとれるお電話番号をご記入ください。" [ref=e193]:
+              - rowheader "お電話番号 必須" [ref=e60]:
+                - text: お電話番号
+                - generic [ref=e61]: 必須
+              - cell "080-8727-1079 ※日中ご連絡がとれるお電話番号をご記入ください。" [ref=e194]:
+                - textbox [ref=e63]: 080-8727-1079
+                - paragraph [ref=e64]: ※日中ご連絡がとれるお電話番号をご記入ください。
+            - row "メールアドレス 必須 drew@drewby.com drew@drewby.com （確認用）" [ref=e195]:
+              - rowheader "メールアドレス 必須" [ref=e66]:
+                - text: メールアドレス
+                - generic [ref=e67]: 必須
+              - cell "drew@drewby.com drew@drewby.com （確認用）" [ref=e196]:
+                - textbox [ref=e69]: drew@drewby.com
+                - textbox [ref=e70]: drew@drewby.com
+                - text: （確認用）
+            - row "ご利用施設名 またはご希望エリア CIRQ鎌倉 例：CIRQ○○、○○駅周辺、住所など" [ref=e197]:
+              - rowheader "ご利用施設名 またはご希望エリア" [ref=e72]:
+                - text: ご利用施設名
+                - text: またはご希望エリア
+              - cell "CIRQ鎌倉 例：CIRQ○○、○○駅周辺、住所など" [ref=e198]:
+                - textbox [ref=e74]: CIRQ鎌倉
+                - paragraph [ref=e75]: 例：CIRQ○○、○○駅周辺、住所など
+            - row "ご利用部屋名 AKEルーム（80名）またはHEKIルーム（120名） 例：アトリエウェアハウス、ヨーロピアンクリスタルなど" [ref=e199]:
+              - rowheader "ご利用部屋名" [ref=e77]
+              - cell "AKEルーム（80名）またはHEKIルーム（120名） 例：アトリエウェアハウス、ヨーロピアンクリスタルなど" [ref=e200]:
+                - textbox [ref=e79]: AKEルーム（80名）またはHEKIルーム（120名）
+                - paragraph [ref=e80]: 例：アトリエウェアハウス、ヨーロピアンクリスタルなど
+            - row "料理形式 必須 ビュッフェ コース お弁当・軽食 なし" [ref=e81]:
+              - rowheader "料理形式 必須" [ref=e82]:
+                - text: 料理形式
+                - generic [ref=e83]: 必須
+              - cell "ビュッフェ コース お弁当・軽食 なし" [ref=e84]:
+                - radio "ビュッフェ" [ref=e85]
+                - text: ビュッフェ
+                - radio "コース" [ref=e86]
+                - text: コース
+                - radio "お弁当・軽食" [checked] [ref=e87]
+                - text: お弁当・軽食
+                - radio "なし" [ref=e88]
+                - text: なし
+            - row "ご希望のレイアウト 未定 円卓着席 円卓立食 スクール シアター その他 ※基本的に円卓でご用意をいたします。長机の場合は別途ご料金が発生いたします。" [ref=e89]:
+              - rowheader "ご希望のレイアウト" [ref=e90]
+              - cell "未定 円卓着席 円卓立食 スクール シアター その他 ※基本的に円卓でご用意をいたします。長机の場合は別途ご料金が発生いたします。" [ref=e91]:
+                - radio "未定" [ref=e92]
+                - text: 未定
+                - radio "円卓着席" [ref=e93]
+                - text: 円卓着席
+                - radio "円卓立食" [ref=e94]
+                - text: 円卓立食
+                - radio "スクール" [checked] [ref=e95]
+                - text: スクール
+                - radio "シアター" [ref=e96]
+                - text: シアター
+                - radio "その他" [ref=e97]
+                - text: その他
+                - paragraph [ref=e98]: ※基本的に円卓でご用意をいたします。長机の場合は別途ご料金が発生いたします。
+            - row "ご利用人数 人" [ref=e99]:
+              - rowheader "ご利用人数" [ref=e100]
+              - cell "人" [ref=e101]:
+                - spinbutton [ref=e102]: "50"
+                - text: 人
+            - row "ご利用開始日 2026/06/21" [ref=e203]:
+              - rowheader "ご利用開始日" [ref=e104]
+              - cell "2026/06/21" [ref=e204]:
+                - textbox [active] [ref=e106]: 2026/06/21
+            - row "開始時間 10:00" [ref=e288]:
+              - rowheader "開始時間" [ref=e108]
+              - cell "10:00" [ref=e289]:
+                - combobox [ref=e110]:
+                  - option "----- 選択してください -----"
+                  - option "8:00"
+                  - option "8:30"
+                  - option "9:00"
+                  - option "9:30"
+                  - option "10:00" [selected]
+                  - option "10:30"
+                  - option "11:00"
+                  - option "11:30"
+                  - option "12:00"
+                  - option "12:30"
+                  - option "13:00"
+                  - option "13:30"
+                  - option "14:00"
+                  - option "14:30"
+                  - option "15:00"
+                  - option "15:30"
+                  - option "16:00"
+                  - option "16:30"
+                  - option "17:00"
+                  - option "17:30"
+                  - option "18:00"
+                  - option "18:30"
+                  - option "19:00"
+                  - option "19:30"
+                  - option "20:00"
+            - row "終了時間 18:00 ※終了時間が20時以降をご希望の場合、お手数ですがお問い合わせ欄へ希望時間帯のご入力をお願いします。" [ref=e290]:
+              - rowheader "終了時間" [ref=e112]
+              - cell "18:00 ※終了時間が20時以降をご希望の場合、お手数ですがお問い合わせ欄へ希望時間帯のご入力をお願いします。" [ref=e291]:
+                - combobox [ref=e114]:
+                  - option "----- 選択してください -----"
+                  - option "8:00"
+                  - option "8:30"
+                  - option "9:00"
+                  - option "9:30"
+                  - option "10:00"
+                  - option "10:30"
+                  - option "11:00"
+                  - option "11:30"
+                  - option "12:00"
+                  - option "12:30"
+                  - option "13:00"
+                  - option "13:30"
+                  - option "14:00"
+                  - option "14:30"
+                  - option "15:00"
+                  - option "15:30"
+                  - option "16:00"
+                  - option "16:30"
+                  - option "17:00"
+                  - option "17:30"
+                  - option "18:00" [selected]
+                  - option "18:30"
+                  - option "19:00"
+                  - option "19:30"
+                  - option "20:00"
+                - paragraph [ref=e115]: ※終了時間が20時以降をご希望の場合、お手数ですがお問い合わせ欄へ希望時間帯のご入力をお願いします。
+            - row "利用目的 コーディングイベント・技術カンファレンス ※不特定多数の方が出入りする目的ではご利用できません。" [ref=e201]:
+              - rowheader "利用目的" [ref=e117]
+              - cell "コーディングイベント・技術カンファレンス ※不特定多数の方が出入りする目的ではご利用できません。" [ref=e202]:
+                - textbox "例：会議、研修、懇親会" [ref=e119]: コーディングイベント・技術カンファレンス
+                - paragraph [ref=e120]: ※不特定多数の方が出入りする目的ではご利用できません。
+            - row "ご予算" [ref=e121]:
+              - rowheader "ご予算" [ref=e122]
+              - cell [ref=e123]:
+                - textbox [ref=e124]
+            - row "お支払い方法 銀行振込 クレジットカード" [ref=e125]:
+              - rowheader "お支払い方法" [ref=e126]
+              - cell "銀行振込 クレジットカード" [ref=e127]:
+                - radio "銀行振込" [checked] [ref=e128]
+                - text: 銀行振込
+                - radio "クレジットカード" [ref=e129]
+                - text: クレジットカード
+            - row "キャンペーンコード" [ref=e130]:
+              - rowheader "キャンペーンコード" [ref=e131]
+              - cell [ref=e132]:
+                - textbox [ref=e133]
+            - row "ご予約・お問い合わせ 残り 1000 文字 ※オプション備品、お弁当、お飲み物の用意や、その他のご希望、ご意見などございましたらご記入ください。" [ref=e134]:
+              - rowheader "ご予約・お問い合わせ" [ref=e135]
+              - cell "残り 1000 文字 ※オプション備品、お弁当、お飲み物の用意や、その他のご希望、ご意見などございましたらご記入ください。" [ref=e136]:
+                - textbox [ref=e137]
+                - generic [ref=e138]:
+                  - generic [ref=e139]: 残り
+                  - generic [ref=e140]: "1000"
+                  - generic [ref=e141]: 文字
+                - paragraph [ref=e142]: ※オプション備品、お弁当、お飲み物の用意や、その他のご希望、ご意見などございましたらご記入ください。
+        - paragraph [ref=e143]:
+          - link "プライバシーポリシー" [ref=e144] [cursor=pointer]:
+            - /url: /privacy-policy
+          - text: に同意の上、お問い合わせください。
+        - paragraph [ref=e145]:
+          - button "入力内容の確認" [ref=e146]
+  - generic [ref=e205]:
+    - generic [ref=e206]:
+      - generic "Prev" [ref=e207]:
+        - generic [ref=e208]: Prev
+      - generic "Next" [ref=e209]:
+        - generic [ref=e210]: Next
+      - generic [ref=e211]: 4月 2026
+    - table [ref=e212]:
+      - rowgroup [ref=e213]:
+        - row "日 月 火 水 木 金 土" [ref=e214]:
+          - columnheader "日" [ref=e215]
+          - columnheader "月" [ref=e216]
+          - columnheader "火" [ref=e217]
+          - columnheader "水" [ref=e218]
+          - columnheader "木" [ref=e219]
+          - columnheader "金" [ref=e220]
+          - columnheader "土" [ref=e221]
+      - rowgroup [ref=e222]:
+        - row "1 2 3 4" [ref=e223]:
+          - cell
+          - cell
+          - cell
+          - cell "1" [ref=e224]:
+            - link "1" [ref=e225] [cursor=pointer]:
+              - /url: "#"
+          - cell "2" [ref=e226]:
+            - link "2" [ref=e227] [cursor=pointer]:
+              - /url: "#"
+          - cell "3" [ref=e228]:
+            - link "3" [ref=e229] [cursor=pointer]:
+              - /url: "#"
+          - cell "4" [ref=e230]:
+            - link "4" [ref=e231] [cursor=pointer]:
+              - /url: "#"
+        - row "5 6 7 8 9 10 11" [ref=e232]:
+          - cell "5" [ref=e233]:
+            - link "5" [ref=e234] [cursor=pointer]:
+              - /url: "#"
+          - cell "6" [ref=e235]:
+            - link "6" [ref=e236] [cursor=pointer]:
+              - /url: "#"
+          - cell "7" [ref=e237]:
+            - link "7" [ref=e238] [cursor=pointer]:
+              - /url: "#"
+          - cell "8" [ref=e239]:
+            - link "8" [ref=e240] [cursor=pointer]:
+              - /url: "#"
+          - cell "9" [ref=e241]:
+            - link "9" [ref=e242] [cursor=pointer]:
+              - /url: "#"
+          - cell "10" [ref=e243]:
+            - link "10" [ref=e244] [cursor=pointer]:
+              - /url: "#"
+          - cell "11" [ref=e245]:
+            - link "11" [ref=e246] [cursor=pointer]:
+              - /url: "#"
+        - row "12 13 14 15 16 17 18" [ref=e247]:
+          - cell "12" [ref=e248]:
+            - link "12" [ref=e249] [cursor=pointer]:
+              - /url: "#"
+          - cell "13" [ref=e250]:
+            - link "13" [ref=e251] [cursor=pointer]:
+              - /url: "#"
+          - cell "14" [ref=e252]:
+            - link "14" [ref=e253] [cursor=pointer]:
+              - /url: "#"
+          - cell "15" [ref=e254]:
+            - link "15" [ref=e255] [cursor=pointer]:
+              - /url: "#"
+          - cell "16" [ref=e256]:
+            - link "16" [ref=e257] [cursor=pointer]:
+              - /url: "#"
+          - cell "17" [ref=e258]:
+            - link "17" [ref=e259] [cursor=pointer]:
+              - /url: "#"
+          - cell "18" [ref=e260]:
+            - link "18" [ref=e261] [cursor=pointer]:
+              - /url: "#"
+        - row "19 20 21 22 23 24 25" [ref=e262]:
+          - cell "19" [ref=e263]:
+            - link "19" [ref=e264] [cursor=pointer]:
+              - /url: "#"
+          - cell "20" [ref=e265]:
+            - link "20" [ref=e266] [cursor=pointer]:
+              - /url: "#"
+          - cell "21" [ref=e267]:
+            - link "21" [ref=e268] [cursor=pointer]:
+              - /url: "#"
+          - cell "22" [ref=e269]:
+            - link "22" [ref=e270] [cursor=pointer]:
+              - /url: "#"
+          - cell "23" [ref=e271]:
+            - link "23" [ref=e272] [cursor=pointer]:
+              - /url: "#"
+          - cell "24" [ref=e273]:
+            - link "24" [ref=e274] [cursor=pointer]:
+              - /url: "#"
+          - cell "25" [ref=e275]:
+            - link "25" [ref=e276] [cursor=pointer]:
+              - /url: "#"
+        - row "26 27 28 29 30" [ref=e277]:
+          - cell "26" [ref=e278]:
+            - link "26" [ref=e279] [cursor=pointer]:
+              - /url: "#"
+          - cell "27" [ref=e280]:
+            - link "27" [ref=e281] [cursor=pointer]:
+              - /url: "#"
+          - cell "28" [ref=e282]:
+            - link "28" [ref=e283] [cursor=pointer]:
+              - /url: "#"
+          - cell "29" [ref=e284]:
+            - link "29" [ref=e285] [cursor=pointer]:
+              - /url: "#"
+          - cell "30" [ref=e286]:
+            - link "30" [ref=e287] [cursor=pointer]:
+              - /url: "#"
+          - cell
+          - cell
+  - contentinfo [ref=e147]:
+    - generic [ref=e148]: TOPへ
+    - generic [ref=e149]:
+      - paragraph [ref=e150]: ● ティーケーピーのサービス
+      - link "TKP貸会議室ネット" [ref=e151] [cursor=pointer]:
+        - /url: https://www.kashikaigishitsu.net/
+      - text: ｜
+      - link "CIRQ" [ref=e152] [cursor=pointer]:
+        - /url: https://www.cirq-hall.jp/
+      - text: ｜
+      - link "fabbit" [ref=e153] [cursor=pointer]:
+        - /url: https://fabbit.co.jp/
+      - text: ｜
+      - link "TKPレンタルオフィスネット" [ref=e154] [cursor=pointer]:
+        - /url: https://www.tkp-space.net/
+      - text: ｜
+      - link "TKPホテル&リゾート" [ref=e155] [cursor=pointer]:
+        - /url: https://www.tkp-resort.net/
+      - text: ｜
+      - link "TKP研修ネット" [ref=e156] [cursor=pointer]:
+        - /url: https://www.tkpkenshu.net/
+      - text: ｜
+      - link "TKPウェビナーネット" [ref=e157] [cursor=pointer]:
+        - /url: https://www.tkptv.net/
+      - text: ｜
+      - link "TKPイベントネット" [ref=e158] [cursor=pointer]:
+        - /url: https://www.tkpevent.net/
+      - text: ｜
+      - link "TKPレンタルネット" [ref=e159] [cursor=pointer]:
+        - /url: https://www.tkprental.net/
+      - text: ｜
+      - link "TKPパーティー・懇親会ネット" [ref=e160] [cursor=pointer]:
+        - /url: https://www.konshinkai.net/
+      - text: ｜
+      - link "TKP FOOD" [ref=e161] [cursor=pointer]:
+        - /url: https://www.tkp-food.net/
+      - text: ｜
+      - link "事務局代行サービス" [ref=e162] [cursor=pointer]:
+        - /url: https://www.tkp-secretariat.net/
+      - text: ｜
+      - link "採用代行サービス" [ref=e163] [cursor=pointer]:
+        - /url: https://www.tkpsaiyo.net/
+      - text: ｜
+      - link "TKPトラベルネット" [ref=e164] [cursor=pointer]:
+        - /url: https://www.tkptravel.net/
+      - text: ｜
+      - link "運営会社" [ref=e165] [cursor=pointer]:
+        - /url: https://www.tkp.jp/
+      - text: ｜
+      - link "グループ企業" [ref=e166] [cursor=pointer]:
+        - /url: https://www.tkp.jp/company/group.html
+      - text: ｜
+    - generic [ref=e167]:
+      - link "プライバシーポリシー" [ref=e168] [cursor=pointer]:
+        - /url: https://www.tkp.jp/privacy/
+      - text: ｜
+      - link "勧誘方針" [ref=e169] [cursor=pointer]:
+        - /url: https://www.tkp.jp/solicitation/
+      - text: ｜
+      - link "ソーシャルメディアガイドライン" [ref=e170] [cursor=pointer]:
+        - /url: https://www.tkp.jp/socialmedia/
+      - text: ｜
+      - link "外部送信規律に基づく表記" [ref=e171] [cursor=pointer]:
+        - /url: https://www.tkp.jp/userdata/
+      - text: ｜
+      - link "サステナビリティ方針" [ref=e172] [cursor=pointer]:
+        - /url: https://www.tkp.jp/sdgs/
+      - text: ｜
+      - link "マルチステークホルダー方針" [ref=e173] [cursor=pointer]:
+        - /url: https://www.tkp.jp/multi-stakeholder/
+      - text: ｜
+      - link "ティーケーピーグループ 人権方針" [ref=e174] [cursor=pointer]:
+        - /url: https://www.tkp.jp/human-rights/
+      - text: ｜
+      - link "人材育成方針・職場環境の整備に関する方針" [ref=e175] [cursor=pointer]:
+        - /url: https://www.tkp.jp/human-capital/
+      - text: ｜
+      - link "健康経営への取り組み" [ref=e176] [cursor=pointer]:
+        - /url: https://www.tkp.jp/health_management/
+      - text: ｜
+      - link "利用規約・キャンセルポリシー" [ref=e177] [cursor=pointer]:
+        - /url: https://www.kashikaigishitsu.net/terms/
+      - text: ｜
+      - link "TKP Facebookページ（新しいタブで開く）" [ref=e178] [cursor=pointer]:
+        - /url: https://www.facebook.com/TKPCorp/
+        - img [ref=e179]
+      - link "TKP Twitterページ（新しいタブで開く）" [ref=e182] [cursor=pointer]:
+        - /url: https://twitter.com/TKP_jp
+        - img [ref=e183]
+    - paragraph [ref=e186]: (C) TKP Corporation
