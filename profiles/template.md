@@ -6,6 +6,10 @@
 
 - **Name:** [Your Name]
 - **GitHub Username:** [Your GitHub Username]
+- **Language Preference:** [English / 日本語 / Both — the language(s) you're
+  comfortable presenting and collaborating in]
+- **Agentic Tools / Stack:** [Tools you reach for — e.g., GitHub Copilot,
+  Claude, Cursor, Codex — plus your main languages and frameworks]
 - **Social Media / Contact:** [Links to your public profiles —
   Twitter/X, LinkedIn, Bluesky, Mastodon, LINE, etc.]
 
@@ -50,3 +54,8 @@ Please indicate how you'd like to participate:
 Both English and Japanese submissions are welcome.
 A [Japanese version of this template](template_jp.md) is also available.
 Looking forward to seeing you at ShoCode!
+
+**Accessibility & dietary needs:** Please do **not** put these in your public
+profile. We collect them privately at registration so your personal details
+stay off the public repo — see the registration guide or reach the organizers
+through a private channel.

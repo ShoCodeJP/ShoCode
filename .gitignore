@@ -1,8 +1,8 @@
 # =============================================================================
 # ShoCode .gitignore
 # This repo is PUBLIC (registration is by public PR). Anything committed here
-# is world-readable. Internal planning, financials, partner docs, and the
-# sponsor pipeline must NEVER be committed. See "Content visibility policy".
+# is world-readable. ALL internal content lives in the PRIVATE repo
+# (ShoCodeJP/shocode-internal), not here.
 # =============================================================================
 
 # --- Squad: runtime state (logs, inbox, sessions) ---
@@ -11,14 +11,12 @@
 .squad/decisions/inbox/
 .squad/sessions/
 .squad/.cache/
-# Squad: SubSquad activation file (local to this machine)
 .squad-workstream
 
-# --- Sibling repos symlinked into the project (backed by .devcontainer bind mounts) ---
-# Public landing page — ShoCodeJP/ShoCodeJP.github.io
+# --- Sibling repos (backed by .devcontainer bind mounts) ---
 site
-# Private internal docs — ShoCodeJP/shocode-internal (sponsor pipeline, budget, venue, partner)
 internal
+showcode-internal
 
 # --- Dependencies / build artifacts ---
 node_modules
@@ -26,66 +24,30 @@ __pycache__/
 *.pyc
 .DS_Store
 
-# --- Debug artifacts ---
+# --- Debug / tool artifacts ---
 .playwright-mcp/
 
-# --- Staff ops files (now live in shocode-internal) ---
+# =============================================================================
+# Internal content — ALL lives in shocode-internal (private repo).
+# These ignores are a safety net: if files are recreated locally they won't
+# accidentally be committed. Tracked utilities live in .github/scripts/.
+# =============================================================================
+
+# Staff ops files
 RUNBOOK.md
 SCHEDULE_TEMPLATE*.md
 schedule.yml
 
-# =============================================================================
-# Content visibility policy
-# -----------------------------------------------------------------------------
-# ALWAYS-INTERNAL (never publish): sponsor pipeline, partner proposals, money,
-# venue negotiation, internal planning. These are ignored below.
-#
-# PUBLIC-DESTINED but GATED: program/themes/awards, schedules, speaker guides,
-# info pack, brand identity, etc. are NOT ignored, but must NOT be committed
-# until their gates clear (Earthful Magic partnership confirmed; date + venue
-# locked). Enforce via review/CODEOWNERS, not just this file.
-# =============================================================================
-
-# --- Sponsors: pipeline, prospect research, prospectus & rules drafts ---
-# The sponsor pipeline lives in a PRIVATE store, not here (see
-# marketing/sponsors/tracking-notes.md). Approved, public-facing prospectus/
-# rules are published deliberately via the site repo when ready.
-marketing/sponsors/
-
-# --- Partnerships: confidential partner proposals (e.g. Earthful Magic) ---
-partnerships/
-
-# --- Internal event brief / proposal deck source ---
-proposal/
-
-# --- Operations: budget, venue negotiation, catering, MC, runsheet, power, AV ---
-# CAVEAT: ops/venue-research.md is ALREADY committed/public — ignoring the dir
-# does NOT untrack it. Decide separately whether to `git rm --cached` it
-# (it candidly rates/eliminates named venues); history will still retain it.
+# Entire directories — all internal
+attendees/
+marketing/
 ops/
-# Private comms — emails, PII, planning conversations (also under ops/)
-ops/comms/
-
-# --- Internal pipeline / committee / direction notes ---
-program/cfp-pipeline-notes.md
-program/SCHEDULE_TEMPLATE*.md
-program/schedule.yml
-speakers/keynote-shortlist.md
-speakers/cfp-committee-charter.md
-
-# --- Internal attendee operations (capacity math, check-in, PII handling) ---
-attendees/capacity-plan.md
-attendees/checkin-process.md
-attendees/dietary-accessibility-handoff.md
-attendees/registration-flow-test-plan.md
-
-# --- Internal marketing strategy (channels, unreleased timing) ---
-marketing/outreach-channels.md
-marketing/social-calendar-template.md
-
-# --- Scripts: entire directory gitignored (tracked utilities live in .github/scripts/) ---
+partnerships/
+program/
+proposal/
+quality/
+speakers/
 scripts/
 
-# --- Convention: anything explicitly marked DRAFT in its filename stays out ---
-# Rename (drop the -DRAFT suffix) only when approved for publication.
+# Convention: anything marked DRAFT stays out until approved
 *-DRAFT.md

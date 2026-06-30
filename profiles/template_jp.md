@@ -6,6 +6,10 @@
 
 - **Name / 氏名:** [氏名]
 - **GitHub Username / GitHub ユーザー名:** [GitHub ユーザー名]
+- **Language Preference / 言語の希望:** [English / 日本語 / Both — プレゼンや
+  コラボレーションで使いやすい言語]
+- **Agentic Tools / Stack / 利用ツール・スタック:** [よく使うツール — 例:
+  GitHub Copilot、Claude、Cursor、Codex — と主な言語・フレームワーク]
 - **Social Media / ソーシャルメディア・連絡先:** [Twitter/X、LinkedIn、Bluesky、Mastodon、LINE などの公開プロフィールリンク]
 
 ## Introduction / はじめに
@@ -47,3 +51,8 @@
 **Note / 注意:** このファイルはプロフィールページとイベント参加登録を兼ねています。
 英語・日本語どちらでの提出も歓迎します。
 ShoCode でお会いできることを楽しみにしています！
+
+**Accessibility & dietary needs / アクセシビリティ・食事の配慮:** これらは
+公開プロフィールには**記載しないでください**。個人情報を公開リポジトリに
+残さないよう、参加登録時に非公開で収集します。登録ガイドをご参照いただくか、
+非公開のチャンネルで運営にご連絡ください。

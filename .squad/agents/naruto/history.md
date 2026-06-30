@@ -48,6 +48,11 @@
   - nekton-fujisawa.com → JS-heavy SPA, failed automated fetch. Needs manual browser visit.
   - "Kamakura Seaside Coworking" → ⚠️ Cannot verify existence. No URL, no search results. Flagged in venue-research.md as unverified. Included in deep research prompt for further investigation.
 - **Email shortening:** Cut both venues' JP and EN emails to roughly half length. Combined WiFi+power into single bullets, removed redundant pleasantries, kept English-reply-welcome note in JP versions.
+
+### 2026-06-30: Internal-Content Governance — devcontainer + venue-research
+
+- Updated `.devcontainer/devcontainer.json` with `initializeCommand` for sibling private-repo cloning (`ShoCodeJP/shocode-internal`).
+- Committed `git rm --cached ops/venue-research.md` to untrack sensitive venue research from the public repo (commit 203b785).
 - **Date update:** Changed all references from "2026年秋頃" / "autumn 2026" to "2026年5月下旬〜6月" / "late May or June 2026".
 - **Contact info:** Added contact method notes to email section headers — Another Day has no discoverable contact method (TBD), Hayama Marina is phone-only (046-875-0002).
 - **Deep research prompt:** Added comprehensive prompt to bottom of venue-contact-emails.md for an AI research agent to: find contact info for both venues, verify Kamakura Seaside Coworking existence, discover new Shonan-area venues, find venues that have hosted tech events.
