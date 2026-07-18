@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "@bradygaster/squad-cli": "^0.10.0"
+  },
+  "dependencies": {
+    "pdf-parse": "^2.4.5",
+    "pdfjs-dist": "^3.11.174"
   }
 }
