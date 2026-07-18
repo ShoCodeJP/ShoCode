@@ -1,0 +1,25 @@
+name: Ops Budget Lint
+
+# Structural check for the ops budget doc. Runs only when ops/budget.md
+# changes in a PR. Non-destructive: read-only grep via scripts/check-budget.sh.
+
+on:
+  pull_request:
+    paths:
+      - "ops/budget.md"
+      - "scripts/check-budget.sh"
+
+permissions:
+  contents: read
+
+jobs:
+  budget-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Lint budget structure
+        run: |
+          chmod +x scripts/check-budget.sh
+          ./scripts/check-budget.sh ops/budget.md
