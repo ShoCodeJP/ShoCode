@@ -2,9 +2,9 @@
 
 [![日本語](https://img.shields.io/badge/%F0%9F%87%AF%F0%9F%87%B5-日本語-white?style=plastic)](README_jp.md)
 
-> A community-powered, fully bilingual (日本語 / English) one-day event for
+> A community-powered, fully bilingual (日本語 / English) event series for
 builders, creators, and doers exploring the frontier of agentic coding —
-held in the inspiring Shonan area of Kanagawa, Japan.
+held in the Tokyo and Shonan areas of Japan.
 
 This repository is your single source of truth for event details, registration,
 and community contributions. True to its roots, ShoCode uses GitHub to manage
@@ -13,19 +13,36 @@ pull request (with easier paths available for those new to PRs).
 
 ## The Event
 
-The Shonan Code Summit (ShoCode) is a one-day, repeatable gathering where
-engineers come together to **build, present, and demo** around the theme of
+The Shonan Code Summit (ShoCode) is a two-part event series where
+engineers come together to **learn, build, present, and demo** around the theme of
 **Agentic Coding** — AI agents that write, review, test, deploy, and evolve
 code alongside humans.
 
+### Part 1 — Challenge Design Workshop (September, Tokyo)
+
+An evening workshop in the Tokyo area where participants use a structured
+validation framework to pressure-test and sharpen the hackathon's challenge
+areas — so teams spend their build time solving real, validated needs rather
+than building something technically impressive that doesn't advance the mission.
+
+* **Location:** TBD (Tokyo area)
+* **Date:** TBD (September evening)
+* **Format:** ~3-hour non-coding sprint, ~10–15 participants
+* **Cost:** Free
+
+### Part 2 — Hackathon Day (October, Shonan)
+
+A full day of presentations, hands-on building, and live demos on the
+Shonan coast.
+
 * **Location:** TBD (Shonan area, Kanagawa, Japan)
-* **Date:** TBD
+* **Date:** TBD (October)
 * **Cost:** TBD (goal is to keep it affordable and accessible)
 * **Languages:** Japanese and English (fully bilingual)
 
-### Format
+### Hackathon Format
 
-The day is split into three acts:
+The hackathon day is split into three acts:
 
 1. **Presentations** — Deep-dive talks on agentic coding: autonomous agents,
    human-in-the-loop workflows, AI-assisted architecture, prompt engineering

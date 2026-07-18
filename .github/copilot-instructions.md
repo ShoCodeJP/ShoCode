@@ -2,7 +2,7 @@
 
 ## Project Context
 
-ShoCode is a bilingual (English/Japanese) one-day agentic coding event held in Shonan, Japan. Participants register by submitting a profile via pull request. All content must support both English and Japanese.
+ShoCode is a bilingual (English/Japanese) agentic coding event series held in Japan. It consists of two parts: an **evening challenge-design workshop in September** (Tokyo area) and a **full-day hackathon in October** (Shonan area, Kanagawa). Participants register by submitting a profile via pull request. All content must support both English and Japanese.
 
 ## Registration Profile Creation
 
