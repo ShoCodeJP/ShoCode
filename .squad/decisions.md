@@ -46,7 +46,11 @@
 
 ### Agenda & Format (Sakura)
 
-One-day event, revised to **10:30–18:00** start (was 09:30–18:30) to accommodate Tokyo commuters avoiding rush hour. Keynote (30 min) + 3 standard talks (15 min each) + 5 lightning talks in the morning. 2.5-hour hackathon after lunch — build time fully protected. Team demos, community awards, networking to close. Speakers present in preferred language; slides must be bilingual. No simultaneous translation — bilingual MC summarizes between talks. Standard talks shortened from 20→15 min; lunch 60→50 min; tighter transitions throughout.
+**Two-part event series** (revised from one-day event):
+
+**Part 1 — Challenge Design Workshop (September, Tokyo area).** Non-coding evening sprint (~3 hours), facilitated by Clay Wong (AI Tinkerers HK & GBA), using a validation pyramid to pressure-test and sharpen the hackathon's challenge areas. ~10–15 participants. Free. Small venue in Tokyo area. English-only facilitation (with possible JP bridge support). See `pre-workshop-proposal.md`.
+
+**Part 2 — Hackathon Day (October, Shonan area).** Revised to **10:30–18:00** start (was 09:30–18:30) to accommodate Tokyo commuters avoiding rush hour. Keynote (30 min) + 3 standard talks (15 min each) + 5 lightning talks in the morning. 2.5-hour hackathon after lunch — build time fully protected. Team demos, community awards, networking to close. Speakers present in preferred language; slides must be bilingual. No simultaneous translation — bilingual MC summarizes between talks. Standard talks shortened from 20→15 min; lunch 60→50 min; tighter transitions throughout.
 
 ### Venue & Logistics (Naruto)
 
