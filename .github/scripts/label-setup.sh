@@ -10,11 +10,6 @@ if [[ "${1:-}" == "--help" || "${1:-}" == "-h" ]]; then
 fi
 
 labels=(
-  "registration|#0E8A16|Registration profile PR"
-  "registration:presenter|#1D76DB|Presenter registration"
-  "registration:hacker|#5319E7|Hacker registration"
-  "registration:both|#D93F0B|Presenter + Hacker registration"
-  "registration:attendee|#FBCA04|Attendee registration"
   "needs-jp-update|#E4E669|Japanese content needs updating"
   "needs-en-update|#E4E669|English content needs updating"
   "needs-translation|#E4E669|Content needs translation"

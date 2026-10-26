@@ -180,6 +180,18 @@ Added **Language Preference** and **Agentic Tools/Stack** fields to BOTH profile
 
 ---
 
+## 2026-10-07: Event redefined by Earthful Magic brief; registration moves to Luma
+
+Source: `shocode-internal/partnerships/earthful-magic/EM Focus - 4. Hackathon-1.pdf`.
+
+- **Event:** Earthful Magic Builder Hackathon, hosted by Earthful Magic and Cor-an Holdings, co-hosted by ShoCode. One-day in-person sprint, **Sunday 29 November 2026**, Shonan area (venue TBD, 50-60 pax).
+- **Format:** ~40 builders, teams of 1-3. Focus Stream (3 teams, land eligibility + Moringa suitability under VM0047) and Open Stream (~10 teams, customer journey pain points). No talk program, no Tokyo workshop.
+- **Judging:** industry judges, one winner per stream. Replaces community-vote awards.
+- **Registration:** Luma, reviewed/accepted. PR-based registration retired: profile templates, registration PR template, registration workflow and scripts removed. #17 and #23 are moot.
+- **IP:** builder code under MIT; EM/Cor-an methodologies and guidance remain theirs (to confirm with EM).
+
+---
+
 ## Governance
 
 - All meaningful changes require team consensus

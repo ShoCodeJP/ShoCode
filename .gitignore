@@ -1,6 +1,6 @@
 # =============================================================================
 # ShoCode .gitignore
-# This repo is PUBLIC (registration is by public PR). Anything committed here
+# This repo is PUBLIC (registration is on Luma). Anything committed here
 # is world-readable. ALL internal content lives in the PRIVATE repo
 # (ShoCodeJP/shocode-internal), not here.
 # =============================================================================

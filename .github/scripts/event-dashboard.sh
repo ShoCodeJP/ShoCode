@@ -26,13 +26,8 @@ echo -e "${BOLD}${CYAN}║      🏖️  ShoCode Event Dashboard     ║${RESET}
 echo -e "${BOLD}${CYAN}╚══════════════════════════════════════╝${RESET}"
 echo ""
 
-# --- Registrations ---
-merged=$(gh pr list --label registration --state merged --json number | jq length)
-open=$(gh pr list --label registration --state open --json number | jq length)
-
-echo -e "${BOLD}${GREEN}📋 Registrations${RESET}"
-echo -e "   Confirmed:  ${BOLD}$merged${RESET}"
-echo -e "   Pending:    ${BOLD}$open${RESET}"
+# Registrations are on Luma; check the Luma dashboard for counts.
+echo -e "${BOLD}${GREEN}📋 Registrations${RESET}: see Luma"
 echo ""
 
 # --- Open issues by label ---

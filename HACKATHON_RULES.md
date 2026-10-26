@@ -3,70 +3,109 @@
 [![日本語](https://img.shields.io/badge/%F0%9F%87%AF%F0%9F%87%B5-日本語-white?style=plastic)](#日本語版)
 [![English](https://img.shields.io/badge/%F0%9F%87%BA%F0%9F%87%B8-English-white?style=plastic)](#english)
 
+> Rules for the **Earthful Magic Builder Hackathon**, Sunday 29 November 2026.
+> Times are draft until the venue is confirmed.
+
 ---
 
 ## English
 
 ### Overview
 
-The ShoCode hackathon is a focused, 2.5-hour build session where participants create something using agentic coding tools. It's not a competition — it's a chance to build, learn, and share with the community.
+A one-day, in-person product sprint. Teams build working prototypes with AI
+coding agents for Earthful Magic, whose mission is to help small farmers grow
+export-grade Moringa funded by VM0047 carbon credits.
 
-### Team Formation / チーム編成
+### Streams
 
-- **Solo or team:** You can hack solo or in a team — both are welcome.
-- **Max team size:** 4 people per team.
-- **How to form teams:** Pre-formed teams are fine. Solo participants can find teammates during the lunch mixer (12:25–13:15).
-- **Cross-language teams encouraged:** Pairing JP and EN speakers is a great way to build together.
+- **Focus Stream (3 teams):** build a land eligibility and Moringa suitability
+  assessment prototype under the Verra VM0047 methodology.
+- **Open Stream (~10 teams):** research the project developer and farmer
+  customer journey, pick an unaddressed pain point, and build a solution.
+- Streams are chosen during team setup (10:30–10:45). If more than 3 teams
+  want the Focus Stream, organizers will decide fairly on the day.
 
-### Time Limits / 制限時間
+### Teams
 
-- **Build window:** 2.5 hours (13:25–15:55)
-- **Wrap-up:** 15 minutes (15:55–16:10) for final commits and demo prep
-- **All code must be committed by 15:55.** The wrap-up period is for preparing your demo, not writing new code.
+- **Team size:** 1 to 3 people.
+- **Pre-formed teams** are welcome. Solo participants can team up during
+  team setup.
+- **Cross-language teams encouraged.** Pairing JP and EN speakers works well.
 
-### What's Allowed / 許可事項
+### Time Limits
 
-- **Any programming language or framework.** Use whatever you're comfortable with.
-- **AI and agentic coding tools:** Copilot, Cursor, Cline, Claude Code, custom agents — all encouraged. You must use at least one agentic coding tool or technique.
-- **Pre-existing libraries and frameworks:** Yes — use npm packages, pip libraries, boilerplate templates, etc.
-- **Pre-existing code:** You may bring starter code, personal libraries, or reference projects. The key is that meaningful new work happens during the hack window.
-- **Internet access:** Full internet access is available and expected.
+- **Briefing:** 10:00–10:30
+- **Team setup and stream selection:** 10:30–10:45
+- **Build:** 10:45 until demos start at 15:00 (lunch is grab-and-build)
+- **All code must be pushed before demos start.**
 
-### What's NOT Allowed / 禁止事項
+### What's Allowed
 
-- **Submitting a pre-built project as-is.** Your demo must show work done during the hackathon.
-- **Disruptive behavior.** The [Code of Conduct](CODE_OF_CONDUCT.md) applies to the hackathon in full.
+- **Any language, framework, or library.**
+- **AI and agentic coding tools:** Copilot, Cursor, Claude Code, Codex, custom
+  agents. All encouraged.
+- **Starter code and personal libraries**, as long as meaningful new work
+  happens on the day.
+- **Materials provided by Earthful Magic** (briefing deck, customer journey,
+  methodology documents). Use them for this hackathon only unless Earthful
+  Magic says otherwise.
 
-### Demo Format / デモ形式
+### What's NOT Allowed
 
-- **5 minutes per team:** 3 minutes live demo + 2 minutes Q&A.
-- **Strict timer:** The MC will cut you off at 5 minutes — no exceptions.
+- **Submitting a pre-built project as-is.**
+- **Disruptive behavior.** The [Code of Conduct](CODE_OF_CONDUCT.md) applies in
+  full.
+
+### Demo Format
+
+- **About 4 minutes per team:** 3 minutes live demo plus 1 minute of judge
+  questions (final timing depends on team count).
 - **Live demo preferred** over slides. Show what you built running.
-- **Present from your own laptop** via screen share on the main projector.
-- **All teams that submit a demo get stage time.** No elimination rounds.
+- **Open Stream teams** must cover: who you are building for, their goal, the
+  pain point, your solution, and how it differs from existing competitors.
+- **Every team that submits gets stage time.**
 
-### Submission Requirements / 提出要件
+### Submission Requirements
 
-1. **Push your code** to a public GitHub repository by 15:55.
-2. **Include a README** with a brief description of what you built and which agentic tools you used.
-3. **Have a working demo** — it can be rough, incomplete, or buggy. That's fine. Show what you built.
+1. **Push your code** to a GitHub repository shared with the organizers before
+   demos start.
+2. **Include a README** describing what you built, which stream, and which AI
+   tools you used.
+3. **Have a working demo.** Rough is fine.
 
-### Community Awards / コミュニティアワード
+### Judging and Awards
 
-ShoCode uses community awards, not competition judging. All attendees vote.
+Judges are industry experts: carbon credit project developers, forest
+developers, agricultural supply chain operators, and climate-tech investors.
 
-| Award / アワード | Criteria / 基準 |
+| Award | Criteria |
 |---|---|
-| 🏖️ **Shonan Spirit Award / 湘南スピリット賞** | Most creative or joyful hack / 最もクリエイティブまたは楽しいハック |
-| 🤖 **Agent Whisperer Award / エージェントウィスパラー賞** | Best use of agentic coding / エージェントコーディングの最も優れた活用 |
-| 🎤 **Best Demo Award / ベストデモ賞** | Most compelling presentation / 最も説得力のあるプレゼンテーション |
+| 🌱 **Focus Stream Winner** | Most convincing land eligibility and Moringa suitability prototype under VM0047 |
+| 🧭 **Open Stream Winner** | Most compelling pain point and solution pair from the customer journey |
 
-- Prizes are stickers, small trophies, and bragging rights — no cash prizes.
-- **Every team that demos gets recognized** by name in the closing ceremony.
+Partners may sponsor additional prizes and choose their recipient teams.
+Awards are announced at 17:00.
 
-### Code of Conduct / 行動規範
+### Intellectual Property
 
-The [ShoCode Code of Conduct](CODE_OF_CONDUCT.md) applies at all times during the hackathon. Be kind, be respectful, and have fun building.
+- **Your code is released under the [MIT License](https://opensource.org/license/mit).**
+  You keep the rights to what you write, and Earthful Magic and Cor-an Holdings
+  can use, modify, and build on it freely.
+- **Methodologies, data, and guidance provided by Earthful Magic and Cor-an
+  Holdings remain theirs.**
+- Prototypes may be used in Earthful Magic's ongoing product development and
+  shown to prospective customers and partners. Builders are welcome to keep
+  collaborating with Earthful Magic and Cor-an Holdings after the event.
+
+### Venue Etiquette
+
+Japanese facilities expect participants to help clean up and sort trash.
+Clean-up runs 16:00–17:00. Please bring your own laptop charger.
+
+### Code of Conduct
+
+The [ShoCode Code of Conduct](CODE_OF_CONDUCT.md) applies at all times. Be
+kind, be respectful, and have fun building.
 
 ---
 
@@ -76,61 +115,78 @@ The [ShoCode Code of Conduct](CODE_OF_CONDUCT.md) applies at all times during th
 
 ### 概要
 
-ShoCodeハッカソンは、参加者がエージェントコーディングツールを使って何かを作る2.5時間の集中ビルドセッションです。コンペではありません。コミュニティと一緒に作り、学び、共有する機会です。
+1日集中・対面形式のプロダクトスプリントです。チームは AI コーディングエージェントを使い、
+Earthful Magic のために動くプロトタイプを作ります。Earthful Magic のミッションは、
+VM0047 カーボンクレジットを資金源に、小規模農家が輸出品質のモリンガを育てられるよう支援することです。
+
+### ストリーム
+
+- **フォーカスストリーム（3チーム）:** Verra VM0047 方法論における土地適格性とモリンガ栽培適性を評価するプロトタイプを作ります。
+- **オープンストリーム（約10チーム）:** プロジェクト開発者と農家のカスタマージャーニーを調査し、未解決の課題を選んで解決策を作ります。
+- ストリームはチーム編成の時間（10:30〜10:45）に選びます。フォーカスストリームの希望が3チームを超えた場合は、当日運営が公平に決定します。
 
 ### チーム編成
 
-- **ソロまたはチーム:** 一人でもチームでも参加できます。
-- **最大チームサイズ:** 1チーム4名まで。
-- **チームの作り方:** 事前結成チーム歓迎。ソロ参加者はランチミキサー（12:25–13:15）でチームメイトを見つけられます。
-- **異なる言語のチーム歓迎:** 日本語話者と英語話者がペアを組むのは素晴らしいビルド体験になります。
+- **チームサイズ:** 1〜3名。
+- **事前結成チーム歓迎。** ソロ参加者はチーム編成の時間にチームを組めます。
+- **異なる言語のチーム歓迎。** 日本語話者と英語話者の組み合わせをおすすめします。
 
 ### 制限時間
 
-- **ビルド時間:** 2.5時間（13:25–15:55）
-- **まとめ時間:** 15分（15:55–16:10）最終コミットとデモ準備用
-- **15:55までに全コードをコミットすること。** まとめ時間はデモの準備用であり、新しいコードを書く時間ではありません。
+- **ブリーフィング:** 10:00〜10:30
+- **チーム編成とストリーム選択:** 10:30〜10:45
+- **ビルド:** 10:45〜15:00 のデモ開始まで（ランチは作りながら食べられる形式）
+- **デモ開始前に全コードをプッシュすること。**
 
 ### 許可事項
 
-- **どのプログラミング言語・フレームワークでもOK。** 使い慣れたものを使ってください。
-- **AIとエージェントコーディングツール:** Copilot、Cursor、Cline、Claude Code、カスタムエージェント — 全て歓迎。少なくとも1つのエージェントコーディングツール/技術を使用すること。
-- **既存のライブラリとフレームワーク:** はい — npmパッケージ、pipライブラリ、ボイラープレートテンプレートなど利用可。
-- **既存のコード:** スターターコード、個人ライブラリ、リファレンスプロジェクトの持ち込み可。重要なのは、ハック時間内に意味のある新しい作業が行われることです。
-- **インターネットアクセス:** 完全なインターネットアクセスが利用可能です。
+- **どの言語・フレームワーク・ライブラリでもOK。**
+- **AI とエージェントコーディングツール:** Copilot、Cursor、Claude Code、Codex、カスタムエージェントなど、すべて歓迎。
+- **スターターコードや個人ライブラリの持ち込み可。** ただし当日に意味のある新しい作業を行うこと。
+- **Earthful Magic が提供する資料**（ブリーフィング資料、カスタマージャーニー、方法論の文書）。Earthful Magic の許可がない限り、本ハッカソンでのみ使用してください。
 
 ### 禁止事項
 
-- **事前に構築したプロジェクトをそのまま提出すること。** デモはハッカソン中に行った作業を示す必要があります。
-- **迷惑行為。** [行動規範](CODE_OF_CONDUCT.md)はハッカソン中も完全に適用されます。
+- **事前に構築したプロジェクトをそのまま提出すること。**
+- **迷惑行為。** [行動規範](CODE_OF_CONDUCT_jp.md)が完全に適用されます。
 
 ### デモ形式
 
-- **1チーム5分:** ライブデモ3分 + 質疑応答2分。
-- **厳格なタイマー:** MCが5分で終了します — 例外なし。
-- **ライブデモ推奨。** スライドよりも、作ったものが動いているところを見せてください。
-- **自分のPCで発表。** メインプロジェクターに画面共有。
-- **デモを提出した全チームにステージ時間が与えられます。** 予選落ちはありません。
+- **1チーム約4分:** ライブデモ3分 + 審査員からの質問1分（最終的な時間はチーム数により調整）。
+- **ライブデモ推奨。** スライドより、作ったものが動いているところを見せてください。
+- **オープンストリームのチーム**は、誰のために作るのか、その人の目標、課題、解決策、既存の競合との違いを必ず説明してください。
+- **提出した全チームにステージ時間があります。**
 
 ### 提出要件
 
-1. **コードをプッシュ:** 15:55までにパブリックGitHubリポジトリにプッシュすること。
-2. **READMEを含める:** 何を作ったか、どのエージェントツールを使ったかの簡単な説明を記載。
-3. **動くデモを用意:** 粗削り、未完成、バグありでもOK。作ったものを見せてください。
+1. **コードをプッシュ:** デモ開始前に、運営と共有した GitHub リポジトリへプッシュすること。
+2. **README を含める:** 作ったもの、ストリーム、使用した AI ツールを記載。
+3. **動くデモを用意:** 粗削りでもOKです。
 
-### コミュニティアワード
+### 審査と賞
 
-ShoCodeはコンペではなく、コミュニティアワードで表彰します。全参加者が投票します。
+審査員は業界の専門家です。カーボンクレジットのプロジェクト開発者、森林開発者、
+農業サプライチェーンの事業者、気候テック投資家が審査します。
 
-| アワード | 基準 |
+| 賞 | 基準 |
 |---|---|
-| 🏖️ **湘南スピリット賞** | 最もクリエイティブまたは楽しいハック |
-| 🤖 **エージェントウィスパラー賞** | エージェントコーディングの最も優れた活用 |
-| 🎤 **ベストデモ賞** | 最も説得力のあるプレゼンテーション |
+| 🌱 **フォーカスストリーム賞** | VM0047 における土地適格性・モリンガ栽培適性の評価で最も説得力のあるプロトタイプ |
+| 🧭 **オープンストリーム賞** | カスタマージャーニーから見つけた課題と解決策の組み合わせで最も優れたもの |
 
-- 賞品はステッカー、小トロフィー、自慢の権利 — 現金賞品なし。
-- **デモした全チームがクロージングで名前を紹介されます。**
+パートナーが追加の賞を提供し、受賞チームを選ぶ場合があります。表彰は 17:00 に行います。
+
+### 知的財産
+
+- **あなたのコードは [MIT ライセンス](https://opensource.org/license/mit) で公開されます。**
+  書いたコードの権利はあなたに残り、Earthful Magic と Cor-an Holdings は自由に利用・改変・発展させることができます。
+- **Earthful Magic と Cor-an Holdings が提供する方法論、データ、ガイダンスの権利は両社に帰属します。**
+- プロトタイプは Earthful Magic の今後のプロダクト開発に活用され、見込み顧客やパートナーに紹介される場合があります。イベント後も Earthful Magic・Cor-an Holdings との協働を歓迎します。
+
+### 会場でのマナー
+
+日本の施設では、参加者による片付けとゴミの分別が求められます。
+片付けは 16:00〜17:00 に行います。ノートPCの充電器はご自身でお持ちください。
 
 ### 行動規範
 
-[ShoCode行動規範](CODE_OF_CONDUCT.md)はハッカソン中も常に適用されます。親切に、敬意を持って、楽しくビルドしましょう。
+[ShoCode 行動規範](CODE_OF_CONDUCT_jp.md)は常に適用されます。親切に、敬意を持って、楽しくビルドしましょう。

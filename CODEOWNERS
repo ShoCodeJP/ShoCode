@@ -4,9 +4,6 @@
 # Default owner for everything
 * @drewby
 
-# Registration profiles
-/profiles/ @drewby
-
 # GitHub workflows, templates, and config
 /.github/ @drewby
 
