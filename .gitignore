@@ -14,6 +14,7 @@
 .squad-workstream
 
 # --- Sibling repos (backed by .devcontainer bind mounts) ---
+# Landing page — maintained in ShoCodeJP/ShoCodeJP.github.io (local symlink)
 site
 internal
 showcode-internal
@@ -51,3 +52,6 @@ scripts/
 
 # Convention: anything marked DRAFT stays out until approved
 *-DRAFT.md
+
+# Private comms — emails, PII, planning conversations (never commit)
+ops/comms/
