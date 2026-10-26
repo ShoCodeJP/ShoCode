@@ -32,30 +32,19 @@ climate company.
 
 ### What You Take Home
 
-You leave with the skill, the network, and the story. Earthful Magic may
-leave with the code. Here is why that is a good trade.
+You leave with the skill, the network, and the story.
 
-* **Team agentic development, for real.** Most of us run coding agents
-  alone. Here you split one build across up to three people and their
-  agents, on a clock, then merge it and demo it. It is the skill almost
-  nobody has practised yet and every team is about to need.
-* **Work that moves a real number.** A real climate startup, real farmers,
-  and a real bottleneck in getting land into carbon projects. What you build
-  can go straight into Earthful Magic's product. If they want to take it
-  further, that happens through a separate agreement with your team.
-* **A room you cannot otherwise get into.** Carbon project developers,
-  forest developers, agricultural supply chain operators, climate-tech
-  investors, and Earthful Magic's founders judge your demo and are at dinner
-  afterwards.
-* **Scarce domain knowledge.** How carbon credits work, what makes land
-  eligible, and how regenerative agriculture gets financed, briefed in plain
-  language in one morning.
-* **Your rights stay yours.** You keep the IP in what you build. Earthful
-  Magic gets a license to use it. The bounty is opt-in, and after a 60-day
-  quiet period the project is yours to publish. What you learned is yours to
-  share from day one.
-* **A small bilingual cohort on the coast.** About 40 builders,
-  cross-language teams, lunch on us, and the Shonan coast outside the window.
+* **Ship as a team with AI agents.** Three people, their agents, one build,
+  six hours. The skill every team needs next.
+* **Build something that matters.** Real farmers, real carbon projects. Your
+  code can ship in Earthful Magic's product.
+* **Meet people you can't otherwise meet.** Carbon developers, climate
+  investors, founders. They judge your demo and stay for dinner.
+* **Learn a rare domain in a morning.** Carbon credits, land eligibility,
+  regenerative farming, explained by people who do it.
+* **Keep your IP.** Your code stays yours. The bounty is optional.
+* **A day on the Shonan coast.** 40 builders, two languages, lunch on us, the
+  sea outside.
 
 ### The Mission
 
@@ -142,7 +131,7 @@ coast, you'll find inspiration beyond the screen.
 
 <figure>
   <img src="resources/top_banner.jpg" alt="ShoCode: Agentic Coding on the Coast"
-title="ShoCode" width="400" height="400">
+title="ShoCode" width="600" height="400">
 </figure>
 
 ## How to Attend
