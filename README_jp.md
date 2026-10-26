@@ -106,7 +106,7 @@ ShoCode を特別にするのは、湘南の海岸という立地です。
 
 <figure>
   <img src="resources/top_banner.jpg" alt="ShoCode: 海辺のエージェンティック・コーディング"
-title="ShoCode" width="600" height="400">
+title="ShoCode" width="600" height="338">
 </figure>
 
 ## 参加方法

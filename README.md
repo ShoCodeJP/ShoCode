@@ -131,7 +131,7 @@ coast, you'll find inspiration beyond the screen.
 
 <figure>
   <img src="resources/top_banner.jpg" alt="ShoCode: Agentic Coding on the Coast"
-title="ShoCode" width="600" height="400">
+title="ShoCode" width="600" height="338">
 </figure>
 
 ## How to Attend
