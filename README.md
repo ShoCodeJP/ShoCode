@@ -123,7 +123,7 @@ signed by the whole team. Full terms, including the bounty, are in
   share the mission.
 * **Bilingual by design.** Use whichever language you are comfortable with.
 
-## Zushi, on the Shonan Coast
+## The Shonan Coast
 
 ShoCode happens where Tokyo ends and the sea begins. &WORK ZUSHI is two
 minutes from the station and a ten-minute walk from Zushi Beach, with Hayama
