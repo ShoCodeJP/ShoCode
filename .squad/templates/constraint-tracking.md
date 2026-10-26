@@ -4,7 +4,7 @@ When the user or system imposes constraints (question limits, revision limits, t
 
 ## Format
 
-```
+```text
 📊 Clarifying questions used: 2 / 3
 ```
 
@@ -17,7 +17,7 @@ When the user or system imposes constraints (question limits, revision limits, t
 
 ## Example Session
 
-```
+```yaml
 Coordinator: Spawning agents to analyze requirements...
 📊 Clarifying questions used: 0 / 3
 

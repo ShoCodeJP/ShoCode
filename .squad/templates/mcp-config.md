@@ -2,11 +2,10 @@
 
 MCP (Model Context Protocol) servers extend Squad with tools for external services — Trello, Aspire dashboards, Azure, Notion, and more. The user configures MCP servers in their environment; Squad discovers and uses them.
 
-> **Full patterns:** Read `.squad/skills/mcp-tool-discovery/SKILL.md` for discovery patterns, domain-specific usage, and graceful degradation.
-
 ## Config File Locations
 
 Users configure MCP servers at these locations (checked in priority order):
+
 1. **Repository-level:** `.copilot/mcp-config.json` (team-shared, committed to repo)
 2. **Workspace-level:** `.vscode/mcp.json` (VS Code workspaces)
 3. **User-level:** `~/.copilot/mcp-config.json` (personal)

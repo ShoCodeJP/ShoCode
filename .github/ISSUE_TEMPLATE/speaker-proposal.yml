@@ -1,0 +1,136 @@
+name: "🎤 Speaker / Talk Proposal — 登壇・トーク提案"
+description: "Propose a talk for ShoCode / ShoCodeでのトークを提案する"
+title: "[Talk] <your title here / タイトルをここに>"
+labels:
+  - "talk-proposal"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a talk at ShoCode! / ShoCodeへのトーク提案ありがとうございます！
+
+        ShoCode is a bilingual (EN/JP) agentic AI coding event. Fill in the
+        fields below. Either language is welcome — bilingual is a bonus.
+        Do **not** include email addresses; use public/social links only.
+
+        ShoCodeはバイリンガル（英語／日本語）のエージェンティックAIコーディング
+        イベントです。以下の項目を記入してください。どちらの言語でも歓迎、
+        バイリンガルなら尚良しです。メールアドレスは記載せず、公開・ソーシャル
+        リンクのみを使用してください。
+
+  - type: input
+    id: title
+    attributes:
+      label: "Talk title / トークのタイトル"
+      placeholder: "e.g., Shipping an MRV pipeline with coding agents in one day"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: format
+    attributes:
+      label: "Format / 形式"
+      options:
+        - "Standard talk (15 min) / 通常トーク（15分）"
+        - "Lightning talk (5 min) / ライトニングトーク（5分）"
+        - "Keynote (30 min, by invitation) / 基調講演（30分・招待制）"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: duration
+    attributes:
+      label: "Requested duration / 希望する所要時間"
+      options:
+        - "5 minutes / 5分"
+        - "15 minutes / 15分"
+        - "30 minutes / 30分"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: delivery_language
+    attributes:
+      label: "Delivery language / 発表言語"
+      options:
+        - "English / 英語"
+        - "Japanese / 日本語"
+        - "Bilingual / バイリンガル"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: slide_language
+    attributes:
+      label: "Slide language / スライド言語"
+      options:
+        - "English / 英語"
+        - "Japanese / 日本語"
+        - "Both on slides / スライドに両言語"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: level
+    attributes:
+      label: "Audience level / 対象レベル"
+      options:
+        - "Intro / 入門"
+        - "Intermediate / 中級"
+        - "Advanced / 上級"
+    validations:
+      required: true
+
+  - type: textarea
+    id: abstract
+    attributes:
+      label: "Abstract / 概要"
+      description: "2–4 sentences. What the talk covers and the takeaway. / 2〜4文。内容と持ち帰れるもの。"
+      placeholder: "What will the audience be able to do or understand afterwards?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: outline
+    attributes:
+      label: "Outline / アウトライン"
+      description: "Optional bullet outline of the talk flow. / 任意。トークの流れを箇条書きで。"
+    validations:
+      required: false
+
+  - type: textarea
+    id: theme_tie_in
+    attributes:
+      label: "Theme tie-in / テーマとの関連"
+      description: "How it connects to agentic AI coding and/or the regeneration theme. / エージェンティックAIコーディングおよび／またはリジェネレーションのテーマとの関連。"
+    validations:
+      required: false
+
+  - type: textarea
+    id: speaker_bio
+    attributes:
+      label: "Speaker bio / 登壇者プロフィール"
+      description: "2–3 sentences. No email — public/social links only. / 2〜3文。メールなし、公開・ソーシャルリンクのみ。"
+      placeholder: "Name, what you build, GitHub + public links."
+    validations:
+      required: true
+
+  - type: textarea
+    id: av_needs
+    attributes:
+      label: "AV & tech needs / AV・技術要件"
+      description: "Live demo? Adapters? Audio? Accessibility notes? / ライブデモ？アダプター？音声？アクセシビリティ？"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: "Confirmations / 確認事項"
+      options:
+        - label: "No email addresses included (public/social links only) / メールアドレスは含めていない（公開・ソーシャルリンクのみ）"
+          required: true
+        - label: "I have read the Speaker Guide / スピーカーガイドを読んだ"
+          required: true
+        - label: "I agree to follow the Code of Conduct / 行動規範に従うことに同意する"
+          required: true

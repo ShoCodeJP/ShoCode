@@ -10,8 +10,6 @@ on:
       - "CONTRIBUTING_jp.md"
       - "CODE_OF_CONDUCT.md"
       - "CODE_OF_CONDUCT_jp.md"
-      - "profiles/**/profile.md"
-      - "profiles/**/profile_jp.md"
 
 permissions:
   contents: read
@@ -53,20 +51,6 @@ jobs:
             elif [[ "$jp_changed" -gt 0 && "$en_changed" -eq 0 ]]; then
               labels_to_add+=("$label_en")
               issues+=("- \`$jp_file\` changed but \`$en_file\` was not updated / \`$jp_file\` が変更されましたが \`$en_file\` は更新されていません")
-            fi
-          done
-
-          # --- Profile bilingual pairs ---
-          profile_dirs=$(echo "$CHANGED_FILES" | grep -oP '^profiles/[^/]+/' | sort -u || true)
-          for dir in $profile_dirs; do
-            has_en=$(echo "$CHANGED_FILES" | grep -cx "${dir}profile.md" || true)
-            has_jp=$(echo "$CHANGED_FILES" | grep -cx "${dir}profile_jp.md" || true)
-            if [[ "$has_en" -gt 0 && "$has_jp" -eq 0 && ! -f "${dir}profile_jp.md" ]]; then
-              labels_to_add+=("needs-translation")
-              issues+=("- \`${dir}profile.md\` has no Japanese counterpart / \`${dir}profile.md\` に日本語版がありません")
-            elif [[ "$has_jp" -gt 0 && "$has_en" -eq 0 && ! -f "${dir}profile.md" ]]; then
-              labels_to_add+=("needs-translation")
-              issues+=("- \`${dir}profile_jp.md\` has no English counterpart / \`${dir}profile_jp.md\` に英語版がありません")
             fi
           done
 

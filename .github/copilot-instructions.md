@@ -2,27 +2,17 @@
 
 ## Project Context
 
-ShoCode is a bilingual (English/Japanese) one-day agentic coding event held in Shonan, Japan. Participants register by submitting a profile via pull request. All content must support both English and Japanese.
+ShoCode is a bilingual (English/Japanese) agentic coding hackathon held on the Shonan coast of Kanagawa, Japan. The 2026 edition is the **Earthful Magic Builder Hackathon** on **Sunday 29 November 2026**: a one-day, in-person sprint for ~40 builders in teams of 1 to 3, hosted by Earthful Magic and Cor-an Holdings and co-hosted by ShoCode. It has two streams: a Focus Stream (3 teams, land eligibility and Moringa suitability under Verra's methodology) and an Open Stream (~10 teams, customer journey pain points).
 
-## Registration Profile Creation
-
-When a user wants to register for ShoCode, create their profile as follows:
-
-1. **Create the profile folder:** `profiles/{github_username}/`
-2. **Create `profile.md`** inside that folder, using `profiles/template.md` as the base. Fill in the user's details from their request.
-3. **Optionally create `profile_jp.md`** if the user wrote their registration in Japanese, using `profiles/template_jp.md` as the base.
-4. **PR title format:** `Register: {username} for ShoCode`
+**Registration is on Luma, not through this repository.** Do not create profile pages or registration pull requests. Point anyone who wants to register to the "How to Attend" section of the README.
 
 ## Content Rules
 
-- **No email addresses.** Only public/social contact links (Twitter/X, LinkedIn, Bluesky, Mastodon, LINE, GitHub, etc.).
-- **Bilingual support:** Both English and Japanese submissions are welcome. If a user submits in Japanese, create the `profile_jp.md` version. If they submit in English, `profile.md` is sufficient.
-- **Follow templates exactly.** Preserve all required sections from the template: About Me, Introduction, What I'll Bring to ShoCode, Code & Project Links, and Preferred Role.
-- **Preferred Role** must have exactly one option checked (Presenter, Hacker, Both, or Attendee).
-- Do not invent information the user hasn't provided. Leave template placeholders for missing optional fields.
+- **No email addresses or other personal data** in this public repo.
+- **Bilingual support:** attendee-facing docs exist in both English and Japanese (`README.md` / `README_jp.md`, `CONTRIBUTING.md` / `CONTRIBUTING_jp.md`, `CODE_OF_CONDUCT.md` / `CODE_OF_CONDUCT_jp.md`; `HACKATHON_RULES.md` holds both). Change both languages together.
+- Do not invent event details (venue, prices, sponsors) that are not already in the repo.
 
 ## PR Expectations
 
-- One profile per PR.
-- The PR should only add/modify files under `profiles/{github_username}/`.
-- Ensure the profile passes markdownlint and link checks before submitting.
+- One logical change per PR.
+- Ensure docs pass markdownlint and link checks before submitting.

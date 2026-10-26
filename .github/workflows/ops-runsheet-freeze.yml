@@ -1,0 +1,71 @@
+name: Ops Runsheet Freeze Guard
+
+# Blocks edits to the day-of runsheet once it is "frozen", so the schedule
+# everyone printed cannot silently change. Two ways to freeze (either works):
+#
+#   1. Label the PR with `runsheet-frozen`, OR
+#   2. Put a freeze marker line in ops/runsheet.md on the base branch:
+#        <!-- runsheet:frozen -->
+#
+# When neither is present the guard passes. The check is advisory-friendly:
+# it explains exactly how to proceed (remove the label or the marker, or get
+# Ops sign-off) instead of just failing.
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled, unlabeled]
+    paths:
+      - "ops/runsheet.md"
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  freeze-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check runsheet freeze status
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const FREEZE_LABEL = 'runsheet-frozen';
+            const FREEZE_MARKER = '<!-- runsheet:frozen -->';
+
+            // 1. PR label check.
+            const labels = (pr.labels || []).map(l => l.name);
+            const labelFrozen = labels.includes(FREEZE_LABEL);
+
+            // 2. In-file marker check, read from the PR base (the version on main).
+            let markerFrozen = false;
+            try {
+              const { data } = await github.rest.repos.getContent({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                path: 'ops/runsheet.md',
+                ref: pr.base.sha,
+              });
+              const body = Buffer.from(data.content, 'base64').toString('utf8');
+              markerFrozen = body.includes(FREEZE_MARKER);
+            } catch (err) {
+              core.info(`Could not read base ops/runsheet.md (${err.status || err.message}) — treating as not-frozen.`);
+            }
+
+            if (!labelFrozen && !markerFrozen) {
+              core.info('✅ Runsheet is not frozen — change allowed.');
+              return;
+            }
+
+            const reasons = [];
+            if (labelFrozen) reasons.push(`the \`${FREEZE_LABEL}\` label is on this PR`);
+            if (markerFrozen) reasons.push(`the \`${FREEZE_MARKER}\` marker is in ops/runsheet.md`);
+
+            core.setFailed(
+              `🧊 Runsheet is FROZEN (${reasons.join(' and ')}).\n` +
+              `This PR modifies ops/runsheet.md and is blocked to protect the locked day-of schedule.\n\n` +
+              `To proceed, do ONE of the following:\n` +
+              (labelFrozen ? `  • Remove the \`${FREEZE_LABEL}\` label (Ops sign-off required), or\n` : '') +
+              (markerFrozen ? `  • Remove the \`${FREEZE_MARKER}\` marker line from ops/runsheet.md on main, or\n` : '') +
+              `  • Split the change so it does not touch ops/runsheet.md.`
+            );

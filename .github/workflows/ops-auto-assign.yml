@@ -1,0 +1,93 @@
+name: Ops Auto-Assign
+
+# Fills a gap left by Squad Triage: that workflow only fires on the base
+# `squad` label and routes by content keywords (deploy/ci/pipeline/docker/
+# infrastructure). Issues tagged with ops-domain labels like `logistics` or
+# `ops` are NOT matched and never reach the Operations member.
+#
+# This workflow adds exactly that link: when a `logistics` or `ops*` label is
+# applied, it stamps the Operations member's `squad:<name>` label, which then
+# chains into the existing Squad Issue Assign workflow. The Operations member
+# is read from .squad/team.md (role contains "Operations") so it stays correct
+# if the roster changes; falls back to `squad:naruto`.
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  ops-route:
+    # Only act on ops-domain labels. (`ops` matches `ops`, `ops/venue`, etc.)
+    if: >
+      github.event.label.name == 'logistics' ||
+      startsWith(github.event.label.name, 'ops')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Apply Operations squad label
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const issue = context.payload.issue;
+            const trigger = context.payload.label.name;
+
+            function slugify(t) {
+              return t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+            }
+
+            // Resolve the Operations member from the roster (fallback: naruto).
+            let opsName = 'naruto';
+            let teamFile = '.squad/team.md';
+            if (!fs.existsSync(teamFile)) teamFile = '.ai-team/team.md';
+            if (fs.existsSync(teamFile)) {
+              const lines = fs.readFileSync(teamFile, 'utf8').split('\n');
+              let inMembers = false;
+              for (const line of lines) {
+                if (line.match(/^##\s+(Members|Team Roster)/i)) { inMembers = true; continue; }
+                if (inMembers && line.startsWith('## ')) break;
+                if (inMembers && line.startsWith('|') && !line.includes('---') && !line.includes('Name')) {
+                  const cells = line.split('|').map(c => c.trim()).filter(Boolean);
+                  if (cells.length >= 2 && /operations/i.test(cells[1])) {
+                    opsName = cells[0];
+                    break;
+                  }
+                }
+              }
+            }
+
+            const opsLabel = `squad:${slugify(opsName)}`;
+
+            // Idempotent: skip if an ops squad label is already present.
+            const existing = (issue.labels || []).map(l => (l.name || l));
+            if (existing.includes(opsLabel)) {
+              core.info(`Issue #${issue.number} already has ${opsLabel} — nothing to do.`);
+              return;
+            }
+
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              labels: [opsLabel],
+            });
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              body: [
+                `### 🧭 Ops auto-routing`,
+                '',
+                `Label \`${trigger}\` detected → routed to **${opsName}** (Operations) via \`${opsLabel}\`.`,
+                '',
+                `> Squad Issue Assign will pick it up from here. To reassign, swap the \`squad:*\` label.`,
+              ].join('\n'),
+            });
+
+            core.info(`Issue #${issue.number}: applied ${opsLabel} (trigger label: ${trigger}).`);

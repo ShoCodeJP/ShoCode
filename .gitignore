@@ -1,13 +1,57 @@
-# Squad: ignore runtime state (logs, inbox, sessions)
+# =============================================================================
+# ShoCode .gitignore
+# This repo is PUBLIC (registration is on Luma). Anything committed here
+# is world-readable. ALL internal content lives in the PRIVATE repo
+# (ShoCodeJP/shocode-internal), not here.
+# =============================================================================
+
+# --- Squad: runtime state (logs, inbox, sessions) ---
 .squad/orchestration-log/
 .squad/log/
 .squad/decisions/inbox/
 .squad/sessions/
-# Squad: SubSquad activation file (local to this machine)
+.squad/.cache/
 .squad-workstream
+
+# --- Sibling repos (backed by .devcontainer bind mounts) ---
+# Landing page — maintained in ShoCodeJP/ShoCodeJP.github.io (local symlink)
+site
+internal
+showcode-internal
+
+# --- Dependencies / build artifacts ---
+node_modules
+__pycache__/
+*.pyc
+.DS_Store
+
+# --- Debug / tool artifacts ---
+.playwright-mcp/
+
+# =============================================================================
+# Internal content — ALL lives in shocode-internal (private repo).
+# These ignores are a safety net: if files are recreated locally they won't
+# accidentally be committed. Tracked utilities live in .github/scripts/.
+# =============================================================================
+
+# Staff ops files
+RUNBOOK.md
+SCHEDULE_TEMPLATE*.md
+schedule.yml
+
+# Entire directories — all internal
+attendees/
+marketing/
+ops/
+partnerships/
+program/
+proposal/
+quality/
+speakers/
+scripts/
+
+# Convention: anything marked DRAFT stays out until approved
+*-DRAFT.md
 
 # Private comms — emails, PII, planning conversations (never commit)
 ops/comms/
-
-# Landing page — maintained in ShoCodeJP/ShoCodeJP.github.io (local symlink)
-site

@@ -7,6 +7,7 @@
 When running Squad on Kubernetes, agent pods sit idle when no work exists. [KEDA](https://keda.sh) (Kubernetes Event-Driven Autoscaler) solves this for queue-based workloads, but GitHub Issues isn't a native KEDA trigger.
 
 The `keda-copilot-scaler` is a KEDA External Scaler (gRPC) that bridges this gap:
+
 1. Polls GitHub API for issues matching specific labels (e.g., `squad:copilot`)
 2. Reports queue depth as a KEDA metric
 3. Handles rate limits gracefully (Retry-After, exponential backoff)
@@ -15,6 +16,7 @@ The `keda-copilot-scaler` is a KEDA External Scaler (gRPC) that bridges this gap
 ## Quick Start
 
 ### Prerequisites
+
 - Kubernetes cluster with KEDA v2.x installed
 - GitHub personal access token (PAT) with `repo` scope
 - Helm 3.x
@@ -30,6 +32,7 @@ helm install keda-copilot-scaler oci://ghcr.io/tamirdresher/keda-copilot-scaler 
 ```
 
 Or with Kustomize:
+
 ```bash
 kubectl apply -k https://github.com/tamirdresher/keda-copilot-scaler/deploy/kustomize
 ```
@@ -86,6 +89,7 @@ The threshold and max replicas are configurable per ScaledObject.
 ## Rate Limit Awareness
 
 The scaler tracks GitHub API rate limits:
+
 - Reads `X-RateLimit-Remaining` from API responses
 - Backs off when quota is low (< 100 remaining)
 - Reports rate limit metrics as secondary KEDA triggers
@@ -113,13 +117,14 @@ spec:
 ### Cooperative Rate Limiting (#515)
 
 The scaler exposes rate limit metrics that feed into the cooperative rate limiting system:
+
 - Current `X-RateLimit-Remaining` value
 - Predicted time to exhaustion (from predictive circuit breaker)
 - Can return 0 target replicas when rate limited → pods scale to zero
 
 ## Architecture
 
-```
+```text
 GitHub API                    KEDA                    Kubernetes
 ┌──────────┐              ┌──────────┐           ┌──────────────┐
 │  Issues   │◄── poll ──►│  Scaler   │──metrics─►│ HPA / KEDA   │

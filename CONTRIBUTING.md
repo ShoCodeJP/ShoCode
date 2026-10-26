@@ -4,18 +4,13 @@
 
 Welcome to the ShoCode repository! We're glad you're here and interested in
 contributing to this community-driven event. This document outlines how to
-contribute — whether that's registering to attend, improving the repo, or
-helping shape the event itself.
+contribute, whether that's improving the repo or helping shape the event
+itself.
 
 ## Event Registration
 
-The primary way to contribute is to **register as a participant** by submitting
-a profile page. See the [README](README.md) for full details, but in short:
-
-1. **Pull Request** — Fork, add your profile page under `profiles/your_username`,
-   and submit a PR.
-2. **Ask @copilot** — Comment on a registration issue and let Copilot create
-   the PR for you.
+Registration for the hackathon is on **Luma**, not through this repository.
+See the [README](README.md#how-to-attend) for the link.
 
 ## Repo Contributions
 
@@ -63,5 +58,5 @@ the [Code of Conduct](CODE_OF_CONDUCT.md).
 ## Thank You
 
 ShoCode exists because of its community. Every contribution matters — whether
-it's a profile page, a typo fix, or a bold new idea. Thank you for being part
+it's a typo fix, a translation, or a bold new idea. Thank you for being part
 of it.

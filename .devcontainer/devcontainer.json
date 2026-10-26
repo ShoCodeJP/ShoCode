@@ -3,6 +3,13 @@
 {
 	"name": "Ubuntu",
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+	// Runs on the HOST before the container builds.
+	// Clones sibling repos so the bind mounts below have source directories.
+	// NOTE: Windows users without WSL must clone these repos manually into
+	//       %USERPROFILE%\src\ShoCode\ (or adapt this script for PowerShell).
+	"initializeCommand": "bash -c 'REPO_ROOT=\"${HOME}/src/ShoCode\" && mkdir -p \"${REPO_ROOT}\" && [ -d \"${REPO_ROOT}/ShoCodeJP.github.io\" ] || git clone git@github.com:ShoCodeJP/ShoCodeJP.github.io.git \"${REPO_ROOT}/ShoCodeJP.github.io\" && [ -d \"${REPO_ROOT}/ShoCode-internal\" ] || git clone git@github.com:ShoCodeJP/shocode-internal.git \"${REPO_ROOT}/ShoCode-internal\"'",
+
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {
 			"version": "lts"
@@ -10,7 +17,9 @@
 		"ghcr.io/devcontainers/features/github-cli:1": {}
 	},
 	"mounts": [
-		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached",
+		"source=${localEnv:HOME}/src/ShoCode/ShoCodeJP.github.io,target=/workspaces/ShoCode/site,type=bind,consistency=cached",
+		"source=${localEnv:HOME}/src/ShoCode/ShoCode-internal,target=/workspaces/ShoCode/showcode-internal,type=bind,consistency=cached"
 	],
 	"customizations": {
 		"vscode": {

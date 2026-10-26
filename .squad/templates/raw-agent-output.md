@@ -30,6 +30,7 @@
 ## Why This Exists
 
 The appendix provides diagnostic integrity. It lets anyone verify:
+
 - What each agent actually said (vs. what the Coordinator assembled)
 - Whether the Coordinator faithfully represented agent work
 - What was lost or changed in synthesis

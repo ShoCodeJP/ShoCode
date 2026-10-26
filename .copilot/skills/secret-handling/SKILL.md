@@ -15,6 +15,7 @@ Spawned agents have read access to the entire repository, including `.env` files
 ### Prohibited File Reads
 
 **NEVER read these files:**
+
 - `.env` (production secrets)
 - `.env.local` (local dev secrets)
 - `.env.production` (production environment)
@@ -24,11 +25,13 @@ Spawned agents have read access to the entire repository, including `.env` files
 - Any file matching `.env.*` UNLESS explicitly allowed (see below)
 
 **Allowed alternatives:**
+
 - `.env.example` (safe — contains placeholder values, no real secrets)
 - `.env.sample` (safe — documentation template)
 - `.env.template` (safe — schema/structure reference)
 
 **If you need config info:**
+
 1. **Ask the user directly** — "What's the database connection string?"
 2. **Read `.env.example`** — shows structure without exposing secrets
 3. **Read documentation** — check `README.md`, `docs/`, config guides
@@ -41,15 +44,16 @@ Spawned agents have read access to the entire repository, including `.env` files
 
 | Pattern Type | Examples | Regex Pattern (for scanning) |
 |--------------|----------|-------------------------------|
-| API Keys | `OPENAI_API_KEY=sk-proj-...`, `GITHUB_TOKEN=ghp_...` | `[A-Z_]+(?:KEY|TOKEN|SECRET)=[^\s]+` |
-| Passwords | `DB_PASSWORD=super_secret_123`, `password: "..."` | `(?:PASSWORD|PASS|PWD)[:=]\s*["']?[^\s"']+` |
-| Connection Strings | `postgres://user:pass@host:5432/db`, `Server=...;Password=...` | `(?:postgres|mysql|mongodb)://[^@]+@|(?:Server|Host)=.*(?:Password|Pwd)=` |
+| API Keys | `OPENAI_API_KEY=sk-proj-...`, `GITHUB_TOKEN=ghp_...` | `[A-Z_]+(?:KEY\|TOKEN\|SECRET)=[^\s]+` |
+| Passwords | `DB_PASSWORD=super_secret_123`, `password: "..."` | `[?:PASSWORD\|PASS\|PWD](:=)\s*["']?[^\s"']+` |
+| Connection Strings | `postgres://user:pass@host:5432/db`, `Server=...;Password=...` | `(?:postgres\|mysql\|mongodb)://[^@]+@\|(?:Server\|Host)=.*(?:Password\|Pwd)=` |
 | JWT Tokens | `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...` | `eyJ[A-Za-z0-9_-]+\.eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+` |
 | Private Keys | `-----BEGIN PRIVATE KEY-----`, `-----BEGIN RSA PRIVATE KEY-----` | `-----BEGIN [A-Z ]+PRIVATE KEY-----` |
-| AWS Credentials | `AKIA...`, `aws_secret_access_key=...` | `AKIA[0-9A-Z]{16}|aws_secret_access_key=[^\s]+` |
+| AWS Credentials | `AKIA...`, `aws_secret_access_key=...` | `AKIA[0-9A-Z]{16}\|aws_secret_access_key=[^\s]+` |
 | Email Addresses | `user@example.com` (PII violation per team decision) | `[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}` |
 
 **What to write instead:**
+
 - Placeholder values: `DATABASE_URL=<set in .env>`
 - Redacted references: `API key configured (see .env.example)`
 - Architecture notes: "App uses JWT auth — token stored in session"
@@ -65,7 +69,8 @@ Spawned agents have read access to the entire repository, including `.env` files
    - STOP the commit (do NOT proceed)
    - Remove the file from staging: `git reset HEAD <file>`
    - Report to user:
-     ```
+
+     ```text
      🚨 SECRET DETECTED — commit blocked
      
      File: .squad/decisions/inbox/river-db-config.md
@@ -74,12 +79,14 @@ Spawned agents have read access to the entire repository, including `.env` files
      This file contains credentials and MUST NOT be committed.
      Please remove the secret, replace with placeholder, and try again.
      ```
+
    - Exit with error (never silently skip)
 
 4. **If no secrets detected:**
    - Proceed with commit as normal
 
 **Implementation note for Scribe:**
+
 - Run validation AFTER staging files, BEFORE calling `git commit`
 - Use PowerShell `Select-String` or `git diff --cached` to scan staged content
 - Fail loud — secret leaks are unacceptable, blocking the commit is correct behavior
@@ -90,7 +97,8 @@ Spawned agents have read access to the entire repository, including `.env` files
 
 1. **STOP immediately** — do not make more commits
 2. **Alert the user:**
-   ```
+
+   ```text
    🚨 CREDENTIAL LEAK DETECTED
    
    A secret was found in git history:
@@ -105,6 +113,7 @@ Spawned agents have read access to the entire repository, including `.env` files
    
    Do NOT proceed with new work until this is resolved.
    ```
+
 3. **Do NOT attempt to fix it yourself** — secret removal requires specialized tools
 4. **Wait for user confirmation** before resuming work
 
@@ -114,7 +123,7 @@ Spawned agents have read access to the entire repository, including `.env` files
 
 **Agent needs to know what environment variables are required:**
 
-```
+```yaml
 Agent: "What environment variables does this app need?"
 → Reads `.env.example`:
     OPENAI_API_KEY=sk-...
@@ -133,7 +142,7 @@ Agent: "What environment variables does this app need?"
 
 **Agent needs to know database schema:**
 
-```
+```yaml
 Agent: (reads .env)
     DATABASE_URL=postgres://admin:super_secret_pw@prod.example.com:5432/appdb
 
@@ -144,7 +153,8 @@ Agent: (reads .env)
 ```
 
 **Correct approach:**
-```
+
+```yaml
 Agent: (reads .env.example OR asks user)
 User: "It's a Postgres database, schema is in migrations/"
 

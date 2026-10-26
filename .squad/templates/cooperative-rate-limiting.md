@@ -59,6 +59,7 @@ A shared JSON file (`~/.squad/rate-pool.json`) distributes API quota:
 ```
 
 **Rules:**
+
 - P0 agents (Lead) get 40% of quota
 - P1 agents (specialists) get 35%
 - P2 agents (Ralph, Scribe) get 25%
@@ -189,7 +190,7 @@ interface ResourceLease {
 
 Track downstream failures and apply backpressure:
 
-```
+```text
 Agent A (rate limited) → Agent B (waiting for A) → Agent C (waiting for B)
                          ↑ Backpressure signal: "don't start new work"
 ```

@@ -2,111 +2,154 @@
 
 [![日本語](https://img.shields.io/badge/%F0%9F%87%AF%F0%9F%87%B5-日本語-white?style=plastic)](README_jp.md)
 
-> A community-powered, fully bilingual (日本語 / English) one-day event for
-builders, creators, and doers exploring the frontier of agentic coding —
-held in the inspiring Shonan area of Kanagawa, Japan.
+> A community-powered, bilingual (日本語 / English) hackathon for builders,
+> creators, and doers exploring agentic coding, held on the Shonan coast of
+> Kanagawa, Japan.
 
-This repository is your single source of truth for event details, registration,
-and community contributions. True to its roots, ShoCode uses GitHub to manage
-every aspect of the event — including registration, which happens through a
-pull request (with easier paths available for those new to PRs).
+This repository is the public home for event details, hackathon rules, and
+community contributions. **Registration is on Luma** (see
+[How to Attend](#how-to-attend)).
 
-## The Event
+## The Event: Earthful Magic Builder Hackathon
 
-The Shonan Code Summit (ShoCode) is a one-day, repeatable gathering where
-engineers come together to **build, present, and demo** around the theme of
-**Agentic Coding** — AI agents that write, review, test, deploy, and evolve
-code alongside humans.
+The 2026 edition of ShoCode is the **Earthful Magic Builder Hackathon**, an
+intensive one-day, in-person product sprint. You will work in a small team
+with AI coding agents to build working prototypes for a real early-stage
+climate company.
 
-* **Location:** TBD (Shonan area, Kanagawa, Japan)
-* **Date:** TBD
-* **Cost:** TBD (goal is to keep it affordable and accessible)
-* **Languages:** Japanese and English (fully bilingual)
+* **Hosts:** Earthful Magic and Cor-an Holdings,
+  co-hosted by ShoCode (with AI Tinkerers Japan)
+* **Date:** Sunday, 29 November 2026, 10:00–21:00 (dinner 18:00–21:00 is
+  optional)
+* **Venue:** [&WORK ZUSHI](https://misakidonuts.com/lp/andworkzushi/), 2F Misaki
+  Donuts & Cafe Zushi, 6-5-3 Zushi, Zushi, Kanagawa. 2 min walk from Keikyu
+  Zushi·Hayama Station.
+* **Cohort:** ~40 engineers, product designers, and technical builders in
+  teams of 1 to 3
+* **Included:** Lunch. Dinner with judges and partners is optional and
+  self-paid. AI API credits: sponsorship in progress.
+* **Languages:** Japanese and English
 
-### Format
+### What You Take Home
 
-The day is split into three acts:
+You leave with the skill, the network, and the story.
 
-1. **Presentations** — Deep-dive talks on agentic coding: autonomous agents,
-   human-in-the-loop workflows, AI-assisted architecture, prompt engineering
-   for code generation, and more.
-2. **Hackathon** — Hands-on building time. Bring a project idea or join a team
-   on-site. Build something real with agentic tools and techniques.
-3. **Hackathon Demos** — Teams show what they built. Live demos, feedback, and
-   celebration of what's possible when humans and agents code together.
+* **Ship as a team with AI agents.** Three people, their agents, one build,
+  six hours. The skill every team needs next.
+* **Build something that matters.** Real farmers, real carbon projects. Your
+  code can ship in Earthful Magic's product.
+* **Meet people you can't otherwise meet.** Carbon developers, climate
+  investors, founders. They judge your demo and stay for dinner.
+* **Learn a rare domain in a morning.** Carbon credits, land eligibility,
+  regenerative farming, explained by people who do it.
+* **Keep your IP.** Your code stays yours. The bounty is optional.
+* **A day on the Shonan coast.** 40 builders, two languages, lunch on us, the
+  sea outside.
+
+### The Mission
+
+Earthful Magic helps small, often invisible farmers in Africa and Southeast
+Asia get export-ready by growing Moringa, a superfood tree, funded in part by
+carbon credits issued under a Verra methodology. Farmers earn a salary and
+the world gets a high-quality superfood ingredient.
+
+Getting from bare land to a registered carbon project (write the Project
+Design Document, register with Verra, claim credits, grow the trees, sell
+credits and leaves) is unclear, expensive, and slow. Much of the pain is
+wading through stacks of PDFs to check whether land qualifies. That is
+where you come in.
+
+### Two Building Streams
+
+| Stream | Teams | What you build |
+|---|---|---|
+| **Focus Stream** | 3 | A software prototype that assesses **land eligibility and Moringa suitability** under Verra's methodology. Earthful Magic has defined this product; you build it. |
+| **Open Stream** | ~10 | Map the project developer and farmer customer journey, find an unaddressed pain point through desk research, then build a solution for it. |
+
+Open Stream teams present: who they are building for, that person's goal,
+the pain point, the solution, and how it differs from anything that already
+exists.
+
+Prototypes may be used by Earthful Magic in ongoing product development and
+shared with prospective customers and project developers. High-potential
+solutions can receive follow-on support from Earthful Magic and Cor-an
+Holdings.
+
+### Schedule
+
+| Time | Activity |
+|---|---|
+| 10:00 | Arrival, check-in, badges |
+| 10:00–10:30 | Briefing: mission, carbon methodology basics, farmer impact, rules |
+| 10:30–10:45 | Team setup and stream selection |
+| 10:45– | Build |
+| 12:00 | Grab-and-build lunch (included) |
+| 15:00 | Demos and judging |
+| 16:00 | Venue clean-up |
+| 17:00 | Awards, Earthful Magic Bounty, and close |
+| 18:00–21:00 | Dinner with builders, judges, and partners (optional, self-paid) |
+
+### Judging and the Earthful Magic Bounty
+
+Prototypes are judged by people who work in the field: carbon project
+developers, forest developers, agricultural supply chain operators, and
+climate-tech investors. Judges recognise one team per stream:
+
+1. **Focus Stream Winner:** the strongest land eligibility and Moringa
+   suitability prototype under Verra's methodology.
+2. **Open Stream Winner:** the best pain point and solution pair uncovered
+   through journey mapping.
+
+Separately, Earthful Magic offers an optional **Earthful Magic Bounty** of
+¥10,000 to one team (possibly a second). Claiming it means transferring the
+copyright in that submission to Earthful Magic Pte. Ltd. Teams that do not
+enter keep their IP.
+
+### Your Code, Your Rights
+
+You keep the IP in your submission; no open-source license is required.
+Earthful Magic Pte. Ltd. receives a non-exclusive license to use it.
+Materials Earthful Magic provides remain theirs and confidential. Teams agree
+not to publish their project for 60 days after the event, during which
+Earthful Magic may open talks to acquire it under a separate agreement
+signed by the whole team. Full terms, including the bounty, are in
+[HACKATHON_RULES.md](HACKATHON_RULES.md). Registering means you accept them.
 
 ### What We Value
 
 * **Builders, creators, doers.** This event is for people who make things.
-* **Technical depth and honesty.** No marketing pitches, no investor decks, no
-  recruiting talks.
-* **Community first.** Sponsors are welcome in appropriate ways, but this is not
-  a corporate event. It belongs to the community.
-* **Bilingual by design.** Presentations and materials in both Japanese and
-  English. Use whichever you're comfortable with.
+* **Working software over slides.** Demos show something that runs.
+* **Community first.** ShoCode stays a community event, run with partners who
+  share the mission.
+* **Bilingual by design.** Use whichever language you are comfortable with.
 
-## Shonan Area
+## The Shonan Coast
 
-What sets ShoCode apart is its location in the Shonan area of Kanagawa, Japan.
-With views of Mount Fuji across Sagami Bay, ocean breezes, and the relaxed
-energy of the coast, you'll find inspiration beyond the screen. Enjoy local
-beaches, trails, cafés, and the unmistakable vibe of Shonan before or after
-the event.
+ShoCode happens where Tokyo ends and the sea begins. &WORK ZUSHI is two
+minutes from the station and a ten-minute walk from Zushi Beach, with Hayama
+and Kamakura next door. Late November is when the air clears and Mount Fuji
+shows across Sagami Bay. Build all day with the ocean down the street, and
+if you stay for dinner, eat by the sea with the people who judged your work.
 
 <figure>
   <img src="resources/top_banner.jpg" alt="ShoCode: Agentic Coding on the Coast"
-title="ShoCode" width="400" height="400">
-  <figcaption>Created by DALL-E</figcaption>
+title="ShoCode" width="600" height="338">
 </figure>
 
 ## How to Attend
 
-Register by submitting a **profile page** to this repository. There are two
-ways to do it — pick whichever suits you:
+Register on **Luma**: <https://luma.com/3n83bqlq>
 
-### Option 1: Pull Request (classic ShoCode style)
+Space is limited to about 40 builders, so registrations are reviewed.
+Accepted participants receive a participant packet with an introduction to
+Earthful Magic, the challenge briefing, and what to bring.
 
-1. Read the **[Creative Commons LICENSE](LICENSE)**.
-2. **Fork this repository.**
-3. Create a new folder under `profiles/` named after your GitHub username
-   (e.g., `profiles/your_username`).
-4. Add your profile page as a Markdown file. Use
-   [profiles/template.md](profiles/template.md) as a starting point.
-   A [Japanese template (日本語テンプレート)](profiles/template_jp.md) is also
-   available — use whichever language you prefer.
-5. **Submit a Pull Request** from your fork to this repository.
-
-### Option 2: Ask Copilot (the agentic path 🤖)
-
-Comment on an open registration issue with your details and ask **@copilot** to
-create the PR for you. Copilot will generate your profile page and submit the
-PR on your behalf. This is registration-as-agentic-coding — fitting for a
-conference about AI agents that write code alongside humans.
-
----
-
-### Profile Page Requirements
-
-Your profile page should include:
-
-* **About you** — name, GitHub username, and a public way to contact you
-  (Twitter/X, LinkedIn, Bluesky, LINE, etc.)
-* **What you'll bring** — a short description of what you want to present,
-  build, or demo. Focus on agentic coding, AI-assisted development, or related
-  technical topics.
-* **Code or project links** — share repos, gists, blogs, or prior work that
-  shows what you're about
-* **Your preferred role:**
-  * Presenter — give a talk during the presentation block
-  * Hacker — participate in the hackathon (and demo what you build)
-  * Both — present and hack
-  * Attendee — come, learn, and connect
-
-Once your PR is reviewed and merged, you're in. Welcome to ShoCode!
+**What to bring:** a laptop, its charger, an extension cord (outlets are
+shared), and your favourite AI coding tools.
 
 ## Contributing to ShoCode
 
-This event belongs to the community. We welcome contributions of all kinds —
-event ideas, tooling, documentation, translations, and more. Before
-contributing, please review the [Code of Conduct](CODE_OF_CONDUCT.md) and
-the [Contribution Guidelines](CONTRIBUTING.md).
+This repository belongs to the community. We welcome improvements to docs,
+translations, tooling, and more. Before contributing, please review the
+[Code of Conduct](CODE_OF_CONDUCT.md) and the
+[Contribution Guidelines](CONTRIBUTING.md).

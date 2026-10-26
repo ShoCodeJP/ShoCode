@@ -134,12 +134,14 @@ copilot --resume SESSION_ID
 ## Examples
 
 **Recovering from a crash during PR creation:**
+
 1. Query recent sessions filtered by branch name
 2. Find the session that was working on the PR
 3. Check its last checkpoint — was the code committed? Was the PR created?
 4. Resume or manually complete the remaining steps
 
 **Finding yesterday's work on a feature:**
+
 1. Use FTS5 search with feature keywords
 2. Filter to the relevant working directory
 3. Review checkpoint progress to see how far the session got

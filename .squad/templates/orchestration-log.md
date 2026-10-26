@@ -4,7 +4,7 @@
 
 ---
 
-### {timestamp} — {task summary}
+## {timestamp} — {task summary}
 
 | Field | Value |
 |-------|-------|
