@@ -17,13 +17,12 @@ intensive one-day, in-person product sprint. You will work in a small team
 with AI coding agents to build working prototypes for a real early-stage
 climate company.
 
-* **Hosts:** Earthful Magic and Cor-an Holdings,
+* **Hosts:** Earthful Magic Pte. Ltd. and Cor-an Holdings K.K.,
   co-hosted by ShoCode (with AI Tinkerers Japan)
 * **Date:** Sunday, 29 November 2026, 10:00–21:00 (dinner 18:00–21:00 is
   optional)
-* **Venue:** [&WORK ZUSHI](https://misakidonuts.com/lp/andworkzushi/), 2F Misaki
-  Donuts & Cafe Zushi, 6-5-3 Zushi, Zushi, Kanagawa. 2 min walk from Keikyu
-  Zushi·Hayama Station.
+* **Venue:** Zushi/Hayama area, Shonan, Kanagawa (more detail to follow;
+  the exact venue is shared with accepted participants)
 * **Cohort:** ~40 engineers, product designers, and technical builders in
   teams of 1 to 3
 * **Included:** Lunch. Dinner with judges and partners is optional and
@@ -60,14 +59,15 @@ where you come in.
 
 ### Two Building Streams
 
-| Stream | Teams | What you build |
-|---|---|---|
-| **Focus Stream** | 3 | A software prototype that assesses **land eligibility and Moringa suitability** under Verra's methodology. Earthful Magic has defined this product; you build it. |
-| **Open Stream** | ~10 | Map the project developer and farmer customer journey, find an unaddressed pain point through desk research, then build a solution for it. |
+Two products Earthful Magic needs. Teams pick one on the morning of the event.
 
-Open Stream teams present: who they are building for, that person's goal,
-the pain point, the solution, and how it differs from anything that already
-exists.
+| Stream | What you build |
+|---|---|
+| **Product 1** | **Land sourcing for carbon credit developers.** Help a project developer find and screen land that could become a carbon project. |
+| **Product 2** | **Methodology eligibility, crop suitability, and revenue projection.** Take a piece of land and answer whether it qualifies, what grows, and what it could earn. |
+
+Every team presents who it is building for, the pain point, the solution,
+and how it differs from anything that already exists.
 
 Prototypes may be used by Earthful Magic in ongoing product development and
 shared with prospective customers and project developers. High-potential
@@ -92,12 +92,11 @@ Holdings.
 
 Prototypes are judged by people who work in the field: carbon project
 developers, forest developers, agricultural supply chain operators, and
-climate-tech investors. Judges recognise one team per stream:
+climate-tech investors. Judges recognise one team per product:
 
-1. **Focus Stream Winner:** the strongest land eligibility and Moringa
-   suitability prototype under Verra's methodology.
-2. **Open Stream Winner:** the best pain point and solution pair uncovered
-   through journey mapping.
+1. **Product 1 Winner:** the most convincing land sourcing prototype.
+2. **Product 2 Winner:** the most convincing eligibility, suitability, and
+   revenue projection prototype.
 
 Separately, Earthful Magic offers an optional **Earthful Magic Bounty** of
 ¥10,000 to one team (possibly a second). Claiming it means transferring the
@@ -124,9 +123,9 @@ signed by the whole team. Full terms, including the bounty, are in
 
 ## The Shonan Coast
 
-ShoCode happens where Tokyo ends and the sea begins. &WORK ZUSHI is two
-minutes from the station and a ten-minute walk from Zushi Beach, with Hayama
-and Kamakura next door. Late November is when the air clears and Mount Fuji
+ShoCode happens where Tokyo ends and the sea begins: the Zushi and Hayama
+stretch of the Shonan coast, a short walk from the beach, with Kamakura next
+door. Late November is when the air clears and Mount Fuji
 shows across Sagami Bay. Build all day with the ocean down the street, and
 if you stay for dinner, eat by the sea with the people who judged your work.
 
