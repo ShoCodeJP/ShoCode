@@ -42,7 +42,6 @@ You leave with the skill, the network, and the story.
   investors, founders. They judge your demo and stay for dinner.
 * **Learn a rare domain in a morning.** Carbon credits, land eligibility,
   regenerative farming, explained by people who do it.
-* **Keep your IP.** Your code stays yours. The bounty is optional.
 * **A day on the Shonan coast.** 40 builders, two languages, lunch on us, the
   sea outside.
 
