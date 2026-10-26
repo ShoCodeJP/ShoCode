@@ -13,26 +13,56 @@ community contributions. **Registration is on Luma** (see
 ## The Event: Earthful Magic Builder Hackathon
 
 The 2026 edition of ShoCode is the **Earthful Magic Builder Hackathon**, an
-intensive one-day, in-person product sprint. You will build working
-prototypes with AI coding agents for a real early-stage climate company.
+intensive one-day, in-person product sprint. You will work in a small team
+with AI coding agents to build working prototypes for a real early-stage
+climate company.
 
 * **Hosts:** Earthful Magic and Cor-an Holdings,
   co-hosted by ShoCode (with AI Tinkerers Japan)
-* **Date:** Sunday, 29 November 2026 (full day, venue to be confirmed)
-* **Location:** Shonan area (Zushi, Hayama, Kamakura, Fujisawa, Enoshima),
-  Kanagawa. About 2 hours from central Tokyo.
+* **Date:** Sunday, 29 November 2026, 10:00–21:00 (dinner 18:00–21:00 is
+  optional)
+* **Venue:** [&WORK ZUSHI](https://misakidonuts.com/lp/andworkzushi/), 2F Misaki
+  Donuts & Cafe Zushi, 6-5-3 Zushi, Zushi, Kanagawa. 2 min walk from Keikyu
+  Zushi·Hayama Station.
 * **Cohort:** ~40 engineers, product designers, and technical builders in
   teams of 1 to 3
-* **Included:** Lunch, an evening dinner with judges and partners, and AI API
-  credits (sponsorship in progress)
+* **Included:** Lunch. Dinner with judges and partners is optional and
+  self-paid. AI API credits: sponsorship in progress.
 * **Languages:** Japanese and English
+
+### What You Take Home
+
+You leave with the skill, the network, and the story. Earthful Magic may
+leave with the code. Here is why that is a good trade.
+
+* **Team agentic development, for real.** Most of us run coding agents
+  alone. Here you split one build across up to three people and their
+  agents, on a clock, then merge it and demo it. It is the skill almost
+  nobody has practised yet and every team is about to need.
+* **Work that moves a real number.** A real climate startup, real farmers,
+  and a real bottleneck in getting land into carbon projects. What you build
+  can go straight into Earthful Magic's product. If they want to take it
+  further, that happens through a separate agreement with your team.
+* **A room you cannot otherwise get into.** Carbon project developers,
+  forest developers, agricultural supply chain operators, climate-tech
+  investors, and Earthful Magic's founders judge your demo and are at dinner
+  afterwards.
+* **Scarce domain knowledge.** How carbon credits work, what makes land
+  eligible, and how regenerative agriculture gets financed, briefed in plain
+  language in one morning.
+* **Your rights stay yours.** You keep the IP in what you build. Earthful
+  Magic gets a license to use it. The bounty is opt-in, and after a 60-day
+  quiet period the project is yours to publish. What you learned is yours to
+  share from day one.
+* **A small bilingual cohort on the coast.** About 40 builders,
+  cross-language teams, lunch on us, and the Shonan coast outside the window.
 
 ### The Mission
 
 Earthful Magic helps small, often invisible farmers in Africa and Southeast
 Asia get export-ready by growing Moringa, a superfood tree, funded in part by
-carbon credits under the Verra **VM0047** methodology. Farmers earn a salary
-and the world gets a high-quality superfood ingredient.
+carbon credits issued under a Verra methodology. Farmers earn a salary and
+the world gets a high-quality superfood ingredient.
 
 Getting from bare land to a registered carbon project (write the Project
 Design Document, register with Verra, claim credits, grow the trees, sell
@@ -44,7 +74,7 @@ where you come in.
 
 | Stream | Teams | What you build |
 |---|---|---|
-| **Focus Stream** | 3 | A software prototype that assesses **land eligibility and Moringa suitability** under VM0047. Earthful Magic has defined this product; you build it. |
+| **Focus Stream** | 3 | A software prototype that assesses **land eligibility and Moringa suitability** under Verra's methodology. Earthful Magic has defined this product; you build it. |
 | **Open Stream** | ~10 | Map the project developer and farmer customer journey, find an unaddressed pain point through desk research, then build a solution for it. |
 
 Open Stream teams present: who they are building for, that person's goal,
@@ -56,41 +86,45 @@ shared with prospective customers and project developers. High-potential
 solutions can receive follow-on support from Earthful Magic and Cor-an
 Holdings.
 
-### Schedule (draft)
+### Schedule
 
 | Time | Activity |
 |---|---|
 | 10:00 | Arrival, check-in, badges |
-| 10:00–10:30 | Briefing: mission, VM0047 basics, farmer impact, rules |
+| 10:00–10:30 | Briefing: mission, carbon methodology basics, farmer impact, rules |
 | 10:30–10:45 | Team setup and stream selection |
 | 10:45– | Build |
-| 12:00 | Grab-and-build lunch |
+| 12:00 | Grab-and-build lunch (included) |
 | 15:00 | Demos and judging |
 | 16:00 | Venue clean-up |
-| 17:00 | Awards and close |
-| 18:00–21:00 | Dinner with builders, judges, and partners |
+| 17:00 | Awards, Earthful Magic Bounty, and close |
+| 18:00–21:00 | Dinner with builders, judges, and partners (optional, self-paid) |
 
-### Judging and Prizes
+### Judging and the Earthful Magic Bounty
 
 Prototypes are judged by people who work in the field: carbon project
 developers, forest developers, agricultural supply chain operators, and
-climate-tech investors. There is one winner per stream:
+climate-tech investors. Judges recognise one team per stream:
 
 1. **Focus Stream Winner:** the strongest land eligibility and Moringa
-   suitability prototype under VM0047.
+   suitability prototype under Verra's methodology.
 2. **Open Stream Winner:** the best pain point and solution pair uncovered
    through journey mapping.
 
-Partners may sponsor additional prizes. See [HACKATHON_RULES.md](HACKATHON_RULES.md)
-for the full rules, including intellectual property.
+Separately, Earthful Magic offers an optional **Earthful Magic Bounty** of
+¥10,000 to one team (possibly a second). Claiming it means transferring the
+copyright in that submission to Earthful Magic Pte. Ltd. Teams that do not
+enter keep their IP.
 
-### What You Get
+### Your Code, Your Rights
 
-* **0 to 1 product building** on a real early-stage startup problem
-* **Domain knowledge** of carbon credit mechanics (VM0047) and regenerative
-  agriculture
-* **Community:** time with engineers, designers, founders, and industry
-  leaders
+You keep the IP in your submission; no open-source license is required.
+Earthful Magic Pte. Ltd. receives a non-exclusive license to use it.
+Materials Earthful Magic provides remain theirs and confidential. Teams agree
+not to publish their project for 60 days after the event, during which
+Earthful Magic may open talks to acquire it under a separate agreement
+signed by the whole team. Full terms, including the bounty, are in
+[HACKATHON_RULES.md](HACKATHON_RULES.md). Registering means you accept them.
 
 ### What We Value
 
@@ -109,19 +143,18 @@ coast, you'll find inspiration beyond the screen.
 <figure>
   <img src="resources/top_banner.jpg" alt="ShoCode: Agentic Coding on the Coast"
 title="ShoCode" width="400" height="400">
-  <figcaption>Created by DALL-E</figcaption>
 </figure>
 
 ## How to Attend
 
-Register on **Luma**: <!-- TODO: add Luma event URL --> **link coming soon**.
+Register on **Luma**: <https://luma.com/3n83bqlq>
 
 Space is limited to about 40 builders, so registrations are reviewed.
 Accepted participants receive a participant packet with an introduction to
 Earthful Magic, the challenge briefing, and what to bring.
 
-**What to bring:** a laptop, its charger, and your favourite AI coding tools.
-A power strip is welcome.
+**What to bring:** a laptop, its charger, an extension cord (outlets are
+shared), and your favourite AI coding tools.
 
 ## Contributing to ShoCode
 

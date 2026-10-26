@@ -2,7 +2,7 @@
 
 ## Project Context
 
-ShoCode is a bilingual (English/Japanese) agentic coding hackathon held on the Shonan coast of Kanagawa, Japan. The 2026 edition is the **Earthful Magic Builder Hackathon** on **Sunday 29 November 2026**: a one-day, in-person sprint for ~40 builders in teams of 1 to 3, hosted by Earthful Magic and Cor-an Holdings and co-hosted by ShoCode. It has two streams: a Focus Stream (3 teams, land eligibility and Moringa suitability under Verra VM0047) and an Open Stream (~10 teams, customer journey pain points).
+ShoCode is a bilingual (English/Japanese) agentic coding hackathon held on the Shonan coast of Kanagawa, Japan. The 2026 edition is the **Earthful Magic Builder Hackathon** on **Sunday 29 November 2026**: a one-day, in-person sprint for ~40 builders in teams of 1 to 3, hosted by Earthful Magic and Cor-an Holdings and co-hosted by ShoCode. It has two streams: a Focus Stream (3 teams, land eligibility and Moringa suitability under Verra's methodology) and an Open Stream (~10 teams, customer journey pain points).
 
 **Registration is on Luma, not through this repository.** Do not create profile pages or registration pull requests. Point anyone who wants to register to the "How to Attend" section of the README.
 
