@@ -123,11 +123,13 @@ signed by the whole team. Full terms, including the bounty, are in
   share the mission.
 * **Bilingual by design.** Use whichever language you are comfortable with.
 
-## Shonan Area
+## Zushi, on the Shonan Coast
 
-What sets ShoCode apart is its location on the Shonan coast. With views of
-Mount Fuji across Sagami Bay, ocean breezes, and the relaxed energy of the
-coast, you'll find inspiration beyond the screen.
+ShoCode happens where Tokyo ends and the sea begins. &WORK ZUSHI is two
+minutes from the station and a ten-minute walk from Zushi Beach, with Hayama
+and Kamakura next door. Late November is when the air clears and Mount Fuji
+shows across Sagami Bay. Build all day with the ocean down the street, and
+if you stay for dinner, eat by the sea with the people who judged your work.
 
 <figure>
   <img src="resources/top_banner.jpg" alt="ShoCode: Agentic Coding on the Coast"
