@@ -4,7 +4,7 @@
 [![English](https://img.shields.io/badge/%F0%9F%87%BA%F0%9F%87%B8-English-white?style=plastic)](#english)
 
 > Rules for the **Earthful Magic Builder Hackathon**, Sunday 29 November 2026,
-> Zushi/Hayama area, 10:00–21:00 (18:00–21:00 is optional).
+> &WORK ZUSHI, 10:00–21:00 (18:00–21:00 is optional).
 > By registering on Luma you accept these rules, including the
 > [Intellectual Property and Bounty](#intellectual-property-and-bounty) terms.
 
@@ -21,13 +21,12 @@ methodology.
 
 ### Streams
 
-Two products Earthful Magic needs. Each team builds one.
-
-- **Product 1:** land sourcing for carbon credit developers.
-- **Product 2:** methodology eligibility, crop suitability, and revenue
-  projection.
-- Streams are chosen during team setup (10:30–10:45). Organizers may balance
-  the two streams on the day.
+- **Focus Stream (3 teams):** build a land eligibility and Moringa suitability
+  assessment prototype under Verra's methodology.
+- **Open Stream (~10 teams):** research the project developer and farmer
+  customer journey, pick an unaddressed pain point, and build a solution.
+- Streams are chosen during team setup (10:30–10:45). If more than 3 teams
+  want the Focus Stream, organizers will decide fairly on the day.
 
 ### Teams
 
@@ -70,8 +69,8 @@ Two products Earthful Magic needs. Each team builds one.
 - **About 4 minutes per team:** 3 minutes live demo plus 1 minute of judge
   questions (final timing depends on team count).
 - **Live demo preferred** over slides. Show what you built running.
-- **Every team** should cover: who you are building for, the pain point, your
-  solution, and how it differs from existing tools.
+- **Open Stream teams** must cover: who you are building for, their goal, the
+  pain point, your solution, and how it differs from existing competitors.
 - **Every team that submits gets stage time.**
 
 ### Submission Requirements
@@ -91,8 +90,8 @@ developers, agricultural supply chain operators, and climate-tech investors.
 
 | Recognition | Criteria |
 |---|---|
-| 🌱 **Product 1 Winner** | Most convincing land sourcing prototype for carbon credit developers |
-| 🧭 **Product 2 Winner** | Most convincing methodology eligibility, crop suitability, and revenue projection prototype |
+| 🌱 **Focus Stream Winner** | Most convincing land eligibility and Moringa suitability prototype under Verra's methodology |
+| 🧭 **Open Stream Winner** | Most compelling pain point and solution pair from the customer journey |
 
 Stream winners are recognition from the judges. There is no cash prize
 attached to them.
@@ -166,7 +165,7 @@ kind, be respectful, and have fun building.
 
 ## 日本語
 
-> **Earthful Magic ビルダーハッカソン**（2026年11月29日（日）、逗子・葉山エリア、10:00〜21:00、18:00〜21:00 は任意参加）のルールです。
+> **Earthful Magic ビルダーハッカソン**（2026年11月29日（日）、&WORK ZUSHI、10:00〜21:00、18:00〜21:00 は任意参加）のルールです。
 > Luma での登録をもって、[知的財産とバウンティ](#知的財産とバウンティ)の条件を含む本ルールに同意したものとみなします。
 
 ### 概要
@@ -177,11 +176,9 @@ Verra の方法論に基づくカーボンクレジットを資金源に、小�
 
 ### ストリーム
 
-Earthful Magic が必要としている2つのプロダクト。各チームはどちらかを作ります。
-
-- **プロダクト1:** カーボンクレジット開発者向けの土地ソーシング。
-- **プロダクト2:** 方法論の適格性、作物適性、収益予測。
-- ストリームはチーム編成の時間（10:30〜10:45）に選びます。当日、運営が2つのストリームのバランスを調整することがあります。
+- **フォーカスストリーム（3チーム）:** Verra の方法論における土地適格性とモリンガ栽培適性を評価するプロトタイプを作ります。
+- **オープンストリーム（約10チーム）:** プロジェクト開発者と農家のカスタマージャーニーを調査し、未解決の課題を選んで解決策を作ります。
+- ストリームはチーム編成の時間（10:30〜10:45）に選びます。フォーカスストリームの希望が3チームを超えた場合は、当日運営が公平に決定します。
 
 ### チーム編成
 
@@ -214,7 +211,7 @@ Earthful Magic が必要としている2つのプロダクト。各チームは�
 
 - **1チーム約4分:** ライブデモ3分 + 審査員からの質問1分（最終的な時間はチーム数により調整）。
 - **ライブデモ推奨。** スライドより、作ったものが動いているところを見せてください。
-- **すべてのチーム**は、誰のために作るのか、課題、解決策、既存のツールとの違いを説明してください。
+- **オープンストリームのチーム**は、誰のために作るのか、その人の目標、課題、解決策、既存の競合との違いを必ず説明してください。
 - **提出した全チームにステージ時間があります。**
 
 ### 提出要件
@@ -230,8 +227,8 @@ Earthful Magic が必要としている2つのプロダクト。各チームは�
 
 | 表彰 | 基準 |
 |---|---|
-| 🌱 **プロダクト1賞** | カーボンクレジット開発者向けの土地ソーシングで最も説得力のあるプロトタイプ |
-| 🧭 **プロダクト2賞** | 方法論の適格性・作物適性・収益予測で最も説得力のあるプロトタイプ |
+| 🌱 **フォーカスストリーム賞** | Verra の方法論における土地適格性・モリンガ栽培適性の評価で最も説得力のあるプロトタイプ |
+| 🧭 **オープンストリーム賞** | カスタマージャーニーから見つけた課題と解決策の組み合わせで最も優れたもの |
 
 ストリーム賞は審査員による表彰であり、賞金はありません。
 
